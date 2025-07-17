@@ -3,31 +3,29 @@ import { useState } from 'react'
 export default function SearchBox({ players, onSelect }) {
   const [query, setQuery] = useState('')
 
-  const filtered = query.length > 1
-    ? players.filter(p =>
-        p.name.toLowerCase().includes(query.toLowerCase()) &&
-        !p.disabled
-      ).slice(0, 6)
-    : []
+  const matches = players.filter(p =>
+    p.name?.toLowerCase().includes(query.toLowerCase())
+  )
 
   return (
-    <div className="relative">
+    <div>
       <input
+        type="text"
+        placeholder="Search players"
         value={query}
-        onChange={e => setQuery(e.target.value)}
-        placeholder="Search player"
-        className="w-full px-3 py-2 border rounded focus:outline-none"
+        onChange={(e) => setQuery(e.target.value)}
+        className="w-full p-2 border border-gray-300 rounded mb-2"
       />
-      {filtered.length > 0 && (
-        <ul className="absolute z-10 left-0 right-0 bg-white border mt-1 rounded shadow text-sm">
-          {filtered.map(p => (
+      {query && matches.length > 0 && (
+        <ul className="bg-white border max-h-60 overflow-auto rounded shadow">
+          {matches.slice(0, 10).map(p => (
             <li
               key={p.id}
-              className="px-3 py-2 hover:bg-blue-50 cursor-pointer"
               onClick={() => {
                 onSelect(p)
                 setQuery('')
               }}
+              className="px-3 py-2 cursor-pointer hover:bg-gray-100"
             >
               {p.name} ({p.pos}) – {p.value}
             </li>

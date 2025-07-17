@@ -1,15 +1,18 @@
 export default function PlayerCard({ player, onRemove }) {
   return (
-    <div className="flex justify-between items-center bg-gray-50 border rounded-lg px-4 py-3 hover:shadow transition">
+    <div className="flex items-center justify-between bg-gray-50 border px-3 py-2 rounded">
       <div>
-        <p className="font-semibold text-sm">{player.name}</p>
-        <p className="text-xs text-gray-500">{player.pos} — {player.team}</p>
+        <p className="font-medium">{player.name}</p>
+        <p className="text-xs text-gray-500">{player.pos} – {player.team}</p>
       </div>
-      <div className="flex gap-2 items-center">
-        <span className="text-blue-700 font-bold text-sm">{player.value}</span>
-        {onRemove && (
-          <button onClick={onRemove} className="text-red-600 text-sm hover:underline">✕</button>
-        )}
+      <div className="flex items-center gap-2">
+        <p className="font-semibold text-blue-700">{player.value}</p>
+        <button
+          onClick={onRemove}
+          className="text-red-500 hover:text-red-700 text-lg"
+        >
+          ❌
+        </button>
       </div>
     </div>
   )
