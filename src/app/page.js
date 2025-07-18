@@ -7,7 +7,13 @@ import SleeperLogin from "./components/SleeperLogin";
 
 export default function Home() {
   const SAFE_MARGIN = 50;
+
   const [allPlayers, setAllPlayers] = useState([]);
+  const getPlayerImageUrl = (name) =>
+  `https://static.www.nfl.com/image/upload/t_player_profile_landscape/f_auto/league/${name
+    .toLowerCase()
+    .replace(/\s+/g, "-")}`;
+
   const [sideA, setSideA] = useState(() => {
     if (typeof window !== "undefined") {
       const stored = sessionStorage.getItem("sideA");
@@ -39,6 +45,7 @@ export default function Home() {
     }
     return null;
   });
+  const [positionFilter, setPositionFilter] = useState("");
   const [owners, setOwners] = useState([]);
   const [ownerMap, setOwnerMap] = useState({});
   const [rosters, setRosters] = useState({});
@@ -64,12 +71,11 @@ export default function Home() {
   });
 
 
+
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const res = await fetch(
-          `/api/values?format=${format}&superflex=${superflex}`
-        );
+        const res = await fetch(`/api/values?format=${format}&superflex=${superflex}`);
         const data = await res.json();
         const values = Array.isArray(data)
           ? data
@@ -86,7 +92,8 @@ export default function Home() {
             pos: p?.player?.position,
             team: p?.player?.maybeTeam || "",
             value: p?.value || 0,
-          }))
+        }))
+
           .filter((p) => p.name && p.value > 0);
 
         setAllPlayers(flat);
@@ -133,7 +140,7 @@ export default function Home() {
     const target = a > b ? "B" : "A";
     const missing = Math.abs(a - b);
     const newRecos = { A: [], B: [] };
-
+    
     const opposingSide = target === "A" ? "B" : "A";
     const opposingOwnerId = sideOwners[opposingSide];
     const rosterFilter = opposingOwnerId ? rosters[opposingOwnerId] || [] : null;
@@ -174,6 +181,14 @@ export default function Home() {
       sessionStorage.setItem("sleeperUser", JSON.stringify(sleeperUser));
     }
   }, [sleeperUser]);
+
+  const changeSuperflex = (value) => {
+  setSuperflex(value);
+  if (typeof window !== "undefined") {
+    sessionStorage.setItem("superflex", value.toString());
+  }
+};
+
 
   const handleLogin = async (username, userId) => {
     setSleeperUser({ username, userId });
@@ -283,52 +298,39 @@ export default function Home() {
           🏈 Fantasy Trade Analyzer
         </h1>
 
-        {/* Format Toggle Always Visible */}
-        <div className="flex flex-col items-center mt-6 gap-2">
-          <div className="flex items-center gap-4 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
+        {/* Format & Superflex Toggle */}
+        <div className="flex justify-center mt-6 flex-wrap gap-4">
+          <div className="flex items-center gap-3 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
             <span className="text-sm font-medium text-gray-600">Format:</span>
-            <button
-              onClick={() => {
-                setFormat("dynasty");
-                sessionStorage.setItem("format", "dynasty");
-              }}
-              className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                format === "dynasty"
-                  ? "bg-indigo-600 text-white shadow"
-                  : "bg-gray-100 text-gray-700"
-              }`}
-            >
-              Dynasty
-            </button>
-            <button
-              onClick={() => {
-                setFormat("redraft");
-                sessionStorage.setItem("format", "redraft");
-              }}
-              className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                format === "redraft"
-                  ? "bg-indigo-600 text-white shadow"
-                  : "bg-gray-100 text-gray-700"
-              }`}
-            >
-              Redraft
-            </button>
+            {["dynasty", "redraft"].map((f) => (
+              <button
+                key={f}
+                onClick={() => changeFormat(f)}
+                className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
+                  format === f ? "bg-indigo-600 text-white shadow" : "bg-gray-100 text-gray-700"
+                }`}
+              >
+                {f === "dynasty" ? "Dynasty" : "Redraft"}
+              </button>
+            ))}
           </div>
 
-          {/* Superflex Toggle */}
-          <div className="flex items-center gap-2 text-sm text-gray-700 bg-white px-3 py-1 rounded-full border shadow">
-            <input
-              type="checkbox"
-              checked={superflex}
-              onChange={(e) => {
-                setSuperflex(e.target.checked);
-                if (typeof window !== "undefined") {
-                  sessionStorage.setItem("superflex", e.target.checked);
-                }
-              }}
-              className="form-checkbox accent-indigo-600"
-            />
-            Superflex
+          <div className="flex items-center gap-3 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
+            <span className="text-sm font-medium text-gray-600">QB Type:</span>
+            {[
+              { label: "1QB", value: false },
+              { label: "SF", value: true },
+            ].map(({ label, value }) => (
+              <button
+                key={label}
+                onClick={() => changeSuperflex(value)}
+                className={`w-16 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
+                  superflex === value ? "bg-indigo-600 text-white shadow" : "bg-gray-100 text-gray-700"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -383,78 +385,119 @@ export default function Home() {
           )}
         </div>
 
-        {/* Trade Interface */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <TradeSide
-            label="A"
-            players={sideA}
-            setPlayers={setSideA}
-            addPlayer={(player) => handleAddPlayer("A", player)}
-            allPlayers={
-              sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers
-            }
-            recommendations={recommendations.A}
-            owners={owners}
-            selectedOwner={sideOwners.A}
-            onOwnerSelect={(id) => setTeam("A", id)}
-          />
-          <TradeSide
-            label="B"
-            players={sideB}
-            setPlayers={setSideB}
-            addPlayer={(player) => handleAddPlayer("B", player)}
-            allPlayers={
-              sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers
-            }
-            recommendations={recommendations.B}
-            owners={owners}
-            selectedOwner={sideOwners.B}
-            onOwnerSelect={(id) => setTeam("B", id)}
-          />
+        {/* Trade and Top 10 Side-by-Side */}
+        <div className="flex flex-col md:flex-row gap-8">
+          {/* Trade Interface */}
+          <div className="flex-1 grid md:grid-cols-2 gap-8">
+            <TradeSide
+              label="A"
+              players={sideA}
+              setPlayers={setSideA}
+              addPlayer={(player) => handleAddPlayer("A", player)}
+              allPlayers={
+                sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers
+              }
+              recommendations={recommendations.A}
+              owners={owners}
+              selectedOwner={sideOwners.A}
+              onOwnerSelect={(id) => setTeam("A", id)}
+            />
+            <TradeSide
+              label="B"
+              players={sideB}
+              setPlayers={setSideB}
+              addPlayer={(player) => handleAddPlayer("B", player)}
+              allPlayers={
+                sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers
+              }
+              recommendations={recommendations.B}
+              owners={owners}
+              selectedOwner={sideOwners.B}
+              onOwnerSelect={(id) => setTeam("B", id)}
+            />
+          </div>
+
+          {/* Top 10 Players */}
+          <div className="w-full md:w-[300px] bg-white border rounded-lg shadow p-4">
+            <h3 className="text-lg font-semibold text-indigo-700 mb-3 text-center">
+              💎 Top 10 Players
+            </h3>
+
+            <div className="mb-4">
+              <label htmlFor="pos-filter" className="block text-sm font-medium text-gray-700 mb-1">
+                Filter by Position:
+              </label>
+              <select
+                id="pos-filter"
+                className="w-full p-2 border rounded"
+                value={positionFilter}
+                onChange={(e) => setPositionFilter(e.target.value)}
+              >
+                <option value="">All Positions</option>
+                <option value="QB">QB</option>
+                <option value="RB">RB</option>
+                <option value="WR">WR</option>
+                <option value="TE">TE</option>
+              </select>
+            </div>
+
+            <ul className="space-y-2">
+              {allPlayers
+                .filter((p) => !positionFilter || p.pos === positionFilter)
+                .slice(0, 10)
+                .map((p) => (
+                  <li key={p.id} className="border rounded px-3 py-2 hover:bg-gray-50">
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={`/api/avatar/${p.name}`}
+                        alt={p.name}
+                        className="w-10 h-10 rounded-full object-cover"
+                        onError={(e) => {
+                          e.target.src = "/default-avatar.png";
+                        }}
+                      />
+
+
+
+
+
+                      <div className="flex-1">
+                        <a
+                          href={`https://www.nfl.com/players/${p.name.toLowerCase().replace(/\s+/g, "-")}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="font-semibold text-indigo-700 hover:underline"
+                        >
+                          {p.name}
+                        </a>
+                        <div className="text-xs text-gray-500">
+                          Value: {p.value}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex gap-2 mt-2">
+                      <button
+                        onClick={() => handleAddPlayer("A", p)}
+                        className="flex-1 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded hover:bg-blue-200"
+                      >
+                        ➕ Add to A
+                      </button>
+                      <button
+                        onClick={() => handleAddPlayer("B", p)}
+                        className="flex-1 bg-green-100 text-green-800 text-xs px-2 py-1 rounded hover:bg-green-200"
+                      >
+                        ➕ Add to B
+                      </button>
+                    </div>
+                  </li>
+                ))}
+            </ul>
+
+          </div>
         </div>
 
-        {/* Trade Result */}
-        {result && (
-          <div className="text-center animate-pulse">
-            <div className="inline-block bg-white border border-gray-300 rounded-lg px-6 py-4 shadow-md text-lg">
-              <p className="mb-1">
-                {sideOwners.A ? `${ownerMap[sideOwners.A]}: ` : "Side A: "}
-                <span className="font-bold text-blue-700">{result.a}</span>
-                {" vs "}
-                {sideOwners.B ? `${ownerMap[sideOwners.B]}: ` : "Side B: "}
-                <span className="font-bold text-green-700">{result.b}</span>
-              </p>
-              <p className="mt-1 font-semibold text-xl">
-                {result.winner === "Even"
-                  ? "⚖️ Even trade"
-                  : result.winner === "A"
-                  ? `🏆 ${ownerMap[sideOwners.A] || "Side A"} wins by ${
-                      result.diff
-                    }`
-                  : `🏆 ${ownerMap[sideOwners.B] || "Side B"} wins by ${
-                      result.diff
-                    }`}
-              </p>
-            </div>
-          </div>
-        )}
 
-        {sideA.length === 0 && sideB.length === 0 && (
-          <div>
-            <h2 className="text-2xl font-bold text-center mb-4 text-gray-700">
-              💎 Top Available Players
-            </h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-              {allPlayers.slice(0, 12).map((p) => (
-                <PlayerCard
-                  key={p.id}
-                  player={p}
-                  onAdd={() => handleAddPlayer("A", p)}
-                />
-              ))}
-            </div>
-          </div>
-        )}
+        
       </div>
     </main>
   );
