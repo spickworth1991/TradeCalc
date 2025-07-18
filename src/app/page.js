@@ -6,6 +6,7 @@ import PlayerCard from "./components/PlayerCard";
 import SleeperLogin from "./components/SleeperLogin";
 
 export default function Home() {
+  const SAFE_MARGIN = 50;
   const [allPlayers, setAllPlayers] = useState([]);
   const [sideA, setSideA] = useState(() => {
     if (typeof window !== "undefined") {
@@ -55,12 +56,20 @@ export default function Home() {
     return "dynasty";
   });
 
-  const SAFE_MARGIN = 50;
+  const [superflex, setSuperflex] = useState(() => {
+    if (typeof window !== "undefined") {
+      return sessionStorage.getItem("superflex") === "true";
+    }
+    return false;
+  });
+
 
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const res = await fetch(`/api/values?format=${format}`);
+        const res = await fetch(
+          `/api/values?format=${format}&superflex=${superflex}`
+        );
         const data = await res.json();
         const values = Array.isArray(data)
           ? data
@@ -81,14 +90,14 @@ export default function Home() {
           .filter((p) => p.name && p.value > 0);
 
         setAllPlayers(flat);
-        console.log(`📊 Loaded ${format} values:`, values.slice(0, 3));
+        console.log(`📊 Loaded ${format} (${superflex ? "SF" : "1QB"}) values:`, values.slice(0, 3));
       } catch (err) {
         console.error("Error loading players:", err);
       }
     };
 
     fetchPlayers();
-  }, [format]);
+  }, [format, superflex]);
 
   // 🆕 Sync active trade player values after format changes
   useEffect(() => {
@@ -275,11 +284,14 @@ export default function Home() {
         </h1>
 
         {/* Format Toggle Always Visible */}
-        <div className="flex justify-center mt-6">
+        <div className="flex flex-col items-center mt-6 gap-2">
           <div className="flex items-center gap-4 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
             <span className="text-sm font-medium text-gray-600">Format:</span>
             <button
-              onClick={() => changeFormat("dynasty")}
+              onClick={() => {
+                setFormat("dynasty");
+                sessionStorage.setItem("format", "dynasty");
+              }}
               className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
                 format === "dynasty"
                   ? "bg-indigo-600 text-white shadow"
@@ -289,7 +301,10 @@ export default function Home() {
               Dynasty
             </button>
             <button
-              onClick={() => changeFormat("redraft")}
+              onClick={() => {
+                setFormat("redraft");
+                sessionStorage.setItem("format", "redraft");
+              }}
               className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
                 format === "redraft"
                   ? "bg-indigo-600 text-white shadow"
@@ -299,7 +314,24 @@ export default function Home() {
               Redraft
             </button>
           </div>
+
+          {/* Superflex Toggle */}
+          <div className="flex items-center gap-2 text-sm text-gray-700 bg-white px-3 py-1 rounded-full border shadow">
+            <input
+              type="checkbox"
+              checked={superflex}
+              onChange={(e) => {
+                setSuperflex(e.target.checked);
+                if (typeof window !== "undefined") {
+                  sessionStorage.setItem("superflex", e.target.checked);
+                }
+              }}
+              className="form-checkbox accent-indigo-600"
+            />
+            Superflex
+          </div>
         </div>
+
 
         {!sleeperUser && (
           <div className="flex justify-center">
@@ -414,19 +446,11 @@ export default function Home() {
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
               {allPlayers.slice(0, 12).map((p) => (
-                <div
+                <PlayerCard
                   key={p.id}
-                  className="bg-white border rounded-lg p-3 cursor-pointer hover:shadow-md transition hover:bg-blue-50"
-                  onClick={() => handleAddPlayer("A", p)}
-                >
-                  <p className="font-medium">{p.name}</p>
-                  <p className="text-xs text-gray-500">
-                    {p.pos} – {p.team}
-                  </p>
-                  <p className="text-right text-blue-700 font-semibold">
-                    {p.value}
-                  </p>
-                </div>
+                  player={p}
+                  onAdd={() => handleAddPlayer("A", p)}
+                />
               ))}
             </div>
           </div>
