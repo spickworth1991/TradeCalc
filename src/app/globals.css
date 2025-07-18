@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes flashGreen {
+  0% {
+    background-color: #d1fae5; /* Tailwind green-100 */
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flash-green {
+  animation: flashGreen 1s ease-out;
+}

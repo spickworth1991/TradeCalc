@@ -1,19 +1,43 @@
-export default function PlayerCard({ player, onRemove }) {
+import { useEffect, useRef, useState } from "react";
+
+export default function PlayerCard({ player, onAdd, onRemove }) {
+  const [flash, setFlash] = useState(false);
+  const prevValue = useRef(player.value);
+
+  useEffect(() => {
+    if (player.value !== prevValue.current) {
+      setFlash(true);
+      prevValue.current = player.value;
+      setTimeout(() => setFlash(false), 500); // shorter flash for responsiveness
+    }
+  }, [player.value]);
+
   return (
-    <div className="flex items-center justify-between bg-gray-50 border px-3 py-2 rounded">
-      <div>
+    <div className="bg-white border rounded-lg p-3 relative hover:shadow-md transition group">
+      <div
+        onClick={() => onAdd?.(player)}
+        className="cursor-pointer hover:bg-blue-50 rounded p-1"
+      >
         <p className="font-medium">{player.name}</p>
-        <p className="text-xs text-gray-500">{player.pos} – {player.team}</p>
-      </div>
-      <div className="flex items-center gap-2">
-        <p className="font-semibold text-blue-700">{player.value}</p>
-        <button
-          onClick={onRemove}
-          className="text-red-500 hover:text-red-700 text-lg"
+        <p className="text-xs text-gray-500">
+          {player.pos} – {player.team}
+        </p>
+        <p
+          className={`text-right font-semibold ${
+            flash ? "text-green-600 scale-105" : "text-blue-700"
+          } transition-all duration-300`}
         >
-          ❌
-        </button>
+          {player.value}
+        </p>
       </div>
+      {onRemove && (
+        <button
+          onClick={() => onRemove(player)}
+          className="absolute top-1 right-1 text-red-600 text-sm font-bold hover:text-red-800"
+        >
+          ✖
+        </button>
+      )}
     </div>
-  )
+  );
 }
