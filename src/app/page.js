@@ -4,10 +4,14 @@ import { useEffect, useState } from "react";
 import TradeSide from "./components/TradeSide";
 import PlayerCard from "./components/PlayerCard";
 import SleeperLogin from "./components/SleeperLogin";
+import { toSlug } from "@/utils/slugify";
+
 
 export default function Home() {
   const SAFE_MARGIN = 50;
 
+
+  
   const [allPlayers, setAllPlayers] = useState([]);
   const getPlayerImageUrl = (name) =>
     `https://static.www.nfl.com/image/upload/t_player_profile_landscape/f_auto/league/${name
@@ -130,7 +134,6 @@ export default function Home() {
     const b = total(sideB);
     const diff = Math.abs(a - b);
     const winner = a === b ? "Even" : a > b ? "A" : "B";
-
     setResult({ a, b, winner, diff });
 
     if (diff <= SAFE_MARGIN) {
@@ -202,7 +205,7 @@ export default function Home() {
     const data = await res.json();
     setLeagues(Array.isArray(data) ? data : []);
   };
-
+  
   const handleLeagueSelect = async (leagueId) => {
     const league = leagues.find((l) => l.league_id === leagueId);
     if (!league) return;
@@ -292,7 +295,7 @@ export default function Home() {
       }
     }
   };
-
+  
   return (
     <main className="min-h-screen py-10 px-4 bg-gradient-to-br from-slate-100 to-gray-200 text-gray-800">
       <div className="max-w-7xl mx-auto space-y-12">
@@ -460,7 +463,7 @@ export default function Home() {
                   >
                     <div className="flex items-center gap-3">
                       <img
-                        src={p.name.avatarurl || `/api/avatar/${p.name}`}
+                        src={`/api/avatar/${toSlug(p.name)}`}
                         loading="lazy"
                         decoding="async"
                         width="40"

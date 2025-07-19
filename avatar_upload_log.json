@@ -1,31 +1,31 @@
 [
   {
     "slug": "ja-marr-chase",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "justin-jefferson",
-    "status": "cached"
-  },
-  {
-    "slug": "jahmyr-gibbs",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "bijan-robinson",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "jahmyr-gibbs",
+    "status": "downloaded"
   },
   {
     "slug": "malik-nabers",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "ashton-jeanty",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "ceedee-lamb",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-01",
@@ -34,55 +34,55 @@
   },
   {
     "slug": "brock-bowers",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "brian-thomas-jr",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "amon-ra-st-brown",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "puka-nacua",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "saquon-barkley",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "nico-collins",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "josh-allen",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "drake-london",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "devon-achane",
-    "status": "cached"
-  },
-  {
-    "slug": "lamar-jackson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "trey-mcbride",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jayden-daniels",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "lamar-jackson",
+    "status": "downloaded"
   },
   {
     "slug": "omarion-hampton",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-02",
@@ -91,11 +91,11 @@
   },
   {
     "slug": "marvin-harrison-jr",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "ladd-mcconkey",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-03",
@@ -104,19 +104,19 @@
   },
   {
     "slug": "bucky-irving",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jaxon-smith-njigba",
-    "status": "cached"
-  },
-  {
-    "slug": "garrett-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "joe-burrow",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "garrett-wilson",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-04",
@@ -124,28 +124,32 @@
     "reason": "No image found"
   },
   {
+    "slug": "a-j-brown",
+    "status": "downloaded"
+  },
+  {
     "slug": "jonathan-taylor",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "breece-hall",
-    "status": "cached"
-  },
-  {
-    "slug": "a-j-brown",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "treveyon-henderson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "travis-hunter",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jalen-hurts",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "kyren-williams",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-05",
@@ -154,23 +158,15 @@
   },
   {
     "slug": "christian-mccaffrey",
-    "status": "cached"
-  },
-  {
-    "slug": "kyren-williams",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tetairoa-mcmillan",
-    "status": "cached"
-  },
-  {
-    "slug": "rashee-rice",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "josh-jacobs",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-06",
@@ -178,20 +174,24 @@
     "reason": "No image found"
   },
   {
-    "slug": "derrick-henry",
-    "status": "cached"
+    "slug": "tee-higgins",
+    "status": "downloaded"
   },
   {
-    "slug": "tee-higgins",
-    "status": "cached"
+    "slug": "rashee-rice",
+    "status": "downloaded"
   },
   {
     "slug": "chase-brown",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "sam-laporta",
-    "status": "cached"
+    "slug": "derrick-henry",
+    "status": "downloaded"
+  },
+  {
+    "slug": "james-cook",
+    "status": "downloaded"
   },
   {
     "slug": "2025-round-1",
@@ -199,12 +199,12 @@
     "reason": "No image found"
   },
   {
-    "slug": "james-cook",
-    "status": "cached"
+    "slug": "sam-laporta",
+    "status": "downloaded"
   },
   {
     "slug": "quinshon-judkins",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-07",
@@ -213,19 +213,15 @@
   },
   {
     "slug": "kenneth-walker",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "patrick-mahomes",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "rome-odunze",
-    "status": "cached"
-  },
-  {
-    "slug": "kaleb-johnson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-08",
@@ -233,24 +229,28 @@
     "reason": "No image found"
   },
   {
+    "slug": "kaleb-johnson",
+    "status": "downloaded"
+  },
+  {
     "slug": "devonta-smith",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "emeka-egbuka",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "rj-harvey",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "xavier-worthy",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tyler-warren",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-09",
@@ -258,32 +258,28 @@
     "reason": "No image found"
   },
   {
-    "slug": "colston-loveland",
-    "status": "cached"
+    "slug": "george-kittle",
+    "status": "downloaded"
   },
   {
-    "slug": "george-kittle",
-    "status": "cached"
+    "slug": "colston-loveland",
+    "status": "downloaded"
   },
   {
     "slug": "caleb-williams",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "chuba-hubbard",
-    "status": "cached"
-  },
-  {
-    "slug": "jameson-williams",
-    "status": "cached"
-  },
-  {
-    "slug": "terry-mclaurin",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "drake-maye",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "jameson-williams",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-10",
@@ -292,31 +288,35 @@
   },
   {
     "slug": "dk-metcalf",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "terry-mclaurin",
+    "status": "downloaded"
   },
   {
     "slug": "bo-nix",
-    "status": "cached"
-  },
-  {
-    "slug": "zay-flowers",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "justin-herbert",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "george-pickens",
-    "status": "cached"
-  },
-  {
-    "slug": "dj-moore",
-    "status": "cached"
+    "slug": "zay-flowers",
+    "status": "downloaded"
   },
   {
     "slug": "tyreek-hill",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "george-pickens",
+    "status": "downloaded"
+  },
+  {
+    "slug": "dj-moore",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-11",
@@ -324,20 +324,24 @@
     "reason": "No image found"
   },
   {
-    "slug": "c-j-stroud",
-    "status": "cached"
-  },
-  {
     "slug": "jordan-addison",
-    "status": "cached"
-  },
-  {
-    "slug": "t-j-hockenson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jaylen-waddle",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "t-j-hockenson",
+    "status": "downloaded"
+  },
+  {
+    "slug": "c-j-stroud",
+    "status": "downloaded"
+  },
+  {
+    "slug": "chris-olave",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-1-12",
@@ -345,20 +349,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "chris-olave",
-    "status": "cached"
-  },
-  {
     "slug": "matthew-golden",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jordan-love",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "alvin-kamara",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-01",
@@ -372,19 +372,19 @@
   },
   {
     "slug": "ricky-pearsall",
-    "status": "cached"
-  },
-  {
-    "slug": "joe-mixon",
-    "status": "cached"
-  },
-  {
-    "slug": "j-j-mccarthy",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "davante-adams",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "joe-mixon",
+    "status": "downloaded"
+  },
+  {
+    "slug": "j-j-mccarthy",
+    "status": "downloaded"
   },
   {
     "slug": "2026-round-1",
@@ -392,33 +392,37 @@
     "reason": "No image found"
   },
   {
+    "slug": "brock-purdy",
+    "status": "downloaded"
+  },
+  {
     "slug": "2025-pick-2-02",
     "status": "error",
     "reason": "No image found"
   },
   {
-    "slug": "kyler-murray",
-    "status": "cached"
-  },
-  {
     "slug": "baker-mayfield",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "brock-purdy",
-    "status": "cached"
-  },
-  {
-    "slug": "mike-evans",
-    "status": "cached"
+    "slug": "kyler-murray",
+    "status": "downloaded"
   },
   {
     "slug": "david-montgomery",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "mike-evans",
+    "status": "downloaded"
+  },
+  {
+    "slug": "josh-downs",
+    "status": "downloaded"
   },
   {
     "slug": "jerry-jeudy",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-03",
@@ -427,35 +431,31 @@
   },
   {
     "slug": "cameron-ward",
-    "status": "cached"
-  },
-  {
-    "slug": "luther-burden-iii",
-    "status": "cached"
-  },
-  {
-    "slug": "josh-downs",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jayden-higgins",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "d-andre-swift",
-    "status": "cached"
+    "slug": "luther-burden-iii",
+    "status": "downloaded"
   },
   {
     "slug": "trevor-lawrence",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "brandon-aiyuk",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "courtland-sutton",
-    "status": "cached"
+    "slug": "d-andre-swift",
+    "status": "downloaded"
+  },
+  {
+    "slug": "chris-godwin",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-04",
@@ -464,23 +464,27 @@
   },
   {
     "slug": "tre-harris",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "isiah-pacheco",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "chris-godwin",
-    "status": "cached"
+    "slug": "courtland-sutton",
+    "status": "downloaded"
   },
   {
     "slug": "james-conner",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "travis-etienne",
+    "status": "downloaded"
   },
   {
     "slug": "cam-skattebo",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-05",
@@ -488,20 +492,12 @@
     "reason": "No image found"
   },
   {
-    "slug": "travis-etienne",
-    "status": "cached"
+    "slug": "michael-penix-jr",
+    "status": "downloaded"
   },
   {
     "slug": "zach-charbonnet",
-    "status": "cached"
-  },
-  {
-    "slug": "michael-penix-jr",
-    "status": "cached"
-  },
-  {
-    "slug": "jayden-reed",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-06",
@@ -509,16 +505,24 @@
     "reason": "No image found"
   },
   {
-    "slug": "tucker-kraft",
-    "status": "cached"
+    "slug": "brian-robinson",
+    "status": "downloaded"
   },
   {
     "slug": "aaron-jones",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "brian-robinson",
-    "status": "cached"
+    "slug": "david-njoku",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tucker-kraft",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jayden-reed",
+    "status": "downloaded"
   },
   {
     "slug": "2025-round-2",
@@ -526,24 +530,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "david-njoku",
-    "status": "cached"
-  },
-  {
     "slug": "dalton-kincaid",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "trey-benson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "mark-andrews",
-    "status": "cached"
-  },
-  {
-    "slug": "keon-coleman",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-07",
@@ -552,7 +548,11 @@
   },
   {
     "slug": "khalil-shakir",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "keon-coleman",
+    "status": "downloaded"
   },
   {
     "slug": "2028-round-1",
@@ -560,16 +560,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "kyle-pitts",
-    "status": "cached"
-  },
-  {
     "slug": "jared-goff",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "michael-pittman",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "kyle-pitts",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-08",
@@ -577,36 +577,32 @@
     "reason": "No image found"
   },
   {
-    "slug": "dylan-sampson",
-    "status": "cached"
+    "slug": "jakobi-meyers",
+    "status": "downloaded"
   },
   {
-    "slug": "jakobi-meyers",
-    "status": "cached"
+    "slug": "dylan-sampson",
+    "status": "downloaded"
   },
   {
     "slug": "dak-prescott",
-    "status": "cached"
-  },
-  {
-    "slug": "travis-kelce",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tony-pollard",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "bryce-young",
-    "status": "cached"
+    "slug": "travis-kelce",
+    "status": "downloaded"
   },
   {
     "slug": "tyrone-tracy-jr",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "isaiah-likely",
-    "status": "cached"
+    "slug": "bhayshul-tuten",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-09",
@@ -614,28 +610,36 @@
     "reason": "No image found"
   },
   {
-    "slug": "bhayshul-tuten",
-    "status": "cached"
+    "slug": "isaiah-likely",
+    "status": "downloaded"
   },
   {
-    "slug": "jauan-jennings",
-    "status": "cached"
-  },
-  {
-    "slug": "jordan-mason",
-    "status": "cached"
+    "slug": "bryce-young",
+    "status": "downloaded"
   },
   {
     "slug": "jack-bech",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "najee-harris",
-    "status": "cached"
+    "slug": "jauan-jennings",
+    "status": "downloaded"
+  },
+  {
+    "slug": "j-k-dobbins",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jordan-mason",
+    "status": "downloaded"
   },
   {
     "slug": "calvin-ridley",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "najee-harris",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-10",
@@ -643,16 +647,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "j-k-dobbins",
-    "status": "cached"
+    "slug": "deebo-samuel",
+    "status": "downloaded"
   },
   {
-    "slug": "deebo-samuel",
-    "status": "cached"
+    "slug": "jaylen-warren",
+    "status": "downloaded"
   },
   {
     "slug": "evan-engram",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-11",
@@ -661,27 +665,15 @@
   },
   {
     "slug": "kyle-williams",
-    "status": "cached"
-  },
-  {
-    "slug": "jaylen-warren",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jaydon-blue",
-    "status": "cached"
-  },
-  {
-    "slug": "javonte-williams",
-    "status": "cached"
-  },
-  {
-    "slug": "mason-taylor",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "rhamondre-stevenson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-2-12",
@@ -689,12 +681,12 @@
     "reason": "No image found"
   },
   {
-    "slug": "justin-fields",
-    "status": "cached"
+    "slug": "mason-taylor",
+    "status": "downloaded"
   },
   {
-    "slug": "tyjae-spears",
-    "status": "cached"
+    "slug": "javonte-williams",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-01",
@@ -702,20 +694,24 @@
     "reason": "No image found"
   },
   {
-    "slug": "cooper-kupp",
-    "status": "cached"
+    "slug": "justin-fields",
+    "status": "downloaded"
   },
   {
-    "slug": "stefon-diggs",
-    "status": "cached"
+    "slug": "tyjae-spears",
+    "status": "downloaded"
   },
   {
     "slug": "darnell-mooney",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "cooper-kupp",
+    "status": "downloaded"
   },
   {
     "slug": "rachaad-white",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-02",
@@ -723,16 +719,20 @@
     "reason": "No image found"
   },
   {
+    "slug": "stefon-diggs",
+    "status": "downloaded"
+  },
+  {
     "slug": "jaylen-wright",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "isaac-guerendo",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jake-ferguson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-03",
@@ -740,28 +740,32 @@
     "reason": "No image found"
   },
   {
-    "slug": "braelon-allen",
-    "status": "cached"
+    "slug": "tua-tagovailoa",
+    "status": "downloaded"
   },
   {
-    "slug": "jaxson-dart",
-    "status": "cached"
+    "slug": "braelon-allen",
+    "status": "downloaded"
   },
   {
     "slug": "ray-davis",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "jaxson-dart",
+    "status": "downloaded"
+  },
+  {
+    "slug": "xavier-legette",
+    "status": "downloaded"
   },
   {
     "slug": "rashod-bateman",
-    "status": "cached"
-  },
-  {
-    "slug": "tua-tagovailoa",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tank-bigsby",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-04",
@@ -769,28 +773,24 @@
     "reason": "No image found"
   },
   {
-    "slug": "xavier-legette",
-    "status": "cached"
-  },
-  {
-    "slug": "marvin-mims-jr",
-    "status": "cached"
-  },
-  {
-    "slug": "jonathon-brooks",
-    "status": "cached"
-  },
-  {
     "slug": "jalen-mcmillan",
-    "status": "cached"
-  },
-  {
-    "slug": "rashid-shaheed",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tyler-allgeier",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "marvin-mims-jr",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jonathon-brooks",
+    "status": "downloaded"
+  },
+  {
+    "slug": "rashid-shaheed",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-05",
@@ -798,8 +798,8 @@
     "reason": "No image found"
   },
   {
-    "slug": "brenton-strange",
-    "status": "cached"
+    "slug": "jaylin-noel",
+    "status": "downloaded"
   },
   {
     "slug": "2026-round-2",
@@ -807,8 +807,8 @@
     "reason": "No image found"
   },
   {
-    "slug": "dallas-goedert",
-    "status": "cached"
+    "slug": "jonnu-smith",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-06",
@@ -816,20 +816,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "jonnu-smith",
-    "status": "cached"
+    "slug": "brenton-strange",
+    "status": "downloaded"
   },
   {
     "slug": "cedric-tillman",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "jaylin-noel",
-    "status": "cached"
-  },
-  {
-    "slug": "dj-giddens",
-    "status": "cached"
+    "slug": "dallas-goedert",
+    "status": "downloaded"
   },
   {
     "slug": "2025-round-3",
@@ -838,7 +834,11 @@
   },
   {
     "slug": "pat-bryant",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "dj-giddens",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-07",
@@ -851,20 +851,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "terrance-ferguson",
-    "status": "cached"
-  },
-  {
     "slug": "roschon-johnson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "cade-otton",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "jarquez-hunter",
-    "status": "cached"
+    "slug": "devin-neal",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-08",
@@ -872,20 +868,28 @@
     "reason": "No image found"
   },
   {
-    "slug": "tank-dell",
-    "status": "cached"
+    "slug": "jarquez-hunter",
+    "status": "downloaded"
   },
   {
-    "slug": "jerome-ford",
-    "status": "cached"
+    "slug": "terrance-ferguson",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tank-dell",
+    "status": "downloaded"
   },
   {
     "slug": "quentin-johnston",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "sam-darnold",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "jerome-ford",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-09",
@@ -893,20 +897,20 @@
     "reason": "No image found"
   },
   {
-    "slug": "adonai-mitchell",
-    "status": "cached"
-  },
-  {
-    "slug": "blake-corum",
-    "status": "cached"
-  },
-  {
     "slug": "pat-freiermuth",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "adonai-mitchell",
+    "status": "downloaded"
   },
   {
     "slug": "ben-sinnott",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "blake-corum",
+    "status": "downloaded"
   },
   {
     "slug": "2028-round-2",
@@ -920,7 +924,15 @@
   },
   {
     "slug": "marshawn-lloyd",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "harold-fannin-jr",
+    "status": "downloaded"
+  },
+  {
+    "slug": "nick-chubb",
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-11",
@@ -928,24 +940,12 @@
     "reason": "No image found"
   },
   {
-    "slug": "nick-chubb",
-    "status": "cached"
-  },
-  {
-    "slug": "jalen-royals",
-    "status": "cached"
-  },
-  {
-    "slug": "devin-neal",
-    "status": "cached"
+    "slug": "anthony-richardson",
+    "status": "downloaded"
   },
   {
     "slug": "christian-kirk",
-    "status": "cached"
-  },
-  {
-    "slug": "anthony-richardson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2025-pick-3-12",
@@ -954,7 +954,11 @@
   },
   {
     "slug": "marquise-brown",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "geno-smith",
+    "status": "downloaded"
   },
   {
     "slug": "dont-e-thornton",
@@ -962,112 +966,116 @@
     "reason": "No image found"
   },
   {
-    "slug": "geno-smith",
-    "status": "cached"
-  },
-  {
     "slug": "wan-dale-robinson",
-    "status": "cached"
-  },
-  {
-    "slug": "brashard-smith",
-    "status": "cached"
-  },
-  {
-    "slug": "demario-douglas",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "roman-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "romeo-doubs",
-    "status": "cached"
+    "slug": "demario-douglas",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jalen-royals",
+    "status": "downloaded"
   },
   {
     "slug": "hunter-henry",
-    "status": "cached"
-  },
-  {
-    "slug": "darren-waller",
-    "status": "cached"
-  },
-  {
-    "slug": "harold-fannin-jr",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "rico-dowdle",
-    "status": "cached"
-  },
-  {
-    "slug": "mike-gesicki",
-    "status": "cached"
-  },
-  {
-    "slug": "austin-ekeler",
-    "status": "cached"
-  },
-  {
-    "slug": "jalen-coker",
-    "status": "cached"
-  },
-  {
-    "slug": "matthew-stafford",
-    "status": "cached"
-  },
-  {
-    "slug": "woody-marks",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "chig-okonkwo",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "elijah-arroyo",
-    "status": "cached"
+    "slug": "brashard-smith",
+    "status": "downloaded"
   },
   {
-    "slug": "ja-tavion-sanders",
-    "status": "cached"
+    "slug": "romeo-doubs",
+    "status": "downloaded"
+  },
+  {
+    "slug": "darren-waller",
+    "status": "downloaded"
+  },
+  {
+    "slug": "mike-gesicki",
+    "status": "downloaded"
+  },
+  {
+    "slug": "austin-ekeler",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jalen-coker",
+    "status": "downloaded"
+  },
+  {
+    "slug": "matthew-stafford",
+    "status": "downloaded"
   },
   {
     "slug": "christian-watson",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "woody-marks",
+    "status": "downloaded"
+  },
+  {
+    "slug": "ja-tavion-sanders",
+    "status": "downloaded"
   },
   {
     "slug": "jalen-milroe",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "elijah-arroyo",
+    "status": "downloaded"
   },
   {
     "slug": "isaac-teslaa",
-    "status": "cached"
-  },
-  {
-    "slug": "will-shipley",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "theo-johnson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "cole-kmet",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "zach-ertz",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "will-shipley",
+    "status": "downloaded"
   },
   {
     "slug": "jacory-croskey-merritt",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "ollie-gordon-ii",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "kendre-miller",
+    "status": "downloaded"
+  },
+  {
+    "slug": "oronde-gadsden",
+    "status": "downloaded"
   },
   {
     "slug": "joshua-palmer",
@@ -1075,20 +1083,16 @@
     "reason": "No image found"
   },
   {
-    "slug": "kendre-miller",
-    "status": "cached"
+    "slug": "troy-franklin",
+    "status": "downloaded"
+  },
+  {
+    "slug": "shedeur-sanders",
+    "status": "downloaded"
   },
   {
     "slug": "tyler-shough",
-    "status": "cached"
-  },
-  {
-    "slug": "jordan-james",
-    "status": "cached"
-  },
-  {
-    "slug": "trevor-etienne",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "2026-round-3",
@@ -1096,29 +1100,29 @@
     "reason": "No image found"
   },
   {
-    "slug": "elic-ayomanor",
-    "status": "cached"
-  },
-  {
-    "slug": "oronde-gadsden",
-    "status": "cached"
-  },
-  {
     "slug": "2027-round-3",
     "status": "error",
     "reason": "No image found"
   },
   {
+    "slug": "jordan-james",
+    "status": "downloaded"
+  },
+  {
+    "slug": "elic-ayomanor",
+    "status": "downloaded"
+  },
+  {
+    "slug": "trevor-etienne",
+    "status": "downloaded"
+  },
+  {
     "slug": "kyle-monangai",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "troy-franklin",
-    "status": "cached"
-  },
-  {
-    "slug": "shedeur-sanders",
-    "status": "cached"
+    "slug": "alec-pierce",
+    "status": "downloaded"
   },
   {
     "slug": "2028-round-3",
@@ -1126,108 +1130,124 @@
     "reason": "No image found"
   },
   {
-    "slug": "alec-pierce",
-    "status": "cached"
-  },
-  {
     "slug": "deandre-hopkins",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "daniel-jones",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "adam-thielen",
-    "status": "cached"
-  },
-  {
-    "slug": "dontayvion-wicks",
-    "status": "cached"
-  },
-  {
-    "slug": "dalton-schultz",
-    "status": "cached"
-  },
-  {
-    "slug": "elijah-moore",
-    "status": "cached"
-  },
-  {
-    "slug": "michael-mayer",
-    "status": "cached"
-  },
-  {
-    "slug": "tory-horton",
-    "status": "cached"
-  },
-  {
-    "slug": "russell-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "miles-sanders",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "tahj-brooks",
-    "status": "cached"
+    "slug": "tory-horton",
+    "status": "downloaded"
   },
   {
-    "slug": "aaron-rodgers",
-    "status": "cached"
+    "slug": "dalton-schultz",
+    "status": "downloaded"
   },
   {
-    "slug": "kareem-hunt",
-    "status": "cached"
-  },
-  {
-    "slug": "keaton-mitchell",
-    "status": "cached"
-  },
-  {
-    "slug": "xavier-restrepo",
-    "status": "cached"
-  },
-  {
-    "slug": "sean-tucker",
-    "status": "cached"
+    "slug": "russell-wilson",
+    "status": "downloaded"
   },
   {
     "slug": "michael-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "audric-estime",
-    "status": "cached"
+    "slug": "aaron-rodgers",
+    "status": "downloaded"
   },
   {
-    "slug": "calvin-austin-iii",
-    "status": "cached"
+    "slug": "tahj-brooks",
+    "status": "downloaded"
   },
   {
-    "slug": "tyler-lockett",
-    "status": "cached"
+    "slug": "dontayvion-wicks",
+    "status": "downloaded"
   },
   {
-    "slug": "jaylin-lane",
-    "status": "cached"
+    "slug": "xavier-restrepo",
+    "status": "downloaded"
   },
   {
-    "slug": "ja-lynn-polk",
-    "status": "cached"
+    "slug": "sean-tucker",
+    "status": "downloaded"
+  },
+  {
+    "slug": "kareem-hunt",
+    "status": "downloaded"
   },
   {
     "slug": "keenan-allen",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "elijah-moore",
+    "status": "downloaded"
+  },
+  {
+    "slug": "michael-mayer",
+    "status": "downloaded"
+  },
+  {
+    "slug": "keaton-mitchell",
+    "status": "downloaded"
+  },
+  {
+    "slug": "audric-estime",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jaylin-lane",
+    "status": "downloaded"
+  },
+  {
+    "slug": "calvin-austin-iii",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tyler-lockett",
+    "status": "downloaded"
+  },
+  {
+    "slug": "ja-lynn-polk",
+    "status": "downloaded"
+  },
+  {
+    "slug": "isaiah-davis",
+    "status": "downloaded"
   },
   {
     "slug": "joe-milton-iii",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "zack-moss",
+    "status": "downloaded"
+  },
+  {
+    "slug": "keandre-lambert-smith",
+    "status": "downloaded"
+  },
+  {
+    "slug": "savion-williams",
+    "status": "downloaded"
   },
   {
     "slug": "tai-felton",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "noah-gray",
+    "status": "downloaded"
   },
   {
     "slug": "efton-chism-iii",
@@ -1235,603 +1255,579 @@
     "reason": "No image found"
   },
   {
-    "slug": "amari-cooper",
-    "status": "cached"
-  },
-  {
-    "slug": "isaiah-davis",
-    "status": "cached"
-  },
-  {
-    "slug": "savion-williams",
-    "status": "cached"
+    "slug": "andrei-iosivas",
+    "status": "downloaded"
   },
   {
     "slug": "chimere-dike",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "amari-cooper",
+    "status": "downloaded"
   },
   {
     "slug": "jordan-whittington",
-    "status": "cached"
-  },
-  {
-    "slug": "andrei-iosivas",
-    "status": "cached"
-  },
-  {
-    "slug": "diontae-johnson",
-    "status": "cached"
-  },
-  {
-    "slug": "noah-gray",
-    "status": "cached"
-  },
-  {
-    "slug": "will-howard",
-    "status": "cached"
-  },
-  {
-    "slug": "arian-smith",
-    "status": "cached"
-  },
-  {
-    "slug": "zack-moss",
-    "status": "cached"
-  },
-  {
-    "slug": "keandre-lambert-smith",
-    "status": "cached"
-  },
-  {
-    "slug": "justice-hill",
-    "status": "cached"
-  },
-  {
-    "slug": "juwan-johnson",
-    "status": "cached"
-  },
-  {
-    "slug": "jermaine-burton",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jaleel-mclaughlin",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "joe-flacco",
-    "status": "cached"
-  },
-  {
-    "slug": "kayshon-boutte",
-    "status": "cached"
-  },
-  {
-    "slug": "luke-mccaffrey",
-    "status": "cached"
+    "slug": "diontae-johnson",
+    "status": "downloaded"
   },
   {
     "slug": "kalel-mullings",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "damien-martinez",
-    "status": "cached"
+    "slug": "jermaine-burton",
+    "status": "downloaded"
+  },
+  {
+    "slug": "will-howard",
+    "status": "downloaded"
+  },
+  {
+    "slug": "arian-smith",
+    "status": "downloaded"
+  },
+  {
+    "slug": "kayshon-boutte",
+    "status": "downloaded"
+  },
+  {
+    "slug": "justice-hill",
+    "status": "downloaded"
+  },
+  {
+    "slug": "luke-mccaffrey",
+    "status": "downloaded"
   },
   {
     "slug": "kirk-cousins",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "joe-flacco",
+    "status": "downloaded"
+  },
+  {
+    "slug": "damien-martinez",
+    "status": "downloaded"
+  },
+  {
+    "slug": "juwan-johnson",
+    "status": "downloaded"
   },
   {
     "slug": "gunnar-helm",
-    "status": "cached"
-  },
-  {
-    "slug": "noah-fant",
-    "status": "cached"
-  },
-  {
-    "slug": "nick-nash",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "jimmy-horn-jr",
-    "status": "cached"
-  },
-  {
-    "slug": "tyler-higbee",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "tyler-conklin",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "tez-johnson",
-    "status": "cached"
+    "slug": "tyler-higbee",
+    "status": "downloaded"
+  },
+  {
+    "slug": "nick-nash",
+    "status": "downloaded"
+  },
+  {
+    "slug": "noah-fant",
+    "status": "downloaded"
   },
   {
     "slug": "malik-washington",
-    "status": "cached"
-  },
-  {
-    "slug": "raheem-mostert",
-    "status": "cached"
-  },
-  {
-    "slug": "devaughn-vele",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "spencer-rattler",
-    "status": "cached"
-  },
-  {
-    "slug": "lequint-allen",
-    "status": "cached"
-  },
-  {
-    "slug": "dyami-brown",
-    "status": "cached"
-  },
-  {
-    "slug": "phil-mafah",
-    "status": "cached"
-  },
-  {
-    "slug": "darius-slayton",
-    "status": "cached"
-  },
-  {
-    "slug": "malachi-corley",
-    "status": "cached"
-  },
-  {
-    "slug": "raheim-sanders",
-    "status": "cached"
-  },
-  {
-    "slug": "jalen-tolbert",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "luke-musgrave",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "jacob-cowing",
-    "status": "cached"
+    "slug": "devaughn-vele",
+    "status": "downloaded"
+  },
+  {
+    "slug": "raheem-mostert",
+    "status": "downloaded"
+  },
+  {
+    "slug": "lequint-allen",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tez-johnson",
+    "status": "downloaded"
   },
   {
     "slug": "a-j-dillon",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "devin-singletary",
-    "status": "cached"
+    "slug": "dyami-brown",
+    "status": "downloaded"
   },
   {
-    "slug": "dillon-gabriel",
-    "status": "cached"
+    "slug": "darius-slayton",
+    "status": "downloaded"
   },
   {
-    "slug": "malik-willis",
-    "status": "cached"
+    "slug": "jacob-cowing",
+    "status": "downloaded"
   },
   {
-    "slug": "dameon-pierce",
-    "status": "cached"
+    "slug": "malachi-corley",
+    "status": "downloaded"
   },
   {
-    "slug": "jordan-watkins",
-    "status": "cached"
+    "slug": "phil-mafah",
+    "status": "downloaded"
   },
   {
     "slug": "elijah-mitchell",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "jalen-tolbert",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jordan-watkins",
+    "status": "downloaded"
+  },
+  {
+    "slug": "raheim-sanders",
+    "status": "downloaded"
+  },
+  {
+    "slug": "devin-singletary",
+    "status": "downloaded"
   },
   {
     "slug": "will-levis",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "mike-williams",
-    "status": "cached"
+    "slug": "dameon-pierce",
+    "status": "downloaded"
   },
   {
-    "slug": "cade-stover",
-    "status": "cached"
+    "slug": "malik-willis",
+    "status": "downloaded"
   },
   {
-    "slug": "tre-tucker",
-    "status": "cached"
-  },
-  {
-    "slug": "jalin-hyatt",
-    "status": "cached"
-  },
-  {
-    "slug": "jalen-nailor",
-    "status": "cached"
-  },
-  {
-    "slug": "sam-howell",
-    "status": "cached"
+    "slug": "dillon-gabriel",
+    "status": "downloaded"
   },
   {
     "slug": "nick-westbrook-ikhine",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "khalil-herbert",
-    "status": "cached"
+    "slug": "sam-howell",
+    "status": "downloaded"
   },
   {
-    "slug": "brandin-cooks",
-    "status": "cached"
+    "slug": "mike-williams",
+    "status": "downloaded"
   },
   {
-    "slug": "quinn-ewers",
-    "status": "cached"
-  },
-  {
-    "slug": "kenny-pickett",
-    "status": "cached"
+    "slug": "jalen-nailor",
+    "status": "downloaded"
   },
   {
     "slug": "emanuel-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "alexander-mattison",
-    "status": "cached"
+    "slug": "jalin-hyatt",
+    "status": "downloaded"
   },
   {
-    "slug": "taysom-hill",
-    "status": "cached"
+    "slug": "kenny-pickett",
+    "status": "downloaded"
+  },
+  {
+    "slug": "cade-stover",
+    "status": "downloaded"
+  },
+  {
+    "slug": "brandin-cooks",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tre-tucker",
+    "status": "downloaded"
   },
   {
     "slug": "antonio-gibson",
-    "status": "cached"
+    "status": "downloaded"
+  },
+  {
+    "slug": "taysom-hill",
+    "status": "downloaded"
+  },
+  {
+    "slug": "khalil-herbert",
+    "status": "downloaded"
   },
   {
     "slug": "tutu-atwell",
-    "status": "cached"
-  },
-  {
-    "slug": "erick-all",
-    "status": "cached"
-  },
-  {
-    "slug": "luke-schoonmaker",
-    "status": "cached"
-  },
-  {
-    "slug": "mac-jones",
-    "status": "cached"
-  },
-  {
-    "slug": "cam-akers",
-    "status": "cached"
-  },
-  {
-    "slug": "treylon-burks",
-    "status": "cached"
-  },
-  {
-    "slug": "kimani-vidal",
-    "status": "cached"
-  },
-  {
-    "slug": "aj-barner",
-    "status": "cached"
-  },
-  {
-    "slug": "marquez-valdes-scantling",
-    "status": "cached"
-  },
-  {
-    "slug": "jahan-dotson",
-    "status": "cached"
-  },
-  {
-    "slug": "javon-baker",
-    "status": "cached"
-  },
-  {
-    "slug": "thomas-fidone-ii",
-    "status": "cached"
-  },
-  {
-    "slug": "isaiah-neyor",
-    "status": "cached"
-  },
-  {
-    "slug": "deshaun-watson",
-    "status": "cached"
-  },
-  {
-    "slug": "mason-rudolph",
-    "status": "cached"
-  },
-  {
-    "slug": "riley-leonard",
-    "status": "cached"
-  },
-  {
-    "slug": "hendon-hooker",
-    "status": "cached"
-  },
-  {
-    "slug": "will-dissly",
-    "status": "cached"
-  },
-  {
-    "slug": "parker-washington",
-    "status": "cached"
-  },
-  {
-    "slug": "allen-lazard",
-    "status": "cached"
-  },
-  {
-    "slug": "zamir-white",
-    "status": "cached"
-  },
-  {
-    "slug": "mitchell-evans",
-    "status": "cached"
-  },
-  {
-    "slug": "jameis-winston",
-    "status": "cached"
-  },
-  {
-    "slug": "lajohntay-wester",
-    "status": "cached"
-  },
-  {
-    "slug": "gardner-minshew",
-    "status": "cached"
-  },
-  {
-    "slug": "dawson-knox",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "isaiah-bond",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "rondale-moore",
-    "status": "cached"
+    "slug": "quinn-ewers",
+    "status": "downloaded"
   },
   {
-    "slug": "cooper-rush",
-    "status": "cached"
+    "slug": "luke-schoonmaker",
+    "status": "downloaded"
   },
   {
-    "slug": "kenneth-gainwell",
-    "status": "cached"
+    "slug": "alexander-mattison",
+    "status": "downloaded"
   },
   {
-    "slug": "jake-bobo",
-    "status": "cached"
+    "slug": "mac-jones",
+    "status": "downloaded"
   },
   {
-    "slug": "zach-wilson",
-    "status": "cached"
+    "slug": "cam-akers",
+    "status": "downloaded"
   },
   {
-    "slug": "demarcus-robinson",
-    "status": "cached"
+    "slug": "erick-all",
+    "status": "downloaded"
   },
   {
-    "slug": "sincere-mccormick",
-    "status": "cached"
+    "slug": "jahan-dotson",
+    "status": "downloaded"
   },
   {
-    "slug": "devontez-walker",
-    "status": "cached"
+    "slug": "javon-baker",
+    "status": "downloaded"
   },
   {
-    "slug": "gabe-davis",
-    "status": "cached"
-  },
-  {
-    "slug": "konata-mumpfield",
-    "status": "cached"
-  },
-  {
-    "slug": "curtis-samuel",
-    "status": "cached"
-  },
-  {
-    "slug": "derek-carr",
-    "status": "cached"
-  },
-  {
-    "slug": "marcus-mariota",
-    "status": "cached"
+    "slug": "allen-lazard",
+    "status": "downloaded"
   },
   {
     "slug": "ray-ray-mccloud",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "tommy-tremble",
-    "status": "cached"
+    "slug": "deshaun-watson",
+    "status": "downloaded"
   },
   {
-    "slug": "chris-rodriguez-jr",
-    "status": "cached"
+    "slug": "parker-washington",
+    "status": "downloaded"
   },
   {
-    "slug": "aidan-o-connell",
-    "status": "cached"
+    "slug": "will-dissly",
+    "status": "downloaded"
   },
   {
-    "slug": "jake-browning",
-    "status": "cached"
+    "slug": "curtis-samuel",
+    "status": "downloaded"
   },
   {
-    "slug": "darnell-washington",
-    "status": "cached"
+    "slug": "hendon-hooker",
+    "status": "downloaded"
   },
   {
-    "slug": "ricky-white-iii",
-    "status": "cached"
+    "slug": "treylon-burks",
+    "status": "downloaded"
   },
   {
-    "slug": "stone-smartt",
-    "status": "cached"
+    "slug": "aj-barner",
+    "status": "downloaded"
   },
   {
-    "slug": "drew-lock",
-    "status": "cached"
+    "slug": "kimani-vidal",
+    "status": "downloaded"
+  },
+  {
+    "slug": "marquez-valdes-scantling",
+    "status": "downloaded"
+  },
+  {
+    "slug": "dawson-knox",
+    "status": "downloaded"
+  },
+  {
+    "slug": "zach-wilson",
+    "status": "downloaded"
+  },
+  {
+    "slug": "gardner-minshew",
+    "status": "downloaded"
+  },
+  {
+    "slug": "mason-rudolph",
+    "status": "downloaded"
+  },
+  {
+    "slug": "riley-leonard",
+    "status": "downloaded"
   },
   {
     "slug": "ty-johnson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "cam-miller",
-    "status": "cached"
+    "slug": "thomas-fidone-ii",
+    "status": "downloaded"
   },
   {
-    "slug": "trey-palmer",
-    "status": "cached"
+    "slug": "jameis-winston",
+    "status": "downloaded"
   },
   {
-    "slug": "olamide-zaccheaus",
-    "status": "cached"
+    "slug": "cooper-rush",
+    "status": "downloaded"
   },
   {
-    "slug": "jimmy-garoppolo",
-    "status": "cached"
+    "slug": "isaiah-neyor",
+    "status": "downloaded"
   },
   {
-    "slug": "brenden-rice",
-    "status": "cached"
+    "slug": "zamir-white",
+    "status": "downloaded"
   },
   {
-    "slug": "rasheen-ali",
-    "status": "cached"
+    "slug": "rondale-moore",
+    "status": "downloaded"
   },
   {
-    "slug": "jamari-thrash",
-    "status": "cached"
+    "slug": "darnell-washington",
+    "status": "downloaded"
   },
   {
-    "slug": "bub-means",
-    "status": "cached"
+    "slug": "jake-bobo",
+    "status": "downloaded"
   },
   {
-    "slug": "samaje-perine",
-    "status": "cached"
+    "slug": "kenneth-gainwell",
+    "status": "downloaded"
+  },
+  {
+    "slug": "demarcus-robinson",
+    "status": "downloaded"
+  },
+  {
+    "slug": "mitchell-evans",
+    "status": "downloaded"
+  },
+  {
+    "slug": "sincere-mccormick",
+    "status": "downloaded"
+  },
+  {
+    "slug": "devontez-walker",
+    "status": "downloaded"
+  },
+  {
+    "slug": "gabe-davis",
+    "status": "downloaded"
+  },
+  {
+    "slug": "lajohntay-wester",
+    "status": "downloaded"
+  },
+  {
+    "slug": "marcus-mariota",
+    "status": "downloaded"
+  },
+  {
+    "slug": "derek-carr",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tommy-tremble",
+    "status": "downloaded"
   },
   {
     "slug": "kavontae-turpin",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "xavier-hutchinson",
-    "status": "cached"
-  },
-  {
-    "slug": "sione-vaki",
-    "status": "cached"
-  },
-  {
-    "slug": "juju-smith-schuster",
-    "status": "cached"
-  },
-  {
-    "slug": "jonathan-mingo",
-    "status": "cached"
-  },
-  {
-    "slug": "ty-chandler",
-    "status": "cached"
-  },
-  {
-    "slug": "trey-lance",
-    "status": "cached"
-  },
-  {
-    "slug": "mack-hollins",
-    "status": "cached"
-  },
-  {
-    "slug": "greg-dortch",
-    "status": "cached"
+    "slug": "rasheen-ali",
+    "status": "downloaded"
   },
   {
     "slug": "colby-parkinson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "noah-brown",
-    "status": "cached"
+    "slug": "chris-rodriguez-jr",
+    "status": "downloaded"
   },
   {
-    "slug": "tanner-mckee",
-    "status": "cached"
+    "slug": "aidan-o-connell",
+    "status": "downloaded"
   },
   {
-    "slug": "joshua-dobbs",
-    "status": "cached"
+    "slug": "mack-hollins",
+    "status": "downloaded"
   },
   {
-    "slug": "jaheim-bell",
-    "status": "cached"
+    "slug": "jake-browning",
+    "status": "downloaded"
   },
   {
-    "slug": "mitchell-trubisky",
-    "status": "cached"
+    "slug": "drew-lock",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jimmy-garoppolo",
+    "status": "downloaded"
+  },
+  {
+    "slug": "stone-smartt",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jamari-thrash",
+    "status": "downloaded"
+  },
+  {
+    "slug": "olamide-zaccheaus",
+    "status": "downloaded"
+  },
+  {
+    "slug": "trey-palmer",
+    "status": "downloaded"
+  },
+  {
+    "slug": "brenden-rice",
+    "status": "downloaded"
+  },
+  {
+    "slug": "bub-means",
+    "status": "downloaded"
   },
   {
     "slug": "josh-reynolds",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "jared-wiley",
-    "status": "cached"
+    "slug": "samaje-perine",
+    "status": "downloaded"
   },
   {
-    "slug": "jacoby-brissett",
-    "status": "cached"
+    "slug": "xavier-hutchinson",
+    "status": "downloaded"
+  },
+  {
+    "slug": "sione-vaki",
+    "status": "downloaded"
+  },
+  {
+    "slug": "konata-mumpfield",
+    "status": "downloaded"
+  },
+  {
+    "slug": "juju-smith-schuster",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tyrod-taylor",
+    "status": "downloaded"
+  },
+  {
+    "slug": "austin-hooper",
+    "status": "downloaded"
+  },
+  {
+    "slug": "cam-miller",
+    "status": "downloaded"
+  },
+  {
+    "slug": "trey-lance",
+    "status": "downloaded"
+  },
+  {
+    "slug": "frank-gore",
+    "status": "downloaded"
+  },
+  {
+    "slug": "nick-mullens",
+    "status": "downloaded"
+  },
+  {
+    "slug": "ty-chandler",
+    "status": "downloaded"
+  },
+  {
+    "slug": "tanner-mckee",
+    "status": "downloaded"
+  },
+  {
+    "slug": "greg-dortch",
+    "status": "downloaded"
+  },
+  {
+    "slug": "josh-oliver",
+    "status": "downloaded"
+  },
+  {
+    "slug": "foster-moreau",
+    "status": "downloaded"
+  },
+  {
+    "slug": "mitchell-trubisky",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jonathan-mingo",
+    "status": "downloaded"
+  },
+  {
+    "slug": "jaheim-bell",
+    "status": "downloaded"
+  },
+  {
+    "slug": "joshua-dobbs",
+    "status": "downloaded"
   },
   {
     "slug": "jarrett-stidham",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
     "slug": "johnny-wilson",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "tyler-boyd",
-    "status": "cached"
+    "slug": "noah-brown",
+    "status": "downloaded"
   },
   {
     "slug": "kyle-trask",
-    "status": "cached"
+    "status": "downloaded"
   },
   {
-    "slug": "kendrick-bourne",
-    "status": "cached"
-  },
-  {
-    "slug": "mason-tipton",
-    "status": "cached"
-  },
-  {
-    "slug": "xavier-gipson",
-    "status": "cached"
-  },
-  {
-    "slug": "pierre-strong",
-    "status": "cached"
+    "slug": "jared-wiley",
+    "status": "downloaded"
   }
 ]

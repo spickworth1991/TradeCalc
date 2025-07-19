@@ -14,10 +14,12 @@
     "axios": "^1.10.0",
     "cheerio": "^1.1.0",
     "fuse.js": "^7.1.0",
+    "glob": "^11.0.3",
     "next": "15.4.1",
     "node-fetch": "^3.3.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
+    "sharp": "^0.34.3",
     "swr": "^2.3.4"
   },
   "devDependencies": {

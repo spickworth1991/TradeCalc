@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { Analytics } from "@vercel/analytics/next"
+import { toSlug } from "@/utils/slugify";
 
 export default function PlayerCard({ player, onAdd, onRemove }) {
   const [flash, setFlash] = useState(false);
   const prevValue = useRef(player.value);
-
+  const slug = toSlug(player.name || "");
   useEffect(() => {
     if (player.value !== prevValue.current) {
       setFlash(true);
@@ -20,7 +21,7 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
         className="cursor-pointer hover:bg-blue-50 rounded p-1"
       >
         <img
-          src={player.avatarUrl || `/api/avatar/${player.name}`}
+          src={`/api/avatar/${slug}`}
           loading="lazy"
           decoding="async"
           width="60"
