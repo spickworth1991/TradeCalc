@@ -24,15 +24,14 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
         className="cursor-pointer hover:bg-blue-50 rounded p-1"
       >
         <Image
-          src={avatarSrc}
+          src={`/avatars/${toSlug(player.name)}.webp`}
           alt={player.name}
           width={60}
           height={60}
+          unoptimized
           className="w-10 h-10 rounded-full object-cover"
           loading="lazy"
-          onError={(e) => {
-            e.currentTarget.src = "/avatars/default.webp";
-          }}
+          onError={() => setImgSrc("/avatars/default.webp")}
         />
         <p className="font-medium">{player.name}</p>
         <p className="text-xs text-gray-500">
