@@ -472,10 +472,7 @@ export default function Home() {
                         height={60}
                         unoptimized
                         loading="lazy"
-                        onError={(e) => {
-                          e.target.onerror = null;
-                          e.target.src = "/avatars/default.webp";
-                        }}
+                        onError={() => setImgSrc("/avatars/default.webp")}
                       />
 
                       <div className="flex-1">
