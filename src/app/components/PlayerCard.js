@@ -18,7 +18,17 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
         onClick={() => onAdd?.(player)}
         className="cursor-pointer hover:bg-blue-50 rounded p-1"
       >
+        <img
+          src={player.avatarUrl || `/api/avatar/${player.name}`}
+          loading="lazy"
+          decoding="async"
+          width="60"
+          height="60"
+          alt={player.name}
+          className="w-10 h-10 rounded-full object-cover"
+        />
         <p className="font-medium">{player.name}</p>
+      
         <p className="text-xs text-gray-500">
           {player.pos} – {player.team}
         </p>

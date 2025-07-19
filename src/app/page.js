@@ -10,9 +10,9 @@ export default function Home() {
 
   const [allPlayers, setAllPlayers] = useState([]);
   const getPlayerImageUrl = (name) =>
-  `https://static.www.nfl.com/image/upload/t_player_profile_landscape/f_auto/league/${name
-    .toLowerCase()
-    .replace(/\s+/g, "-")}`;
+    `https://static.www.nfl.com/image/upload/t_player_profile_landscape/f_auto/league/${name
+      .toLowerCase()
+      .replace(/\s+/g, "-")}`;
 
   const [sideA, setSideA] = useState(() => {
     if (typeof window !== "undefined") {
@@ -70,20 +70,20 @@ export default function Home() {
     return false;
   });
 
-
-
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const res = await fetch(`/api/values?format=${format}&superflex=${superflex}`);
+        const res = await fetch(
+          `/api/values?format=${format}&superflex=${superflex}`,
+        );
         const data = await res.json();
         const values = Array.isArray(data)
           ? data
           : Array.isArray(data.values)
-          ? data.values
-          : Array.isArray(data.results)
-          ? data.results
-          : [];
+            ? data.values
+            : Array.isArray(data.results)
+              ? data.results
+              : [];
 
         const flat = values
           .map((p) => ({
@@ -92,12 +92,15 @@ export default function Home() {
             pos: p?.player?.position,
             team: p?.player?.maybeTeam || "",
             value: p?.value || 0,
-        }))
+          }))
 
           .filter((p) => p.name && p.value > 0);
 
         setAllPlayers(flat);
-        console.log(`📊 Loaded ${format} (${superflex ? "SF" : "1QB"}) values:`, values.slice(0, 3));
+        console.log(
+          `📊 Loaded ${format} (${superflex ? "SF" : "1QB"}) values:`,
+          values.slice(0, 3),
+        );
       } catch (err) {
         console.error("Error loading players:", err);
       }
@@ -113,14 +116,13 @@ export default function Home() {
         prev.map((p) => {
           const updated = allPlayers.find((ap) => ap.id === p.id);
           return updated ? { ...p, value: updated.value } : p;
-        })
+        }),
       );
     };
 
     updateSideValues("A", setSideA);
     updateSideValues("B", setSideB);
   }, [allPlayers]);
-
 
   useEffect(() => {
     const total = (list) => list.reduce((sum, p) => sum + p.value, 0);
@@ -140,15 +142,17 @@ export default function Home() {
     const target = a > b ? "B" : "A";
     const missing = Math.abs(a - b);
     const newRecos = { A: [], B: [] };
-    
+
     const opposingSide = target === "A" ? "B" : "A";
     const opposingOwnerId = sideOwners[opposingSide];
-    const rosterFilter = opposingOwnerId ? rosters[opposingOwnerId] || [] : null;
+    const rosterFilter = opposingOwnerId
+      ? rosters[opposingOwnerId] || []
+      : null;
 
     const possible = allPlayers.filter(
       (p) =>
         !selectedIds.has(p.id) &&
-        (!rosterFilter || rosterFilter.includes(p.id))
+        (!rosterFilter || rosterFilter.includes(p.id)),
     );
 
     const recos = possible
@@ -183,18 +187,17 @@ export default function Home() {
   }, [sleeperUser]);
 
   const changeSuperflex = (value) => {
-  setSuperflex(value);
-  if (typeof window !== "undefined") {
-    sessionStorage.setItem("superflex", value.toString());
-  }
-};
-
+    setSuperflex(value);
+    if (typeof window !== "undefined") {
+      sessionStorage.setItem("superflex", value.toString());
+    }
+  };
 
   const handleLogin = async (username, userId) => {
     setSleeperUser({ username, userId });
     const season = new Date().getFullYear();
     const res = await fetch(
-      `https://api.sleeper.app/v1/user/${userId}/leagues/nfl/${season}`
+      `https://api.sleeper.app/v1/user/${userId}/leagues/nfl/${season}`,
     );
     const data = await res.json();
     setLeagues(Array.isArray(data) ? data : []);
@@ -206,16 +209,16 @@ export default function Home() {
     setSelectedLeague(league);
 
     const usersRes = await fetch(
-      `https://api.sleeper.app/v1/league/${leagueId}/users`
+      `https://api.sleeper.app/v1/league/${leagueId}/users`,
     );
     const users = await usersRes.json();
     setOwners(users);
     setOwnerMap(
-      Object.fromEntries(users.map((u) => [u.user_id, u.display_name]))
+      Object.fromEntries(users.map((u) => [u.user_id, u.display_name])),
     );
 
     const rosterRes = await fetch(
-      `https://api.sleeper.app/v1/league/${leagueId}/rosters`
+      `https://api.sleeper.app/v1/league/${leagueId}/rosters`,
     );
     const data = await rosterRes.json();
     const map = {};
@@ -262,34 +265,33 @@ export default function Home() {
   };
 
   const handleAddPlayer = (side, player) => {
-  const alreadyInSide = (list) => list.some((p) => p.id === player.id);
-  const newSide = side === "A" ? sideA : sideB;
+    const alreadyInSide = (list) => list.some((p) => p.id === player.id);
+    const newSide = side === "A" ? sideA : sideB;
 
-  if (alreadyInSide(newSide)) return;
+    if (alreadyInSide(newSide)) return;
 
-  // Add player to the correct side
-  if (side === "A") {
-    setSideA((prev) => [...prev, player]);
-  } else {
-    setSideB((prev) => [...prev, player]);
-  }
+    // Add player to the correct side
+    if (side === "A") {
+      setSideA((prev) => [...prev, player]);
+    } else {
+      setSideB((prev) => [...prev, player]);
+    }
 
-  // Auto-set other side's owner if not set, and this player belongs to them
-  const otherSide = side === "A" ? "B" : "A";
-  const thisSideOwner = sideOwners[side];
-  const otherSideOwner = sideOwners[otherSide];
+    // Auto-set other side's owner if not set, and this player belongs to them
+    const otherSide = side === "A" ? "B" : "A";
+    const thisSideOwner = sideOwners[side];
+    const otherSideOwner = sideOwners[otherSide];
 
-  // Only run this logic if league is selected, rosters exist, and one owner is missing
-  if (selectedLeague && !otherSideOwner && Object.keys(rosters).length > 0) {
-    for (const [ownerId, playerIds] of Object.entries(rosters)) {
-      if (playerIds?.includes(player.id)) {
-        setSideOwners((prev) => ({ ...prev, [otherSide]: ownerId }));
-        break;
+    // Only run this logic if league is selected, rosters exist, and one owner is missing
+    if (selectedLeague && !otherSideOwner && Object.keys(rosters).length > 0) {
+      for (const [ownerId, playerIds] of Object.entries(rosters)) {
+        if (playerIds?.includes(player.id)) {
+          setSideOwners((prev) => ({ ...prev, [otherSide]: ownerId }));
+          break;
+        }
       }
     }
-  }
-};
-
+  };
 
   return (
     <main className="min-h-screen py-10 px-4 bg-gradient-to-br from-slate-100 to-gray-200 text-gray-800">
@@ -307,7 +309,9 @@ export default function Home() {
                 key={f}
                 onClick={() => changeFormat(f)}
                 className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                  format === f ? "bg-indigo-600 text-white shadow" : "bg-gray-100 text-gray-700"
+                  format === f
+                    ? "bg-indigo-600 text-white shadow"
+                    : "bg-gray-100 text-gray-700"
                 }`}
               >
                 {f === "dynasty" ? "Dynasty" : "Redraft"}
@@ -325,7 +329,9 @@ export default function Home() {
                 key={label}
                 onClick={() => changeSuperflex(value)}
                 className={`w-16 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                  superflex === value ? "bg-indigo-600 text-white shadow" : "bg-gray-100 text-gray-700"
+                  superflex === value
+                    ? "bg-indigo-600 text-white shadow"
+                    : "bg-gray-100 text-gray-700"
                 }`}
               >
                 {label}
@@ -333,7 +339,6 @@ export default function Home() {
             ))}
           </div>
         </div>
-
 
         {!sleeperUser && (
           <div className="flex justify-center">
@@ -424,7 +429,10 @@ export default function Home() {
             </h3>
 
             <div className="mb-4">
-              <label htmlFor="pos-filter" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="pos-filter"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Filter by Position:
               </label>
               <select
@@ -446,20 +454,23 @@ export default function Home() {
                 .filter((p) => !positionFilter || p.pos === positionFilter)
                 .slice(0, 10)
                 .map((p) => (
-                  <li key={p.id} className="border rounded px-3 py-2 hover:bg-gray-50">
+                  <li
+                    key={p.id}
+                    className="border rounded px-3 py-2 hover:bg-gray-50"
+                  >
                     <div className="flex items-center gap-3">
                       <img
-                        src={`/api/avatar/${p.name}`}
+                        src={p.name.avatarurl || `/api/avatar/${p.name}`}
+                        loading="lazy"
+                        decoding="async"
+                        width="40"
+                        height="40"
                         alt={p.name}
                         className="w-10 h-10 rounded-full object-cover"
                         onError={(e) => {
                           e.target.src = "/default-avatar.png";
                         }}
                       />
-
-
-
-
 
                       <div className="flex-1">
                         <a
@@ -492,12 +503,8 @@ export default function Home() {
                   </li>
                 ))}
             </ul>
-
           </div>
         </div>
-
-
-        
       </div>
     </main>
   );
