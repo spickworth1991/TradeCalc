@@ -5,18 +5,20 @@ import TradeSide from "./components/TradeSide";
 import PlayerCard from "./components/PlayerCard";
 import SleeperLogin from "./components/SleeperLogin";
 import { toSlug } from "@/utils/slugify";
+import Image from 'next/image';
 
 
 export default function Home() {
   const SAFE_MARGIN = 50;
 
+  const [hasMounted, setHasMounted] = useState(false);
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
 
   
   const [allPlayers, setAllPlayers] = useState([]);
-  const getPlayerImageUrl = (name) =>
-    `https://static.www.nfl.com/image/upload/t_player_profile_landscape/f_auto/league/${name
-      .toLowerCase()
-      .replace(/\s+/g, "-")}`;
 
   const [sideA, setSideA] = useState(() => {
     if (typeof window !== "undefined") {
@@ -371,7 +373,7 @@ export default function Home() {
             </select>
           )}
 
-          {(sideA.length > 0 || sideB.length > 0 || selectedLeague) && (
+          {hasMounted && (sideA.length > 0 || sideB.length > 0 || selectedLeague) && (
             <div className="flex justify-center gap-4 mt-4 flex-wrap">
               {(sideA.length > 0 || sideB.length > 0) && (
                 <button
@@ -392,6 +394,7 @@ export default function Home() {
             </div>
           )}
         </div>
+        )
 
         {/* Trade and Top 10 Side-by-Side */}
         <div className="flex flex-col md:flex-row gap-8">
@@ -462,18 +465,19 @@ export default function Home() {
                     className="border rounded px-3 py-2 hover:bg-gray-50"
                   >
                     <div className="flex items-center gap-3">
-                      <img
+                      <Image
                         src={`/api/avatar/${toSlug(p.name)}`}
-                        loading="lazy"
-                        decoding="async"
-                        width="40"
-                        height="40"
                         alt={p.name}
-                        className="w-10 h-10 rounded-full object-cover"
+                        width={60}
+                        height={60}
+                        unoptimized
+                        loading="lazy"
                         onError={(e) => {
-                          e.target.src = "/default-avatar.png";
+                          e.target.onerror = null;
+                          e.target.src = "/avatars/default.webp";
                         }}
                       />
+
 
                       <div className="flex-1">
                         <a

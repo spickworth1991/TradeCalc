@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Analytics } from "@vercel/analytics/next"
 import { toSlug } from "@/utils/slugify";
+import Image from 'next/image';
 
 export default function PlayerCard({ player, onAdd, onRemove }) {
   const [flash, setFlash] = useState(false);
@@ -20,14 +21,18 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
         onClick={() => onAdd?.(player)}
         className="cursor-pointer hover:bg-blue-50 rounded p-1"
       >
-        <img
-          src={`/api/avatar/${slug}`}
-          loading="lazy"
-          decoding="async"
-          width="60"
-          height="60"
+        <Image
+          src={`/avatars/${slug}.webp`}
           alt={player.name}
+          width={60}
+          height={60}
+          unoptimized
+          loading="lazy"
           className="w-10 h-10 rounded-full object-cover"
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src = "/avatars/default.webp";
+          }}
         />
         <p className="font-medium">{player.name}</p>
       

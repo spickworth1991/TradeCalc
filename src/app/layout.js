@@ -1,5 +1,9 @@
 // app/layout.js
 import './globals.css'
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+
+
 
 export const metadata = {
   title: 'Fantasy Trade Analyzer',
@@ -16,6 +20,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-gray-100 text-gray-800 min-h-screen font-sans">
         <main>{children}</main>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
