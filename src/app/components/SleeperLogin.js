@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-
+import { Analytics } from "@vercel/analytics/next"
 export default function SleeperLogin({ onLogin }) {
   const [username, setUsername] = useState("");
   const [error, setError] = useState("");

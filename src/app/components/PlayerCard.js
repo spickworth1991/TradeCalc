@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function PlayerCard({ player, onAdd, onRemove }) {
   const [flash, setFlash] = useState(false);

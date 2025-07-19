@@ -1,4 +1,5 @@
 import * as cheerio from "cheerio";
+import { Analytics } from "@vercel/analytics/next"
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(

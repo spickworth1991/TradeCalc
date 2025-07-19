@@ -1,6 +1,6 @@
 import PlayerCard from './PlayerCard'
 import SearchBox from './SearchBox'
-
+import { Analytics } from "@vercel/analytics/next"
 export default function TradeSide({
   label,
   players,

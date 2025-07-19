@@ -1,5 +1,5 @@
 // /api/avatar/[slug]/route.js
-
+import { Analytics } from "@vercel/analytics/next"
 import { NextResponse } from "next/server";
 import * as cheerio from "cheerio";
 import { createClient } from "@supabase/supabase-js";

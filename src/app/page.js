@@ -1,5 +1,5 @@
 "use client";
-
+import { Analytics } from "@vercel/analytics/next"
 import { useEffect, useState } from "react";
 import TradeSide from "./components/TradeSide";
 import PlayerCard from "./components/PlayerCard";

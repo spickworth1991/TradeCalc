@@ -1,6 +1,6 @@
 // app/api/values/route.js
 import axios from "axios";
-
+import { Analytics } from "@vercel/analytics/next"
 const cache = {};
 const lastFetch = {};
 const TTL = 1000 * 60 * 60; // 1 hour
