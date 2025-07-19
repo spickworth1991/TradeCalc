@@ -466,7 +466,7 @@ export default function Home() {
                   >
                     <div className="flex items-center gap-3">
                       <Image
-                        src={`/api/avatar/${toSlug(p.name)}`}
+                        src={`/avatars/${toSlug(p.name)}.webp`}
                         alt={p.name}
                         width={60}
                         height={60}
@@ -477,6 +477,7 @@ export default function Home() {
                           e.target.src = "/avatars/default.webp";
                         }}
                       />
+
 
 
                       <div className="flex-1">

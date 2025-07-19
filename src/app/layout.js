@@ -1,14 +1,12 @@
 // app/layout.js
-import './globals.css'
+import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
-  title: 'Fantasy Trade Analyzer',
-  description: 'Analyze fantasy trades with live values from FantasyCalc',
-}
+  title: "Fantasy Trade Analyzer",
+  description: "Analyze fantasy trades with live values from FantasyCalc",
+};
 
 export default function RootLayout({ children }) {
   return (
@@ -24,5 +22,5 @@ export default function RootLayout({ children }) {
         <SpeedInsights />
       </body>
     </html>
-  )
+  );
 }
