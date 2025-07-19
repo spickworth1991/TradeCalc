@@ -394,7 +394,7 @@ export default function Home() {
             </div>
           )}
         </div>
-        )
+        
 
         {/* Trade and Top 10 Side-by-Side */}
         <div className="flex flex-col md:flex-row gap-8">
@@ -477,8 +477,6 @@ export default function Home() {
                           e.target.src = "/avatars/default.webp";
                         }}
                       />
-
-
 
                       <div className="flex-1">
                         <a
