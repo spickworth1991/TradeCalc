@@ -16,30 +16,29 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
   }, [player.value]);
 
   const avatarSrc = `/avatars/${slug}.webp`;
+  const [imgSrc, setImgSrc] = useState(avatarSrc);
 
   return (
-    <div className="bg-white border rounded-lg p-3 relative hover:shadow-md transition group">
+    <div className="bg-gray-900 text-white border border-gray-700 rounded-lg p-3 relative hover:shadow-lg transition group">
       <div
         onClick={() => onAdd?.(player)}
-        className="cursor-pointer hover:bg-blue-50 rounded p-1"
+        className="cursor-pointer hover:text-black rounded p-1 transition"
       >
         <Image
-          src={`/avatars/${toSlug(player.name)}.webp`}
+          src={imgSrc}
           alt={player.name}
           width={60}
           height={60}
           unoptimized
-          className="w-10 h-10 rounded-full object-cover"
+          className="w-10 h-10 rounded-full object-cover border"
           loading="lazy"
           onError={() => setImgSrc("/avatars/default.webp")}
         />
-        <p className="font-medium">{player.name}</p>
-        <p className="text-xs text-gray-500">
-          {player.pos} – {player.team}
-        </p>
+        <p className="font-semibold mt-1">{player.name}</p>
+        <p className="text-xs text-gray-400">{player.pos} – {player.team}</p>
         <p
-          className={`text-right font-semibold ${
-            flash ? "text-green-600 scale-105" : "text-blue-700"
+          className={`text-right font-semibold mt-1 ${
+            flash ? "text-green-400 scale-105" : "text-blue-400"
           } transition-all duration-300`}
         >
           {player.value}
@@ -48,9 +47,9 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
       {onRemove && (
         <button
           onClick={() => onRemove(player)}
-          className="absolute top-1 right-1 text-red-600 text-sm font-bold hover:text-red-800"
+          className="absolute top-1 right-1 text-red-400 hover:text-red-600 text-sm font-bold"
         >
-          ✖
+          ❌
         </button>
       )}
     </div>

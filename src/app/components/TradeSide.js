@@ -21,14 +21,14 @@ export default function TradeSide({
     : `Side ${label}`
 
   return (
-    <div className="bg-white p-5 rounded-lg border shadow-md">
-      <h2 className="text-xl font-bold mb-3">{displayLabel}</h2>
+    <div className="bg-gray-900 text-white p-5 rounded-lg border border-gray-700 shadow-md">
+      <h2 className="text-xl font-bold mb-3 text-blue-400">{displayLabel}</h2>
 
       {owners.length > 0 && (
         <select
           value={selectedOwner || ''}
           onChange={(e) => onOwnerSelect(e.target.value)}
-          className="w-full p-2 border rounded mb-3"
+          className="w-full p-2 bg-gray-800 text-white border border-gray-600 rounded mb-3"
         >
           <option value="">Select a team</option>
           {owners.map(o => (
@@ -61,7 +61,7 @@ export default function TradeSide({
               <button
                 key={p.id}
                 onClick={() => addPlayer(p)}
-                className="text-sm text-green-700 hover:text-green-900 text-left hover:underline"
+                className="text-sm text-blue-400 hover:text-blue-300 text-left"
               >
                 ➕ {p.name} ({p.pos}) – {p.value}
               </button>

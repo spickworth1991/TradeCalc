@@ -1,8 +1,9 @@
 "use client";
-
+import { useFantasyCalcData } from "@/context/FantasyCalcContext";
 import { useEffect, useState,  } from "react";
 import { useSearchParams } from "next/navigation";
 import { toSlug } from "@/utils/slugify";
+import AvatarImage from "@/app/components/AvatarImage";
 import Link from "next/link";
 
 export default function PlayerStockResults() {
@@ -14,7 +15,8 @@ export default function PlayerStockResults() {
   const excludeBestBall = searchParams.get("exclude_bestball");
   const [searchTerm, setSearchTerm] = useState("");
   const [positionFilter, setPositionFilter] = useState("");
-
+  const values = useFantasyCalcData();
+  console.log("FantasyCalc values:", values);
   const [players, setPlayers] = useState([]);
   const [leagueCount, setLeagueCount] = useState(0);
   const [error, setError] = useState("");
@@ -22,7 +24,11 @@ export default function PlayerStockResults() {
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [highlightStarters, setHighlightStarters] = useState(false);
+  const [fcMode, setFcMode] = useState("Dynasty_SF");
 
+
+
+  
   const pageSize = 15;
   const filteredPlayers = players.filter(
         (p) =>
@@ -165,7 +171,7 @@ function LoadingScreen({ done }) {
   return (
     <main className="min-h-screen bg-black text-white px-4 py-10 flex flex-col items-center">
       <h1 className="text-3xl sm:text-5xl font-bold mb-6 text-center">
-        Player Ownership for <span className="text-purple-400">{username}</span>
+        Player Ownership for <span className="text-blue-400">{username}</span>
       </h1>
 
       <div className="flex items-center gap-4 mb-6">
@@ -197,7 +203,6 @@ function LoadingScreen({ done }) {
                 <option value="WR">WR</option>
                 <option value="TE">TE</option>
                 <option value="K">K</option>
-                <option value="DEF">DEF</option>
             </select>
         </div>
 
@@ -214,7 +219,7 @@ function LoadingScreen({ done }) {
           <div className="w-full max-w-3xl overflow-x-auto mb-4">
             <table className="w-full border-collapse text-left text-sm">
               <thead>
-                <tr className="bg-purple-900 text-white">
+                <tr className="bg-blue-900 text-white">
                   <th className="px-3 py-2">#</th>
                   <th className="px-3 py-2">Player</th>
                   <th className="px-3 py-2">Pos</th>
@@ -226,22 +231,18 @@ function LoadingScreen({ done }) {
                   <tr
                     key={player.id}
                     className={`border-t cursor-pointer hover:bg-gray-800 ${
-                        highlightStarters && player.isStarter ? "bg-purple-900 text-white" : "border-gray-700"
+                        highlightStarters && player.isStarter ? "bg-blue-900 text-white" : "border-gray-700"
                     }`}
                     onClick={() => setSelectedPlayer(player)}
                    >
 
                     <td className="px-3 py-2">{(currentPage - 1) * pageSize + idx + 1}</td>
                     <td className="px-3 py-2 flex items-center gap-2">
-                        <img
-                            src={`/avatars/${toSlug(player.name)}.webp`}
-                            alt={player.name}
-                            className="w-6 h-6 rounded-full border"
-                            onError={(e) => {
-                            e.target.onerror = null;
-                            e.target.src = "/avatars/default.webp";
-                            }}
+                        <AvatarImage
+                          name={player.name}
+                          className="w-6 h-6 rounded-full border"
                         />
+
                         {player.name}
                     </td>
                     <td className="px-3 py-2">{player.pos}</td>
@@ -259,7 +260,7 @@ function LoadingScreen({ done }) {
                 onClick={() => setCurrentPage(i + 1)}
                 className={`px-3 py-1 rounded ${
                   i + 1 === currentPage
-                    ? "bg-purple-600 text-white"
+                    ? "bg-blue-600 text-white"
                     : "bg-gray-700 text-gray-300 hover:bg-gray-600"
                 }`}
               >
@@ -268,9 +269,9 @@ function LoadingScreen({ done }) {
             ))}
           </div>
           <div className="mt-4">
-            <Link href="/" className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition">⬅️ Return to Username Search</Link>
+            <Link href="/" className="inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Username Search</Link>
             <a> </a>
-            <Link href="/" className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition">⬅️ Return to Home</Link>
+            <Link href="/" className="inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
           </div>
 
         </>
@@ -291,36 +292,78 @@ function LoadingScreen({ done }) {
             >
               &times;
             </button>
+
             <div className="flex items-center gap-4 mb-4">
-              <img
-                src={`/avatars/${toSlug(selectedPlayer.name)}.webp`}
-                alt={selectedPlayer.name}
+              <AvatarImage
+                name={selectedPlayer.name}
                 width={60}
                 height={60}
-                onError={(e) => {
-                    e.target.onerror = null;
-                    e.target.src = "/avatars/default.webp";
-                }}
                 className="rounded-full border"
-                />
+              />
+
 
               <div>
                 <h2 className="text-xl font-bold">{selectedPlayer.name}</h2>
                 <p className="text-sm text-gray-400">{selectedPlayer.pos}</p>
               </div>
             </div>
-            <p className="text-sm mb-2 text-purple-400">Rostered in:</p>
-            <ul className="list-disc list-inside text-sm text-gray-200 space-y-1 max-h-64 overflow-y-auto">
-                {selectedPlayer.leagues.map((lg, i) => (
-                    <li key={i}>
-                    {lg.name} {lg.isStarter && <span className="text-green-400">(Starter)</span>}
-                    </li>
-                ))}
-            </ul>
 
+            <div className="mb-4">
+              <label htmlFor="fcMode" className="block text-sm text-gray-400 mb-1">
+                FantasyCalc Format:
+              </label>
+              <select
+                id="fcMode"
+                value={fcMode}
+                onChange={(e) => setFcMode(e.target.value)}
+                className="bg-gray-800 border border-gray-600 text-white text-sm px-3 py-1 rounded w-full"
+              >
+                <option value="Dynasty_SF">Dynasty SF</option>
+                <option value="Dynasty_1QB">Dynasty 1QB</option>
+                <option value="Redraft_SF">Redraft SF</option>
+                <option value="Redraft_1QB">Redraft 1QB</option>
+              </select>
+            </div>
+
+            {(() => {
+              let fc = null;
+              if (selectedPlayer?.name && selectedPlayer?.pos && values?.[fcMode]) {
+                fc = values[fcMode].find(
+                  (p) =>
+                    p?.player?.name?.toLowerCase() === selectedPlayer.name.toLowerCase() &&
+                    p?.player?.position === selectedPlayer.pos
+                );
+              }
+
+
+              if (!fc)
+                return (
+                  <p className="text-sm text-red-400 mb-4">
+                    No FantasyCalc value found for this format.
+                  </p>
+                );
+              return (
+                <div className="text-sm text-white bg-blue-700 px-4 py-2 rounded-lg mb-4">
+                  <p><strong>FantasyCalc Value:</strong> {fc.value}</p>
+                  <p className="text-xs text-gray-300">Format: {fcMode.replace("_", " ")}</p>
+                </div>
+              );
+
+            })()}
+
+            <p className="text-sm mb-2 text-blue-400">Rostered in:</p>
+            <ul className="list-disc list-inside text-sm text-gray-200 space-y-1 max-h-64 overflow-y-auto">
+              {selectedPlayer.leagues.map((lg, i) => (
+                <li key={i}>
+                  {lg.name}{" "}
+                  {lg.isStarter && <span className="text-green-400">(Starter)</span>}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       )}
+
     </main>
   );
 }

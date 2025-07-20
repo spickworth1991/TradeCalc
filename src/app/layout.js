@@ -1,14 +1,17 @@
-// app/layout.js
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { FantasyCalcProvider } from "@/context/FantasyCalcContext";
+import { fetchFantasyCalcData } from "@/lib/fetchFantasyCalcData";
 
 export const metadata = {
   title: "The Fantasy Arsenal by StickyPicky",
   description: "Misc. Tools for Sleeper fantasy leagues.",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const fantasyCalcValues = await fetchFantasyCalcData();
+
   return (
     <html lang="en">
       <head>
@@ -17,7 +20,9 @@ export default function RootLayout({ children }) {
         <title>Fantasy Trade Analyzer</title>
       </head>
       <body className="bg-gray-100 text-gray-800 min-h-screen font-sans">
-        <main>{children}</main>
+        <FantasyCalcProvider values={fantasyCalcValues}>
+          <main>{children}</main>
+        </FantasyCalcProvider>
         <Analytics />
         <SpeedInsights />
       </body>

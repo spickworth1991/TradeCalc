@@ -6,6 +6,9 @@ import PlayerCard from "../components/PlayerCard";
 import SleeperLogin from "../components/SleeperLogin";
 import { toSlug } from "@/utils/slugify";
 import Image from 'next/image';
+import { useFantasyCalcData } from "@/context/FantasyCalcContext";
+import Link from "next/link";
+
 
 
 export default function Home() {
@@ -75,21 +78,17 @@ export default function Home() {
     }
     return false;
   });
-
+  const calcData = useFantasyCalcData();
   useEffect(() => {
     const fetchPlayers = async () => {
       try {
-        const res = await fetch(
-          `/api/values?format=${format}&superflex=${superflex}`,
-        );
-        const data = await res.json();
-        const values = Array.isArray(data)
-          ? data
-          : Array.isArray(data.values)
-            ? data.values
-            : Array.isArray(data.results)
-              ? data.results
-              : [];
+        const formatKey = `${format.charAt(0).toUpperCase() + format.slice(1)}_${superflex ? "SF" : "1QB"}`;
+        if (!calcData || !calcData[formatKey]) {
+          console.warn(`⚠️ No data found for formatKey: ${formatKey}`);
+        }
+
+        const values = calcData?.[formatKey] || [];
+
 
         const flat = values
           .map((p) => ({
@@ -299,15 +298,16 @@ export default function Home() {
   };
   
   return (
-    <main className="min-h-screen py-10 px-4 bg-gradient-to-br from-slate-100 to-gray-200 text-gray-800">
+    <main className="min-h-screen py-10 px-4 bg-black text-white">
       <div className="max-w-7xl mx-auto space-y-12">
-        <h1 className="text-4xl font-extrabold text-center text-indigo-700 drop-shadow">
+        <h1 className="text-4xl font-extrabold text-center text-blue-400 drop-shadow">
           🏈 Fantasy Trade Analyzer
         </h1>
+        <Link href="/" className="flex justify-center inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
 
         {/* Format & Superflex Toggle */}
         <div className="flex justify-center mt-6 flex-wrap gap-4">
-          <div className="flex items-center gap-3 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
+          <div className="flex items-center gap-3 bg-gray-900 p-2 px-4 rounded-full shadow-md border border-gray-300">
             <span className="text-sm font-medium text-gray-600">Format:</span>
             {["dynasty", "redraft"].map((f) => (
               <button
@@ -315,7 +315,7 @@ export default function Home() {
                 onClick={() => changeFormat(f)}
                 className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
                   format === f
-                    ? "bg-indigo-600 text-white shadow"
+                    ? "bg-blue-700 text-black shadow"
                     : "bg-gray-100 text-gray-700"
                 }`}
               >
@@ -324,7 +324,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="flex items-center gap-3 bg-white p-2 px-4 rounded-full shadow-md border border-gray-300">
+          <div className="flex items-center gap-3 bg-gray-900 p-2 px-4 rounded-full shadow-md border border-gray-300">
             <span className="text-sm font-medium text-gray-600">QB Type:</span>
             {[
               { label: "1QB", value: false },
@@ -335,7 +335,7 @@ export default function Home() {
                 onClick={() => changeSuperflex(value)}
                 className={`w-16 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
                   superflex === value
-                    ? "bg-indigo-600 text-white shadow"
+                    ? "bg-blue-600 text-black shadow"
                     : "bg-gray-100 text-gray-700"
                 }`}
               >
@@ -361,7 +361,7 @@ export default function Home() {
           {sleeperUser && (
             <select
               onChange={(e) => handleLeagueSelect(e.target.value)}
-              className="p-2 border rounded text-lg"
+              className="p-2 rounded bg-gray-800 text-white border border-gray-600 text-lg"
               value={selectedLeague?.league_id || ""}
             >
               <option value="">Select a league</option>
@@ -429,7 +429,7 @@ export default function Home() {
           </div>
 
           {/* Top 10 Players */}
-          <div className="w-full md:w-[300px] bg-white border rounded-lg shadow p-4">
+          <div className="w-full md:w-[250px] bg-gray-900 border border-gray-700 rounded-lg shadow p-4 text-white">
             <h3 className="text-lg font-semibold text-indigo-700 mb-3 text-center">
               💎 Top 10 Players
             </h3>
@@ -443,7 +443,7 @@ export default function Home() {
               </label>
               <select
                 id="pos-filter"
-                className="w-full p-2 border rounded"
+                className="w-full p-2 bg-gray-800 text-white border border-gray-600 rounded mb-3 placeholder-gray-400"
                 value={positionFilter}
                 onChange={(e) => setPositionFilter(e.target.value)}
               >
@@ -462,7 +462,7 @@ export default function Home() {
                 .map((p) => (
                   <li
                     key={p.id}
-                    className="border rounded px-3 py-2 hover:bg-gray-50"
+                    className="border rounded px-3 py-2 "
                   >
                     <div className="flex items-center gap-3">
                       <Image
@@ -492,13 +492,13 @@ export default function Home() {
                     <div className="flex gap-2 mt-2">
                       <button
                         onClick={() => handleAddPlayer("A", p)}
-                        className="flex-1 bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded hover:bg-blue-200"
+                        className="flex-1 bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded hover:bg-blue-300"
                       >
                         ➕ Add to A
                       </button>
                       <button
                         onClick={() => handleAddPlayer("B", p)}
-                        className="flex-1 bg-green-100 text-green-800 text-xs px-2 py-1 rounded hover:bg-green-200"
+                        className="flex-1 bg-green-200 text-green-800 text-xs px-2 py-1 rounded hover:bg-green-300"
                       >
                         ➕ Add to B
                       </button>
