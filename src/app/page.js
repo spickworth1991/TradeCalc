@@ -5,8 +5,9 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000"}/api/values`)
+    fetch("/api/values");
   }, []);
+
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white px-4">

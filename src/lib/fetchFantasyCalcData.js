@@ -24,8 +24,10 @@ export async function fetchFantasyCalcData() {
   const fallbackPath = path.join(process.cwd(), "public", "fantasycalc_cache.json");
 
   try {
-    const base = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
-    const res = await fetch(`${base}/api/values`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/api/values`, {
+        cache: "no-store",
+    });
+
 
     if (res.ok) {
       const json = await res.json();
