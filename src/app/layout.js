@@ -4,8 +4,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
-  title: "Fantasy Trade Analyzer",
-  description: "Analyze fantasy trades with live values from FantasyCalc",
+  title: "The Fantasy Arsenal by StickyPicky",
+  description: "Misc. Tools for Sleeper fantasy leagues.",
 };
 
 export default function RootLayout({ children }) {
