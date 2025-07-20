@@ -3,25 +3,20 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const FantasyCalcContext = createContext(null);
 
-export function FantasyCalcProvider({ children, values }) {
-  const [fantasyCalcValues, setFantasyCalcValues] = useState(values || null);
+export function FantasyCalcProvider({ children }) {
+  const [fantasyCalcValues, setFantasyCalcValues] = useState(null);
 
-  // If no values were passed from the server, fallback to fetch (optional)
   useEffect(() => {
-    if (!fantasyCalcValues) {
-      fetch("/api/values")
-        .then((res) => res.json())
-        .then((data) => {
-          console.log("Loaded FantasyCalc data from client:", data);
-          setFantasyCalcValues(data);
-        })
-        .catch((err) => {
-          console.error("Failed to load FantasyCalc data on client", err);
-        });
-    } else {
-      console.log("FantasyCalc values provided by server:", fantasyCalcValues);
-    }
-  }, [values]);
+    fetch("/fantasycalc_cache.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Loaded FantasyCalc data from static cache:", data);
+        setFantasyCalcValues(data);
+      })
+      .catch((err) => {
+        console.error("Failed to load FantasyCalc cache", err);
+      });
+  }, []);
 
   return (
     <FantasyCalcContext.Provider value={fantasyCalcValues}>

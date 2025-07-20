@@ -4,10 +4,6 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 export default function Home() {
-  useEffect(() => {
-    fetch("/api/values").catch(() => {});
-  }, []);
-
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-black text-white px-4">
