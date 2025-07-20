@@ -10,7 +10,13 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  const fantasyCalcValues = await fetchFantasyCalcData();
+  let fantasyCalcValues = {};
+  try {
+    fantasyCalcValues = await fetchFantasyCalcData();
+  } catch (e) {
+    console.error("⚠️ Failed to load FantasyCalc data during build:", e);
+    fantasyCalcValues = {}; // fallback to empty
+  }
 
   return (
     <html lang="en">

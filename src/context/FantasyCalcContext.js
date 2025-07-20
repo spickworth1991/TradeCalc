@@ -21,7 +21,7 @@ export function FantasyCalcProvider({ children, values }) {
     } else {
       console.log("FantasyCalc values provided by server:", fantasyCalcValues);
     }
-  }, []);
+  }, [values]);
 
   return (
     <FantasyCalcContext.Provider value={fantasyCalcValues}>

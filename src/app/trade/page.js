@@ -112,7 +112,7 @@ export default function Home() {
     };
 
     fetchPlayers();
-  }, [format, superflex]);
+  }, [format, superflex, calcData]);
 
   // 🆕 Sync active trade player values after format changes
   useEffect(() => {
