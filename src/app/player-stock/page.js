@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function PlayerStockPage() {
   const [username, setUsername] = useState("");
@@ -82,12 +83,7 @@ export default function PlayerStockPage() {
           Search
         </button>
       </form>
-      <a
-            href="/"
-            className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition"
-        >
-            ⬅️ Return to Home
-        </a>
+      <Link href="/" className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition">⬅️ Return to Home</Link>
     </main>
   );
 }

@@ -3,6 +3,7 @@
 import { useEffect, useState,  } from "react";
 import { useSearchParams } from "next/navigation";
 import { toSlug } from "@/utils/slugify";
+import Link from "next/link";
 
 export default function PlayerStockResults() {
   const [loadingLeagueCount, setLoadingLeagueCount] = useState(null); 
@@ -57,14 +58,13 @@ export default function PlayerStockResults() {
             setLoadingLeagueCount(data.leagueCount); // trigger loading bar
             setPlayers(data.players);
             setLeagueCount(data.leagueCount);
-            setLoadingDone(true); // now we're done
         } catch (err) {
             setError(err.message);
         } finally {
             setLoadingDone(true);
             setTimeout(() => {
                 setLoading(false);
-            }, 1000); // Give bar time to visibly reach 100%
+            }, 750); // Give bar time to visibly reach 100%
         }
     };
 
@@ -88,9 +88,10 @@ function LoadingScreen({ done }) {
   const [factIndex, setFactIndex] = useState(0);
 
   const estimatedTime = 15000; // ~5 seconds to 95%
-  const intervalTime = estimatedTime / 95;
+
 
   useEffect(() => {
+    const intervalTime = estimatedTime / 95;
     let interval;
     let factInterval;
 
@@ -267,19 +268,9 @@ function LoadingScreen({ done }) {
             ))}
           </div>
           <div className="mt-4">
-            <a
-                href="/player-stock"
-                className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition"
-            >
-                ⬅️ Return to Username Search
-            </a>
+            <Link href="/" className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition">⬅️ Return to Username Search</Link>
             <a> </a>
-            <a
-                href="/"
-                className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition"
-            >
-                ⬅️ Return to Home
-            </a>
+            <Link href="/" className="inline-block px-4 py-2 bg-purple-700 text-white rounded hover:bg-purple-600 transition">⬅️ Return to Home</Link>
           </div>
 
         </>
