@@ -1,7 +1,7 @@
 "use client";
 import { createContext, useContext, useState, useEffect } from "react";
 
-const FantasyCalcContext = createContext();
+const FantasyCalcContext = createContext(null);
 
 export function FantasyCalcProvider({ children, values }) {
   const [fantasyCalcValues, setFantasyCalcValues] = useState(values || null);
@@ -9,7 +9,7 @@ export function FantasyCalcProvider({ children, values }) {
   // If no values were passed from the server, fallback to fetch (optional)
   useEffect(() => {
     if (!fantasyCalcValues) {
-      fetch("/fc-values.json")
+      fetch("/api/values")
         .then((res) => res.json())
         .then((data) => {
           console.log("Loaded FantasyCalc data from client:", data);

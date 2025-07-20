@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    fetch("/api/values");
+    fetch("/api/values").catch(() => {});
   }, []);
 
 

@@ -2,7 +2,7 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { FantasyCalcProvider } from "@/context/FantasyCalcContext";
-import { fetchFantasyCalcData } from "@/lib/fetchFantasyCalcData";
+
 
 export const metadata = {
   title: "The Fantasy Arsenal by StickyPicky",
@@ -10,13 +10,6 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-  let fantasyCalcValues = {};
-  try {
-    fantasyCalcValues = await fetchFantasyCalcData();
-  } catch (e) {
-    console.error("⚠️ Failed to load FantasyCalc data during build:", e);
-    fantasyCalcValues = {}; // fallback to empty
-  }
 
   return (
     <html lang="en">
@@ -26,7 +19,7 @@ export default async function RootLayout({ children }) {
         <title>Fantasy Trade Analyzer</title>
       </head>
       <body className="bg-gray-100 text-gray-800 min-h-screen font-sans">
-        <FantasyCalcProvider values={fantasyCalcValues}>
+        <FantasyCalcProvider values={null}>
           <main>{children}</main>
         </FantasyCalcProvider>
         <Analytics />
