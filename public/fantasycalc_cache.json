@@ -171,7 +171,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 3,
+      "maybeTier": 4,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0078
     },
@@ -206,7 +206,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 4,
+      "maybeTier": 5,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0056
     },
@@ -241,7 +241,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 4,
+      "maybeTier": 5,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0118
     },
@@ -311,7 +311,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 5,
+      "maybeTier": 6,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0075
     },
@@ -416,7 +416,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 7,
+      "maybeTier": 6,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0099
     },
@@ -451,7 +451,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 8,
+      "maybeTier": 7,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0121
     },
@@ -486,7 +486,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 9,
+      "maybeTier": 7,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0139
     },
@@ -521,7 +521,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 9,
+      "maybeTier": 7,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0082
     },
@@ -556,7 +556,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 9,
+      "maybeTier": 7,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0115
     },
@@ -591,7 +591,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 9,
+      "maybeTier": 7,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0139
     },
@@ -626,7 +626,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 10,
+      "maybeTier": 8,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0064
     },
@@ -661,7 +661,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 10,
+      "maybeTier": 8,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0083
     },
@@ -696,7 +696,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 10,
+      "maybeTier": 8,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0091
     },
@@ -731,7 +731,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 10,
+      "maybeTier": 8,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.009
     },
@@ -766,7 +766,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 10,
+      "maybeTier": 9,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -801,7 +801,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 11,
+      "maybeTier": 10,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0124
     },
@@ -836,7 +836,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 11,
+      "maybeTier": 10,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0144
     },
@@ -1081,7 +1081,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.016
     },
@@ -1116,7 +1116,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.015
     },
@@ -1151,7 +1151,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0141
     },
@@ -1186,7 +1186,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0093
     },
@@ -1221,7 +1221,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0077
     },
@@ -1256,7 +1256,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0084
     },
@@ -1291,7 +1291,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -1326,7 +1326,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0127
     },
@@ -1361,7 +1361,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0089
     },
@@ -1396,7 +1396,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0142
     },
@@ -1431,7 +1431,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0248
     },
@@ -1466,7 +1466,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0125
     },
@@ -1921,7 +1921,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0166
     },
@@ -1956,7 +1956,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -1991,7 +1991,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0134
     },
@@ -2026,7 +2026,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0176
     },
@@ -2061,7 +2061,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.012
     },
@@ -2096,7 +2096,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0068
     },
@@ -2236,7 +2236,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0071
     },
@@ -2271,7 +2271,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0078
     },
@@ -2306,7 +2306,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0155
     },
@@ -2341,7 +2341,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.016
     },
@@ -2376,7 +2376,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.015
     },
@@ -2411,7 +2411,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0107
     },
@@ -2446,7 +2446,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -2481,7 +2481,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0109
     },
@@ -2516,7 +2516,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0155
     },
@@ -2551,7 +2551,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0152
     },
@@ -2586,7 +2586,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0148
     },
@@ -2621,7 +2621,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0145
     },
@@ -2656,7 +2656,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0073
     },
@@ -2691,7 +2691,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -2726,7 +2726,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0159
     },
@@ -2761,7 +2761,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0202
     },
@@ -2796,7 +2796,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0192
     },
@@ -2831,7 +2831,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.02
     },
@@ -2866,7 +2866,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0086
     },
@@ -2901,7 +2901,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0111
     },
@@ -2936,7 +2936,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0179
     },
@@ -2971,7 +2971,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3006,7 +3006,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0095
     },
@@ -3041,7 +3041,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0104
     },
@@ -3076,7 +3076,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0138
     },
@@ -3111,7 +3111,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3146,7 +3146,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0163
     },
@@ -3181,7 +3181,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3216,7 +3216,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0146
     },
@@ -3251,7 +3251,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3286,7 +3286,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.01
     },
@@ -3321,7 +3321,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3356,7 +3356,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0122
     },
@@ -3391,7 +3391,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0099
     },
@@ -3426,7 +3426,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0097
     },
@@ -3461,7 +3461,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0151
     },
@@ -3496,7 +3496,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0091
     },
@@ -3531,7 +3531,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0146
     },
@@ -3566,7 +3566,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0065
     },
@@ -3601,7 +3601,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3636,7 +3636,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0116
     },
@@ -3671,7 +3671,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0088
     },
@@ -3706,7 +3706,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0147
     },
@@ -3741,7 +3741,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0116
     },
@@ -3776,7 +3776,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.021
     },
@@ -3811,7 +3811,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0138
     },
@@ -3846,7 +3846,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.012
     },
@@ -3881,7 +3881,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -3916,7 +3916,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0165
     },
@@ -3951,7 +3951,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0099
     },
@@ -3986,7 +3986,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0086
     },
@@ -4021,7 +4021,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0168
     },
@@ -4056,7 +4056,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0148
     },
@@ -4091,7 +4091,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0161
     },
@@ -4126,7 +4126,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4161,7 +4161,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0123
     },
@@ -4196,7 +4196,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.012
     },
@@ -4231,7 +4231,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4266,7 +4266,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0132
     },
@@ -4301,7 +4301,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0094
     },
@@ -4336,7 +4336,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0112
     },
@@ -4371,7 +4371,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0125
     },
@@ -4406,7 +4406,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0144
     },
@@ -4441,7 +4441,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4476,7 +4476,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0113
     },
@@ -4511,7 +4511,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0133
     },
@@ -4546,7 +4546,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4581,7 +4581,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0128
     },
@@ -4616,7 +4616,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0143
     },
@@ -4651,7 +4651,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.013
     },
@@ -4686,7 +4686,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0107
     },
@@ -4721,7 +4721,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4756,7 +4756,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0109
     },
@@ -4791,7 +4791,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0153
     },
@@ -4826,7 +4826,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -4861,7 +4861,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0133
     },
@@ -4896,7 +4896,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0157
     },
@@ -4931,7 +4931,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0129
     },
@@ -4966,7 +4966,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0124
     },
@@ -5001,7 +5001,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0183
     },
@@ -5036,7 +5036,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0064
     },
@@ -5071,7 +5071,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5106,7 +5106,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0097
     },
@@ -5141,7 +5141,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0124
     },
@@ -5176,7 +5176,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0125
     },
@@ -5211,7 +5211,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0142
     },
@@ -5246,7 +5246,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0079
     },
@@ -5281,7 +5281,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0133
     },
@@ -5316,7 +5316,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0076
     },
@@ -5351,7 +5351,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5386,7 +5386,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0193
     },
@@ -5421,7 +5421,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0137
     },
@@ -5456,7 +5456,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0119
     },
@@ -5491,7 +5491,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.01
     },
@@ -5526,7 +5526,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0108
     },
@@ -5561,7 +5561,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0097
     },
@@ -5596,7 +5596,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5631,7 +5631,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0063
     },
@@ -5666,7 +5666,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0101
     },
@@ -5701,7 +5701,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0121
     },
@@ -5736,7 +5736,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5771,7 +5771,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0141
     },
@@ -5806,7 +5806,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0094
     },
@@ -5841,7 +5841,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0129
     },
@@ -5876,7 +5876,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5911,7 +5911,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0136
     },
@@ -5946,7 +5946,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -5981,7 +5981,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0109
     },
@@ -6016,7 +6016,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0077
     },
@@ -6051,7 +6051,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0127
     },
@@ -6086,7 +6086,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0088
     },
@@ -6121,7 +6121,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0079
     },
@@ -6156,7 +6156,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0085
     },
@@ -6191,7 +6191,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0084
     },
@@ -6226,7 +6226,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -6261,7 +6261,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0079
     },
@@ -6296,7 +6296,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0095
     },
@@ -6331,7 +6331,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0079
     },
@@ -6366,7 +6366,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0101
     },
@@ -6401,7 +6401,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -6436,7 +6436,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0074
     },
@@ -6471,7 +6471,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0111
     },
@@ -6506,7 +6506,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0083
     },
@@ -6541,7 +6541,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0086
     },
@@ -6576,7 +6576,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0056
     },
@@ -6611,7 +6611,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0061
     },
@@ -6646,7 +6646,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.007
     },
@@ -6681,7 +6681,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -6716,7 +6716,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0084
     },
@@ -6751,7 +6751,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0083
     },
@@ -6786,7 +6786,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -6821,7 +6821,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0083
     },
@@ -6856,7 +6856,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -6891,7 +6891,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0095
     },
@@ -6926,7 +6926,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0043
     },
@@ -6961,7 +6961,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0089
     },
@@ -6996,7 +6996,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0055
     },
@@ -7031,7 +7031,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7066,7 +7066,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7101,7 +7101,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0046
     },
@@ -7136,7 +7136,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7171,7 +7171,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0058
     },
@@ -7206,7 +7206,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0106
     },
@@ -7241,7 +7241,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0075
     },
@@ -7276,7 +7276,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0039
     },
@@ -7311,7 +7311,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0051
     },
@@ -7346,7 +7346,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.007
     },
@@ -7381,7 +7381,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0067
     },
@@ -7416,7 +7416,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7451,7 +7451,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0049
     },
@@ -7486,7 +7486,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0043
     },
@@ -7521,7 +7521,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0055
     },
@@ -7556,7 +7556,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0043
     },
@@ -7591,7 +7591,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7626,7 +7626,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0107
     },
@@ -7661,7 +7661,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7696,7 +7696,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7731,7 +7731,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0067
     },
@@ -7766,7 +7766,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0062
     },
@@ -7801,7 +7801,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -7836,7 +7836,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0066
     },
@@ -7871,7 +7871,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0058
     },
@@ -7906,7 +7906,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0111
     },
@@ -7941,7 +7941,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.004
     },
@@ -7976,7 +7976,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -8011,7 +8011,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0082
     },
@@ -8046,7 +8046,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0064
     },
@@ -8081,7 +8081,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.005
     },
@@ -8116,7 +8116,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -8151,7 +8151,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0052
     },
@@ -8186,7 +8186,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0053
     },
@@ -8221,7 +8221,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0054
     },
@@ -8256,7 +8256,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0058
     },
@@ -8291,7 +8291,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0051
     },
@@ -8326,7 +8326,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0065
     },
@@ -8361,7 +8361,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -8396,7 +8396,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0057
     },
@@ -8431,7 +8431,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0058
     },
@@ -8466,7 +8466,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0045
     },
@@ -8501,7 +8501,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0046
     },
@@ -8536,7 +8536,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -9166,7 +9166,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -9201,7 +9201,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -9236,7 +9236,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0037
     },
@@ -11091,7 +11091,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0032
     },
@@ -11126,7 +11126,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -11161,7 +11161,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0021
     },
@@ -11196,7 +11196,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0025
     },
@@ -11231,7 +11231,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0019
     },
@@ -11266,7 +11266,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0013
     },
@@ -11301,7 +11301,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0019
     },
@@ -11336,7 +11336,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0022
     },
@@ -11371,7 +11371,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0024
     },
@@ -11406,7 +11406,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0013
     },
@@ -11441,7 +11441,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0018
     },
@@ -11476,7 +11476,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0021
     },
@@ -11511,7 +11511,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.002
     },
@@ -11546,7 +11546,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0011
     },
@@ -11581,7 +11581,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0027
     },
@@ -11616,7 +11616,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0018
     },
@@ -11651,7 +11651,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0012
     },
@@ -11686,7 +11686,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0028
     },
@@ -11721,7 +11721,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.001
     },
@@ -11756,7 +11756,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0019
     },
@@ -11791,7 +11791,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0018
     },
@@ -11826,7 +11826,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0017
     },
@@ -11861,7 +11861,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0018
     },
@@ -11896,7 +11896,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0018
     },
@@ -11931,7 +11931,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0027
     },
@@ -11966,7 +11966,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0009
     },
@@ -12001,7 +12001,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0026
     },
@@ -12036,7 +12036,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0012
     },
@@ -12071,7 +12071,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -12106,7 +12106,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12141,7 +12141,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12176,7 +12176,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0013
     },
@@ -12211,7 +12211,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -12246,7 +12246,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0014
     },
@@ -12281,7 +12281,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12316,7 +12316,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12351,7 +12351,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0014
     },
@@ -12386,7 +12386,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -12456,7 +12456,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0005
     },
@@ -12491,7 +12491,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12526,7 +12526,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0012
     },
@@ -12561,7 +12561,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.001
     },
@@ -12596,7 +12596,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0004
     },
@@ -12631,7 +12631,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0008
     },
@@ -12666,7 +12666,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0012
     },
@@ -12701,7 +12701,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.001
     },
@@ -12736,7 +12736,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0009
     },
@@ -12771,7 +12771,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.001
     },
@@ -12806,7 +12806,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0008
     },
@@ -12841,7 +12841,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0015
     },
@@ -12876,7 +12876,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0011
     },
@@ -12911,7 +12911,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0004
     },
@@ -12946,7 +12946,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0009
     },
@@ -12981,7 +12981,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -13401,7 +13401,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -13436,7 +13436,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0009
     },
@@ -13471,7 +13471,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -13506,7 +13506,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0008
     },
@@ -13541,7 +13541,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -13576,7 +13576,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0005
     },
@@ -13611,7 +13611,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0005
     },
@@ -13646,7 +13646,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.001
     },
@@ -13681,7 +13681,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -13716,7 +13716,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -13751,7 +13751,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -13786,7 +13786,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0002
     },
@@ -13821,7 +13821,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0004
     },
@@ -13856,7 +13856,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0004
     },
@@ -13891,7 +13891,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0007
     },
@@ -13926,7 +13926,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0006
     },
@@ -14906,7 +14906,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 37,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0004
     },
@@ -14941,7 +14941,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 37,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0003
     },
@@ -14976,7 +14976,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 37,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": 0.0001
     },
@@ -33145,7 +33145,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33180,7 +33180,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 13,
+      "maybeTier": 12,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33250,7 +33250,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 14,
+      "maybeTier": 13,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33320,7 +33320,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33355,7 +33355,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33390,7 +33390,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33425,7 +33425,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 15,
+      "maybeTier": 14,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33460,7 +33460,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 15,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33495,7 +33495,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 16,
+      "maybeTier": 15,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33530,7 +33530,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 16,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33565,7 +33565,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 16,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33600,7 +33600,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 16,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33635,7 +33635,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33670,7 +33670,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33705,7 +33705,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33740,7 +33740,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33775,7 +33775,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33810,7 +33810,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33845,7 +33845,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33880,7 +33880,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33915,7 +33915,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33950,7 +33950,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -33985,7 +33985,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34020,7 +34020,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 20,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34055,7 +34055,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34090,7 +34090,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34125,7 +34125,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34265,7 +34265,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34510,7 +34510,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34545,7 +34545,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34580,7 +34580,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34615,7 +34615,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34650,7 +34650,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34720,7 +34720,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34755,7 +34755,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34790,7 +34790,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34825,7 +34825,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34860,7 +34860,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -34930,7 +34930,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35350,7 +35350,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35455,7 +35455,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35490,7 +35490,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35525,7 +35525,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35560,7 +35560,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35595,7 +35595,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35630,7 +35630,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35665,7 +35665,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35700,7 +35700,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35735,7 +35735,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35770,7 +35770,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35805,7 +35805,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35840,7 +35840,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35875,7 +35875,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35910,7 +35910,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35945,7 +35945,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -35980,7 +35980,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36015,7 +36015,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36050,7 +36050,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36085,7 +36085,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36120,7 +36120,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36155,7 +36155,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36190,7 +36190,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36225,7 +36225,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36260,7 +36260,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36295,7 +36295,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36330,7 +36330,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36365,7 +36365,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36400,7 +36400,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36435,7 +36435,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36470,7 +36470,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36505,7 +36505,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36540,7 +36540,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36575,7 +36575,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36610,7 +36610,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36645,7 +36645,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36680,7 +36680,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36715,7 +36715,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36750,7 +36750,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36785,7 +36785,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36820,7 +36820,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36855,7 +36855,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36890,7 +36890,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36925,7 +36925,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36960,7 +36960,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -36995,7 +36995,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37030,7 +37030,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37065,7 +37065,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37100,7 +37100,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37135,7 +37135,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37170,7 +37170,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37205,7 +37205,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37240,7 +37240,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37275,7 +37275,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37310,7 +37310,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37345,7 +37345,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37380,7 +37380,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37415,7 +37415,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37450,7 +37450,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37485,7 +37485,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37520,7 +37520,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37555,7 +37555,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37590,7 +37590,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37625,7 +37625,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37660,7 +37660,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37695,7 +37695,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37730,7 +37730,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37765,7 +37765,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37800,7 +37800,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37835,7 +37835,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37870,7 +37870,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37905,7 +37905,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37940,7 +37940,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -37975,7 +37975,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38010,7 +38010,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38045,7 +38045,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38430,7 +38430,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38465,7 +38465,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38500,7 +38500,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38535,7 +38535,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38570,7 +38570,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38605,7 +38605,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38640,7 +38640,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -38675,7 +38675,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39342,7 +39342,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 1,
+      "maybeTier": 2,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39377,7 +39377,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 2,
+      "maybeTier": 3,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39412,7 +39412,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 2,
+      "maybeTier": 3,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39447,7 +39447,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 3,
+      "maybeTier": 4,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39482,7 +39482,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 3,
+      "maybeTier": 4,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39622,7 +39622,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 5,
+      "maybeTier": 6,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39832,7 +39832,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 8,
+      "maybeTier": 9,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -39867,7 +39867,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 8,
+      "maybeTier": 9,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40777,7 +40777,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 16,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40812,7 +40812,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 17,
+      "maybeTier": 16,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40847,7 +40847,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40882,7 +40882,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40917,7 +40917,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40952,7 +40952,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 18,
+      "maybeTier": 17,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -40987,7 +40987,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41022,7 +41022,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 19,
+      "maybeTier": 18,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41057,7 +41057,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 19,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41162,7 +41162,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41197,7 +41197,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 21,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41232,7 +41232,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41267,7 +41267,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 20,
+      "maybeTier": 22,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41302,7 +41302,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41337,7 +41337,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41372,7 +41372,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41407,7 +41407,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41442,7 +41442,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 21,
+      "maybeTier": 23,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41477,7 +41477,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41512,7 +41512,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41547,7 +41547,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 22,
+      "maybeTier": 24,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41582,7 +41582,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 25,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41617,7 +41617,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41652,7 +41652,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41687,7 +41687,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41722,7 +41722,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 23,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41757,7 +41757,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41792,7 +41792,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41827,7 +41827,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41862,7 +41862,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 24,
+      "maybeTier": 26,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41897,7 +41897,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41932,7 +41932,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -41967,7 +41967,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42002,7 +42002,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 25,
+      "maybeTier": 27,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42037,7 +42037,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42072,7 +42072,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42107,7 +42107,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42142,7 +42142,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42177,7 +42177,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 26,
+      "maybeTier": 28,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42212,7 +42212,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42247,7 +42247,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42282,7 +42282,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42317,7 +42317,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42352,7 +42352,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42387,7 +42387,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42422,7 +42422,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42457,7 +42457,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 27,
+      "maybeTier": 29,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42492,7 +42492,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42527,7 +42527,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42562,7 +42562,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42597,7 +42597,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42632,7 +42632,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42667,7 +42667,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 28,
+      "maybeTier": 30,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42702,7 +42702,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42737,7 +42737,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42772,7 +42772,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 31,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42807,7 +42807,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42842,7 +42842,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42877,7 +42877,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 29,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42912,7 +42912,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42947,7 +42947,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 32,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -42982,7 +42982,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43017,7 +43017,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43052,7 +43052,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43087,7 +43087,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43122,7 +43122,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43157,7 +43157,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 30,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43192,7 +43192,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43227,7 +43227,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 33,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43262,7 +43262,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43297,7 +43297,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43332,7 +43332,7 @@
       "displayTrend": true,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43367,7 +43367,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43402,7 +43402,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 31,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43437,7 +43437,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43472,7 +43472,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43507,7 +43507,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43542,7 +43542,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43577,7 +43577,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43612,7 +43612,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 34,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43647,7 +43647,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 32,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43682,7 +43682,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43717,7 +43717,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43752,7 +43752,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43787,7 +43787,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43822,7 +43822,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43857,7 +43857,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43892,7 +43892,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43927,7 +43927,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43962,7 +43962,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -43997,7 +43997,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44032,7 +44032,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44067,7 +44067,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44102,7 +44102,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44137,7 +44137,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44172,7 +44172,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44207,7 +44207,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 33,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44242,7 +44242,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44277,7 +44277,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44312,7 +44312,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44347,7 +44347,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44382,7 +44382,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44417,7 +44417,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44452,7 +44452,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44487,7 +44487,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 35,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44522,7 +44522,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 34,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44557,7 +44557,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44592,7 +44592,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44627,7 +44627,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44662,7 +44662,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44697,7 +44697,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44732,7 +44732,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44767,7 +44767,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44802,7 +44802,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44837,7 +44837,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44872,7 +44872,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44907,7 +44907,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44942,7 +44942,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -44977,7 +44977,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45012,7 +45012,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 35,
+      "maybeTier": 36,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45677,7 +45677,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45712,7 +45712,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45747,7 +45747,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45782,7 +45782,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45817,7 +45817,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45852,7 +45852,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
@@ -45887,7 +45887,7 @@
       "displayTrend": false,
       "maybeOwner": null,
       "starter": false,
-      "maybeTier": 36,
+      "maybeTier": 37,
       "maybeAdp": null,
       "maybeTradeFrequency": null
     },
