@@ -269,7 +269,7 @@ function LoadingScreen({ done }) {
             ))}
           </div>
           <div className="mt-4">
-            <Link href="/" className="inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Username Search</Link>
+            <Link href="/player-stock" className="inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Username Search</Link>
             <a> </a>
             <Link href="/" className="inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
           </div>
