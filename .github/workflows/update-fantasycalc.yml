@@ -3,7 +3,7 @@
 name: Update FantasyCalc Cache
 
 on:
-  #workflow_dispatch:       # ✅ manual run option still available
+  workflow_dispatch:       # ✅ manual run option still available
   schedule:
     - cron: '*/5 * * * *'
 
