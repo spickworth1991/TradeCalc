@@ -3,9 +3,8 @@
 name: Update FantasyCalc Cache
 
 on:
-  workflow_dispatch:       # ✅ Manual run option
   schedule:
-    - cron: '10 02 * * *'  # 
+    - cron: '00 02 * * *'  # 
 
 permissions:
   contents: write           # ✅ Required for commit
