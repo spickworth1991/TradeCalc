@@ -1,12 +1,14 @@
+# .github/workflows/update-fantasycalc.yml
+
 name: Update FantasyCalc Cache
 
 on:
+  workflow_dispatch:       # ✅ Manual run option
   schedule:
-    - cron: "48 00 * * *"  # Every day at 7:53 PM Eastern
-  workflow_dispatch:       # Optional: allows manual runs
+    - cron: '00 02 * * *'  # 
 
 permissions:
-  contents: write           # ✅ This is the key line
+  contents: write           # ✅ Required for commit
 
 jobs:
   update-fantasycalc:
@@ -19,7 +21,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
@@ -32,7 +34,5 @@ jobs:
           git config user.name "FantasyCalc Bot"
           git config user.email "bot@fantasycalc.local"
           git add public/fantasycalc_cache.json
-          git commit -m "🔁 Auto-update FantasyCalc cache"
+          git commit -am "🔁 Auto-update FantasyCalc cache"
           git push
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
