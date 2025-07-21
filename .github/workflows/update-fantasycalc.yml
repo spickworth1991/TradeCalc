@@ -3,12 +3,12 @@
 name: Update FantasyCalc Cache
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '10 02 * * *'  # 
-  workflow_dispatch:       # ✅ Manual run option
+    - cron: '00 02 * * *'
 
 permissions:
-  contents: write           # ✅ Required for commit
+  contents: write
 
 jobs:
   update-fantasycalc:
