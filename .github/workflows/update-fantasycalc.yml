@@ -2,7 +2,7 @@ name: Update FantasyCalc Cache
 
 on:
   schedule:
-    - cron: "12 00 * * *"  # Every day at 7:53 PM Eastern
+    - cron: "32 00 * * *"  # Every day at 7:53 PM Eastern
   workflow_dispatch:       # Optional: allows manual runs
 
 permissions:
