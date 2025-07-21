@@ -5,7 +5,7 @@ name: Update FantasyCalc Cache
 on:
   workflow_dispatch:       # ✅ manual run option still available
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 */12 * * *' # ✅ Runs every 12 hours
 
 permissions:
   contents: write
