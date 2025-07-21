@@ -2,7 +2,7 @@ name: Update FantasyCalc Cache
 
 on:
   schedule:
-    - cron: "53 23 * * *"  # Every day at 7:53 PM Eastern (23:53 UTC)
+    - cron: "05 00 * * *"  # Every day at 7:53 PM Eastern (23:53 UTC)
   workflow_dispatch:     # Allows manual trigger from GitHub UI
 
 jobs:
