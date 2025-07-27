@@ -305,45 +305,51 @@ export default function Home() {
         </h1>
         <Link href="/" className="flex justify-center inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
 
-        {/* Format & Superflex Toggle */}
-        <div className="flex justify-center mt-6 flex-wrap gap-4">
-          <div className="flex items-center gap-3 bg-gray-900 p-2 px-4 rounded-full shadow-md border border-gray-300">
-            <span className="text-sm font-medium text-gray-600">Format:</span>
-            {["dynasty", "redraft"].map((f) => (
-              <button
-                key={f}
-                onClick={() => changeFormat(f)}
-                className={`w-20 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                  format === f
-                    ? "bg-blue-700 text-black shadow"
-                    : "bg-gray-100 text-gray-700"
+        {/* ✅ Toggles */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          {/* Format Toggle */}
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium"></span>
+            <div
+              onClick={() => setFormat(format === "dynasty" ? "redraft" : "dynasty")}
+              className={`relative w-28 h-8 rounded-full cursor-pointer transition-all duration-300 flex items-center text-xs font-semibold ${
+                format === "dynasty" ? "bg-blue-600" : "bg-gray-600"
+              }`}
+            >
+              <div
+                className={`absolute top-1 left-1 w-12 h-6 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center ${
+                  format === "dynasty" ? "translate-x-0" : "translate-x-14"
                 }`}
               >
-                {f === "dynasty" ? "Dynasty" : "Redraft"}
-              </button>
-            ))}
+                {format === "dynasty" ? "Dyn" : "Red"}
+              </div>
+              <span className="absolute left-3 text-white">Dynasty</span>
+              <span className="absolute right-3 text-white">Redraft</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3 bg-gray-900 p-2 px-4 rounded-full shadow-md border border-gray-300">
-            <span className="text-sm font-medium text-gray-600">QB Type:</span>
-            {[
-              { label: "1QB", value: false },
-              { label: "SF", value: true },
-            ].map(({ label, value }) => (
-              <button
-                key={label}
-                onClick={() => changeSuperflex(value)}
-                className={`w-16 py-1 rounded-full transition-all duration-300 text-sm font-semibold ${
-                  superflex === value
-                    ? "bg-blue-600 text-black shadow"
-                    : "bg-gray-100 text-gray-700"
+          {/* QB Toggle */}
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium"></span>
+            <div
+              onClick={() => setSuperflex(!superflex)}
+              className={`relative w-20 h-8 rounded-full cursor-pointer transition-all duration-300 flex items-center text-xs font-semibold ${
+                superflex ? "bg-gray-600" : "bg-blue-600"
+              }`}
+            >
+              <div
+                className={`absolute top-1 left-1 w-8 h-6 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center ${
+                  superflex ? "translate-x-10" : "translate-x-0"
                 }`}
               >
-                {label}
-              </button>
-            ))}
+                {superflex ? "SF" : "1QB"}
+              </div>
+              <span className="absolute left-3 text-white">1QB</span>
+              <span className="absolute right-3 text-white">SF</span>
+            </div>
           </div>
         </div>
+
 
         {!sleeperUser && (
           <div className="flex justify-center">
@@ -396,56 +402,40 @@ export default function Home() {
         </div>
         
 
-        {/* Trade and Top 10 Side-by-Side */}
-        <div className="flex flex-col md:flex-row gap-8">
-          {/* Trade Interface */}
-          <div className="flex-1 grid md:grid-cols-2 gap-8">
+        {/* ✅ Responsive Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
+          {/* TradeSides */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <TradeSide
               label="A"
               players={sideA}
               setPlayers={setSideA}
-              addPlayer={(player) => handleAddPlayer("A", player)}
-              allPlayers={
-                sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers
-              }
-              recommendations={recommendations.A}
+              addPlayer={(p) => handleAddPlayer("A", p)}
+              allPlayers={sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers}
               owners={owners}
               selectedOwner={sideOwners.A}
-              onOwnerSelect={(id) => setTeam("A", id)}
+              onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, A: id }))}
             />
             <TradeSide
               label="B"
               players={sideB}
               setPlayers={setSideB}
-              addPlayer={(player) => handleAddPlayer("B", player)}
-              allPlayers={
-                sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers
-              }
-              recommendations={recommendations.B}
+              addPlayer={(p) => handleAddPlayer("B", p)}
+              allPlayers={sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers}
               owners={owners}
               selectedOwner={sideOwners.B}
-              onOwnerSelect={(id) => setTeam("B", id)}
+              onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
             />
           </div>
 
-          {/* Top 10 Players */}
-          <div className="w-full md:w-[250px] bg-gray-900 border border-gray-700 rounded-lg shadow p-4 text-white">
-            <h3 className="text-lg font-semibold text-indigo-700 mb-3 text-center">
-              💎 Top 10 Players
-            </h3>
-
-            <div className="mb-4">
-              <label
-                htmlFor="pos-filter"
-                className="block text-sm font-medium text-gray-700 mb-1"
-              >
-                Filter by Position:
-              </label>
+           {/* ✅ Top 10 Players Sidebar */}
+          <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
+            <h3 className="text-indigo-400 font-semibold text-center mb-4">💎 Top 10 Players</h3>
+            <div className="mb-3">
               <select
-                id="pos-filter"
-                className="w-full p-2 bg-gray-800 text-white border border-gray-600 rounded mb-3 placeholder-gray-400"
                 value={positionFilter}
                 onChange={(e) => setPositionFilter(e.target.value)}
+                className="w-full p-2 bg-gray-800 border border-gray-600 rounded text-sm"
               >
                 <option value="">All Positions</option>
                 <option value="QB">QB</option>
@@ -454,54 +444,28 @@ export default function Home() {
                 <option value="TE">TE</option>
               </select>
             </div>
-
-            <ul className="space-y-2">
+            <ul className="space-y-2 max-h-[500px] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-600 scrollbar-track-gray-800 pr-2">
               {allPlayers
                 .filter((p) => !positionFilter || p.pos === positionFilter)
                 .slice(0, 10)
                 .map((p) => (
-                  <li
-                    key={p.id}
-                    className="border rounded px-3 py-2 "
-                  >
-                    <div className="flex items-center gap-3">
+                  <li key={p.id} className="flex items-center justify-between bg-gray-800 rounded-lg p-2">
+                    <div className="flex items-center gap-2">
                       <Image
                         src={`/avatars/${toSlug(p.name)}.webp`}
                         alt={p.name}
-                        width={60}
-                        height={60}
-                        unoptimized
-                        loading="lazy"
-                        onError={() => setImgSrc("/avatars/default.webp")}
+                        width={40}
+                        height={40}
+                        className="rounded"
                       />
-
-                      <div className="flex-1">
-                        <a
-                          href={`https://www.nfl.com/players/${p.name.toLowerCase().replace(/\s+/g, "-")}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="font-semibold text-indigo-700 hover:underline"
-                        >
-                          {p.name}
-                        </a>
-                        <div className="text-xs text-gray-500">
-                          Value: {p.value}
-                        </div>
+                      <div>
+                        <a href={`https://www.nfl.com/players/${p.name.toLowerCase().replace(/\s+/g, "-")}`} target="_blank" className="text-indigo-400 hover:underline text-sm">{p.name}</a>
+                        <p className="text-xs text-gray-400">Value: {p.value}</p>
                       </div>
                     </div>
-                    <div className="flex gap-2 mt-2">
-                      <button
-                        onClick={() => handleAddPlayer("A", p)}
-                        className="flex-1 bg-blue-200 text-blue-800 text-xs px-2 py-1 rounded hover:bg-blue-300"
-                      >
-                        ➕ Add to A
-                      </button>
-                      <button
-                        onClick={() => handleAddPlayer("B", p)}
-                        className="flex-1 bg-green-200 text-green-800 text-xs px-2 py-1 rounded hover:bg-green-300"
-                      >
-                        ➕ Add to B
-                      </button>
+                    <div className="flex gap-1">
+                      <button onClick={() => handleAddPlayer("A", p)} className="bg-blue-600 text-white text-xs px-6 py-2 rounded">A</button>
+                      <button onClick={() => handleAddPlayer("B", p)} className="bg-green-600 text-white text-xs px-6 py-2 rounded">B</button>
                     </div>
                   </li>
                 ))}
