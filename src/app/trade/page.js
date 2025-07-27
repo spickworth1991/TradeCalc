@@ -67,17 +67,19 @@ export default function Home() {
   });
   const [format, setFormat] = useState(() => {
     if (typeof window !== "undefined") {
-      return sessionStorage.getItem("format") || "dynasty";
+      return sessionStorage.getItem("format") || "redraft";
     }
-    return "dynasty";
+    return "redraft";
   });
 
   const [superflex, setSuperflex] = useState(() => {
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("superflex") === "true";
-    }
-    return false;
-  });
+  if (typeof window !== "undefined") {
+    const stored = sessionStorage.getItem("superflex");
+    return stored !== null ? stored === "true" : true; // ✅ Default to true
+  }
+  return true; // ✅ Server-side default
+});
+
   const calcData = useFantasyCalcData();
   useEffect(() => {
     const fetchPlayers = async () => {
@@ -190,12 +192,6 @@ export default function Home() {
     }
   }, [sleeperUser]);
 
-  const changeSuperflex = (value) => {
-    setSuperflex(value);
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("superflex", value.toString());
-    }
-  };
 
   const handleLogin = async (username, userId) => {
     setSleeperUser({ username, userId });
@@ -303,7 +299,6 @@ export default function Home() {
         <h1 className="text-4xl font-extrabold text-center text-blue-400 drop-shadow">
           🏈 Fantasy Trade Analyzer
         </h1>
-        <Link href="/" className="flex justify-center inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
 
         {/* ✅ Toggles */}
           <div className="flex flex-col md:flex-row justify-center items-center gap-6">
@@ -311,46 +306,23 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <span className="text-sm font-medium"></span>
               <div
-                onClick={() => setFormat(format === "dynasty" ? "redraft" : "dynasty")}
+                onClick={() => setFormat(format === "redraft" ? "dynasty" : "redraft")}
                 className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
-                  format === "dynasty" ? "bg-blue-600" : "bg-gray-600"
+                  format === "redraft" ? "bg-blue-600" : "bg-gray-600"
                 }`}
               >
                 <div
                   className={`absolute top-1 left-1 w-20 h-8 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center text-sm font-bold text-black ${
-                    format === "dynasty" ? "translate-x-0" : "translate-x-22"
+                    format === "redraft" ? "translate-x-0" : "translate-x-22"
                   }`}
-                  style={{ transform: format === "dynasty" ? "translateX(0)" : "translateX(90px)" }}
+                  style={{ transform: format === "redraft" ? "translateX(0)" : "translateX(90px)" }}
                 >
-                  {format === "dynasty" ? "Dynasty" : "Redraft"}
+                  {format === "redraft" ? "Redraft" : "Dynasty"}
                 </div>
               </div>
             </div>
 
-            {/* QB Toggle */}
-            <div className="flex items-center gap-3">
-              <span className="text-sm font-medium"></span>
-              <div
-                onClick={() => setSuperflex(!superflex)}
-                className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
-                  superflex ? "bg-blue-600" : "bg-gray-600"
-                }`}
-              >
-                <div
-                  className={`absolute top-1 left-1 w-20 h-8 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center text-sm font-bold text-black ${
-                    superflex ? "translate-x-22" : "translate-x-0"
-                  }`}
-                  style={{ transform: superflex ? "translateX(90px)" : "translateX(0)" }}
-                >
-                  {superflex ? "Superflex" : "1 QB"}
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-        {!sleeperUser && (
+            {!sleeperUser && (
           <div className="flex justify-center">
             <SleeperLogin onLogin={handleLogin} />
           </div>
@@ -401,10 +373,35 @@ export default function Home() {
         </div>
         
 
+            {/* QB Toggle */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-medium"></span>
+              <div
+                onClick={() => setSuperflex(!superflex)}
+                className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
+                  superflex ? "bg-blue-600" : "bg-gray-600"
+                }`}
+              >
+                <div
+                  className={`absolute top-1 left-1 w-20 h-8 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center text-sm font-bold text-black ${
+                    superflex ? "translate-x-22" : "translate-x-0"
+                  }`}
+                  style={{ transform: superflex ? "translateX(90px)" : "translateX(0)" }}
+                >
+                  {superflex ? "Superflex" : "1 QB"}
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        
+
         {/* ✅ Responsive Layout */}
           <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
             {/* TradeSides */}
-            <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+            <div className="grid grid-cols-2 gap-6 max-sm:grid-cols-1">
               <TradeSide
                 label="A"
                 players={sideA}
