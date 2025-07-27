@@ -306,49 +306,48 @@ export default function Home() {
         <Link href="/" className="flex justify-center inline-block px-4 py-2 bg-blue-700 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
 
         {/* ✅ Toggles */}
-        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
-          {/* Format Toggle */}
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-medium"></span>
-            <div
-              onClick={() => setFormat(format === "dynasty" ? "redraft" : "dynasty")}
-              className={`relative w-28 h-8 rounded-full cursor-pointer transition-all duration-300 flex items-center text-xs font-semibold ${
-                format === "dynasty" ? "bg-blue-600" : "bg-gray-600"
-              }`}
-            >
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+            {/* Format Toggle */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-medium"></span>
               <div
-                className={`absolute top-1 left-1 w-12 h-6 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center ${
-                  format === "dynasty" ? "translate-x-0" : "translate-x-14"
+                onClick={() => setFormat(format === "dynasty" ? "redraft" : "dynasty")}
+                className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
+                  format === "dynasty" ? "bg-blue-600" : "bg-gray-600"
                 }`}
               >
-                {format === "dynasty" ? "Dyn" : "Red"}
+                <div
+                  className={`absolute top-1 left-1 w-20 h-8 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center text-sm font-bold text-black ${
+                    format === "dynasty" ? "translate-x-0" : "translate-x-22"
+                  }`}
+                  style={{ transform: format === "dynasty" ? "translateX(0)" : "translateX(90px)" }}
+                >
+                  {format === "dynasty" ? "Dynasty" : "Redraft"}
+                </div>
               </div>
-              <span className="absolute left-3 text-white">Dynasty</span>
-              <span className="absolute right-3 text-white">Redraft</span>
+            </div>
+
+            {/* QB Toggle */}
+            <div className="flex items-center gap-3">
+              <span className="text-sm font-medium"></span>
+              <div
+                onClick={() => setSuperflex(!superflex)}
+                className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
+                  superflex ? "bg-blue-600" : "bg-gray-600"
+                }`}
+              >
+                <div
+                  className={`absolute top-1 left-1 w-20 h-8 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center text-sm font-bold text-black ${
+                    superflex ? "translate-x-22" : "translate-x-0"
+                  }`}
+                  style={{ transform: superflex ? "translateX(90px)" : "translateX(0)" }}
+                >
+                  {superflex ? "Superflex" : "1 QB"}
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* QB Toggle */}
-          <div className="flex items-center gap-3">
-            <span className="text-sm font-medium"></span>
-            <div
-              onClick={() => setSuperflex(!superflex)}
-              className={`relative w-20 h-8 rounded-full cursor-pointer transition-all duration-300 flex items-center text-xs font-semibold ${
-                superflex ? "bg-gray-600" : "bg-blue-600"
-              }`}
-            >
-              <div
-                className={`absolute top-1 left-1 w-8 h-6 bg-white rounded-full shadow transition-transform duration-300 flex items-center justify-center ${
-                  superflex ? "translate-x-10" : "translate-x-0"
-                }`}
-              >
-                {superflex ? "SF" : "1QB"}
-              </div>
-              <span className="absolute left-3 text-white">1QB</span>
-              <span className="absolute right-3 text-white">SF</span>
-            </div>
-          </div>
-        </div>
 
 
         {!sleeperUser && (
@@ -403,30 +402,30 @@ export default function Home() {
         
 
         {/* ✅ Responsive Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-8">
-          {/* TradeSides */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <TradeSide
-              label="A"
-              players={sideA}
-              setPlayers={setSideA}
-              addPlayer={(p) => handleAddPlayer("A", p)}
-              allPlayers={sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers}
-              owners={owners}
-              selectedOwner={sideOwners.A}
-              onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, A: id }))}
-            />
-            <TradeSide
-              label="B"
-              players={sideB}
-              setPlayers={setSideB}
-              addPlayer={(p) => handleAddPlayer("B", p)}
-              allPlayers={sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers}
-              owners={owners}
-              selectedOwner={sideOwners.B}
-              onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
-            />
-          </div>
+          <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-8">
+            {/* TradeSides */}
+            <div className="grid grid-cols-2 gap-6 max-md:grid-cols-1">
+              <TradeSide
+                label="A"
+                players={sideA}
+                setPlayers={setSideA}
+                addPlayer={(p) => handleAddPlayer("A", p)}
+                allPlayers={sideOwners.B ? getFilteredPlayers(sideOwners.B) : allPlayers}
+                owners={owners}
+                selectedOwner={sideOwners.A}
+                onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, A: id }))}
+              />
+              <TradeSide
+                label="B"
+                players={sideB}
+                setPlayers={setSideB}
+                addPlayer={(p) => handleAddPlayer("B", p)}
+                allPlayers={sideOwners.A ? getFilteredPlayers(sideOwners.A) : allPlayers}
+                owners={owners}
+                selectedOwner={sideOwners.B}
+                onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
+              />
+            </div>
 
            {/* ✅ Top 10 Players Sidebar */}
           <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
