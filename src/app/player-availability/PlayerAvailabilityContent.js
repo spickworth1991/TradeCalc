@@ -196,13 +196,22 @@ export default function PlayerAvailabilityContent() {
                         className="py-2 flex justify-between"
                       >
                         <span>{league.name}</span>
-                        <a
-                          href={`https://sleeper.app/leagues/${league.league_id}`}
-                          target="_blank"
-                          className="text-blue-400 hover:underline"
-                        >
-                          View
-                        </a>
+                        <div className="flex gap-4">
+                          <a
+                            href={`sleeper://league/${league.league_id}`}
+                            className="text-green-400 hover:underline"
+                          >
+                            Open in App
+                          </a>
+                          <a
+                            href={`https://www.sleeper.app/leagues/${league.league_id}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-blue-400 hover:underline"
+                          >
+                            View in Browser
+                          </a>
+                        </div>
                       </li>
                     ))}
                   </ul>
