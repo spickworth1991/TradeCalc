@@ -350,26 +350,7 @@ export default function Home() {
             </select>
           )}
 
-          {hasMounted && (sideA.length > 0 || sideB.length > 0 || selectedLeague) && (
-            <div className="flex justify-center gap-4 mt-4 flex-wrap">
-              {(sideA.length > 0 || sideB.length > 0) && (
-                <button
-                  onClick={clearTrade}
-                  className="bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded shadow text-black font-semibold"
-                >
-                  🔁 Clear Trade
-                </button>
-              )}
-              {selectedLeague && sleeperUser && (
-                <button
-                  onClick={clearLeague}
-                  className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded shadow text-white font-semibold"
-                >
-                  ❌ Clear League
-                </button>
-              )}
-            </div>
-          )}
+          
         </div>
         
 
@@ -394,7 +375,26 @@ export default function Home() {
             </div>
           </div>
 
-
+        {hasMounted && (sideA.length > 0 || sideB.length > 0 || selectedLeague) && (
+            <div className="flex justify-center gap-4 mt-4 flex-wrap">
+              {(sideA.length > 0 || sideB.length > 0) && (
+                <button
+                  onClick={clearTrade}
+                  className="bg-yellow-400 hover:bg-yellow-500 px-4 py-2 rounded shadow text-black font-semibold"
+                >
+                  🔁 Clear Trade
+                </button>
+              )}
+              {selectedLeague && sleeperUser && (
+                <button
+                  onClick={clearLeague}
+                  className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded shadow text-white font-semibold"
+                >
+                  ❌ Clear League
+                </button>
+              )}
+            </div>
+          )}
 
         
 

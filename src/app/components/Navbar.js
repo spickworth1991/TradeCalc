@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Trade Calculator", href: "/trade" },
     { name: "Player Stock", href: "/player-stock" },
+    { name: "Player Availability", href: "/player-availability" },
     {
       name: "More Tools ▾",
       submenu: [

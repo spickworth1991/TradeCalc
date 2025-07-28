@@ -27,6 +27,15 @@ export default function Home() {
           </div>
         </Link>
 
+        <Link href="/player-availability" className="tool-card">
+          <div className="border border-blue-500 p-6 rounded-2xl hover:bg-blue-900 transition">
+            <h2 className="text-xl font-semibold mb-2">Player Availability</h2>
+            <p>Check all your leagues to find where a player is unrostered.</p>
+            <p>Quick and easy way to spot free agents.</p>
+          </div>
+        </Link>
+
+
         <div className="border border-blue-500 p-6 rounded-2xl opacity-50">
           <h2 className="text-xl font-semibold mb-2">More Coming Soon</h2>
           <p>Additional tools will be added here.</p>
