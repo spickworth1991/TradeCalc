@@ -1,144 +1,87 @@
 "use client";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 import { useEffect, useState } from "react";
 import TradeSide from "../components/TradeSide";
-import PlayerCard from "../components/PlayerCard";
 import { toSlug } from "@/utils/slugify";
-import Image from 'next/image';
+import Image from "next/image";
 import { useFantasyCalcData } from "@/context/FantasyCalcContext";
 import Link from "next/link";
 import { useSleeperData } from "@/context/SleeperDataContext";
 import { useRouter } from "next/navigation";
 
-
-
-
 export default function Home() {
   const SAFE_MARGIN = 50;
   const { username, leagues, getRostersForLeague } = useSleeperData();
   const router = useRouter();
+  const calcData = useFantasyCalcData();
 
-useEffect(() => {
-    if (!username) {
-      router.push("/");
-    }
-  }, [username, router]);
-
-  if (!username) {
-    return null; // prevent rendering while redirecting
-  }
-
-
-
+  // ✅ All hooks at top-level
   const [hasMounted, setHasMounted] = useState(false);
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
-  
   const [allPlayers, setAllPlayers] = useState([]);
-
-  const [sideA, setSideA] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("sideA");
-      return stored ? JSON.parse(stored) : [];
-    }
-    return [];
-  });
-  const [sideB, setSideB] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("sideB");
-      return stored ? JSON.parse(stored) : [];
-    }
-    return [];
-  });
+  const [sideA, setSideA] = useState(() => (typeof window !== "undefined" ? JSON.parse(sessionStorage.getItem("sideA") || "[]") : []));
+  const [sideB, setSideB] = useState(() => (typeof window !== "undefined" ? JSON.parse(sessionStorage.getItem("sideB") || "[]") : []));
   const [recommendations, setRecommendations] = useState({ A: [], B: [] });
   const [result, setResult] = useState(null);
-  const [selectedLeague, setSelectedLeague] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("selectedLeague");
-      return stored ? JSON.parse(stored) : null;
-    }
-    return null;
-  });
+  const [selectedLeague, setSelectedLeague] = useState(() => (typeof window !== "undefined" ? JSON.parse(sessionStorage.getItem("selectedLeague") || "null") : null));
   const [positionFilter, setPositionFilter] = useState("");
   const [owners, setOwners] = useState([]);
   const [ownerMap, setOwnerMap] = useState({});
   const [rosters, setRosters] = useState({});
-  const [sideOwners, setSideOwners] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("sideOwners");
-      return stored ? JSON.parse(stored) : { A: null, B: null };
-    }
-    return { A: null, B: null };
-  });
-  const [format, setFormat] = useState(() => {
-    if (typeof window !== "undefined") {
-      return sessionStorage.getItem("format") || "redraft";
-    }
-    return "redraft";
-  });
-
+  const [sideOwners, setSideOwners] = useState(() => (typeof window !== "undefined" ? JSON.parse(sessionStorage.getItem("sideOwners") || '{"A":null,"B":null}') : { A: null, B: null }));
+  const [format, setFormat] = useState(() => (typeof window !== "undefined" ? sessionStorage.getItem("format") || "redraft" : "redraft"));
   const [superflex, setSuperflex] = useState(() => {
   if (typeof window !== "undefined") {
-    const stored = sessionStorage.getItem("superflex");
-    return stored !== null ? stored === "true" : true; // ✅ Default to true
-  }
-  return true; // ✅ Server-side default
-});
+      const stored = sessionStorage.getItem("superflex");
+      return stored !== null ? stored === "true" : true; // ✅ Default to true (Superflex)
+    }
+    return true; // ✅ Server-side default
+  });
 
-  const calcData = useFantasyCalcData();
+
+  // ✅ Redirect if not logged in
+  useEffect(() => {
+    if (!username) router.push("/");
+  }, [username, router]);
+
+  // ✅ Mark mounted for client-only UI
+  useEffect(() => setHasMounted(true), []);
+
+  // ✅ Fetch FantasyCalc data based on format
   useEffect(() => {
     const fetchPlayers = async () => {
-      try {
-        const formatKey = `${format.charAt(0).toUpperCase() + format.slice(1)}_${superflex ? "SF" : "1QB"}`;
-        if (!calcData || !calcData[formatKey]) {
-          console.warn(`⚠️ No data found for formatKey: ${formatKey}`);
-        }
+      const formatKey = `${format.charAt(0).toUpperCase() + format.slice(1)}_${superflex ? "SF" : "1QB"}`;
+      const values = calcData?.[formatKey] || [];
 
-        const values = calcData?.[formatKey] || [];
+      const flat = values
+        .map((p) => ({
+          name: p?.player?.name,
+          id: p?.player?.sleeperId || p?.player?.id,
+          pos: p?.player?.position,
+          team: p?.player?.maybeTeam || "",
+          value: p?.value || 0,
+        }))
+        .filter((p) => p.name && p.value > 0);
 
-
-        const flat = values
-          .map((p) => ({
-            name: p?.player?.name,
-            id: p?.player?.sleeperId || p?.player?.id,
-            pos: p?.player?.position,
-            team: p?.player?.maybeTeam || "",
-            value: p?.value || 0,
-          }))
-
-          .filter((p) => p.name && p.value > 0);
-
-        setAllPlayers(flat);
-        console.log(
-          `📊 Loaded ${format} (${superflex ? "SF" : "1QB"}) values:`,
-          values.slice(0, 3),
-        );
-      } catch (err) {
-        console.error("Error loading players:", err);
-      }
+      setAllPlayers(flat);
     };
-
     fetchPlayers();
   }, [format, superflex, calcData]);
 
-  // 🆕 Sync active trade player values after format changes
+  // ✅ Update side values if format changes
   useEffect(() => {
-    const updateSideValues = (side, setSide) => {
+    const updateSideValues = (setSide) => {
       setSide((prev) =>
         prev.map((p) => {
           const updated = allPlayers.find((ap) => ap.id === p.id);
           return updated ? { ...p, value: updated.value } : p;
-        }),
+        })
       );
     };
-
-    updateSideValues("A", setSideA);
-    updateSideValues("B", setSideB);
+    updateSideValues(setSideA);
+    updateSideValues(setSideB);
   }, [allPlayers]);
 
+  // ✅ Calculate trade result & recommendations
   useEffect(() => {
     const total = (list) => list.reduce((sum, p) => sum + p.value, 0);
     const a = total(sideA);
@@ -159,44 +102,24 @@ useEffect(() => {
 
     const opposingSide = target === "A" ? "B" : "A";
     const opposingOwnerId = sideOwners[opposingSide];
-    const rosterFilter = opposingOwnerId
-      ? rosters[opposingOwnerId] || []
-      : null;
+    const rosterFilter = opposingOwnerId ? rosters[opposingOwnerId] || [] : null;
 
-    const possible = allPlayers.filter(
-      (p) =>
-        !selectedIds.has(p.id) &&
-        (!rosterFilter || rosterFilter.includes(p.id)),
-    );
+    const possible = allPlayers.filter((p) => !selectedIds.has(p.id) && (!rosterFilter || rosterFilter.includes(p.id)));
 
-    const recos = possible
+    newRecos[target] = possible
       .map((p) => ({ ...p, match: Math.abs(p.value - missing) }))
       .sort((a, b) => a.match - b.match)
       .slice(0, 5);
 
-    newRecos[target] = recos;
     setRecommendations(newRecos);
   }, [sideA, sideB, allPlayers, sideOwners, rosters]);
 
-  useEffect(() => {
-    sessionStorage.setItem("sideA", JSON.stringify(sideA));
-  }, [sideA]);
+  // ✅ Persist state in session
+  useEffect(() => sessionStorage.setItem("sideA", JSON.stringify(sideA)), [sideA]);
+  useEffect(() => sessionStorage.setItem("sideB", JSON.stringify(sideB)), [sideB]);
+  useEffect(() => sessionStorage.setItem("selectedLeague", JSON.stringify(selectedLeague)), [selectedLeague]);
+  useEffect(() => sessionStorage.setItem("sideOwners", JSON.stringify(sideOwners)), [sideOwners]);
 
-  useEffect(() => {
-    sessionStorage.setItem("sideB", JSON.stringify(sideB));
-  }, [sideB]);
-
-  useEffect(() => {
-    sessionStorage.setItem("selectedLeague", JSON.stringify(selectedLeague));
-  }, [selectedLeague]);
-
-  useEffect(() => {
-    sessionStorage.setItem("sideOwners", JSON.stringify(sideOwners));
-  }, [sideOwners]);
-
-
-
-  
   const handleLeagueSelect = async (leagueId) => {
     const league = leagues.find((l) => l.league_id === leagueId);
     if (!league) return;
@@ -209,27 +132,34 @@ useEffect(() => {
 
     const data = await getRostersForLeague(leagueId);
     const map = {};
-    data.forEach((r) => {
-      map[r.owner_id] = r.players || [];
-    });
+    data.forEach((r) => (map[r.owner_id] = r.players || []));
     setRosters(map);
   };
 
-
   const changeFormat = (newFormat) => {
     setFormat(newFormat);
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("format", newFormat);
+    if (typeof window !== "undefined") sessionStorage.setItem("format", newFormat);
+  };
+
+  const getFilteredPlayers = (ownerId) => (!ownerId || !rosters[ownerId] ? [] : allPlayers.filter((p) => rosters[ownerId].includes(p.id)));
+
+  const handleAddPlayer = (side, player) => {
+    const newSide = side === "A" ? sideA : sideB;
+    if (newSide.some((p) => p.id === player.id)) return;
+
+    if (side === "A") setSideA((prev) => [...prev, player]);
+    else setSideB((prev) => [...prev, player]);
+
+    const otherSide = side === "A" ? "B" : "A";
+    const otherSideOwner = sideOwners[otherSide];
+    if (selectedLeague && !otherSideOwner && Object.keys(rosters).length > 0) {
+      for (const [ownerId, playerIds] of Object.entries(rosters)) {
+        if (playerIds?.includes(player.id)) {
+          setSideOwners((prev) => ({ ...prev, [otherSide]: ownerId }));
+          break;
+        }
+      }
     }
-  };
-
-  const getFilteredPlayers = (ownerId) => {
-    if (!ownerId || !rosters[ownerId]) return [];
-    return allPlayers.filter((p) => rosters[ownerId].includes(p.id));
-  };
-
-  const setTeam = (side, ownerId) => {
-    setSideOwners((prev) => ({ ...prev, [side]: ownerId }));
   };
 
   const clearTrade = () => {
@@ -246,41 +176,10 @@ useEffect(() => {
     setSideOwners({ A: null, B: null });
     setSideA([]);
     setSideB([]);
-
-    if (typeof window !== "undefined") {
-      sessionStorage.removeItem("sleeperUser");
-    }
   };
 
-  const handleAddPlayer = (side, player) => {
-    const alreadyInSide = (list) => list.some((p) => p.id === player.id);
-    const newSide = side === "A" ? sideA : sideB;
+  if (!username) return null;
 
-    if (alreadyInSide(newSide)) return;
-
-    // Add player to the correct side
-    if (side === "A") {
-      setSideA((prev) => [...prev, player]);
-    } else {
-      setSideB((prev) => [...prev, player]);
-    }
-
-    // Auto-set other side's owner if not set, and this player belongs to them
-    const otherSide = side === "A" ? "B" : "A";
-    const thisSideOwner = sideOwners[side];
-    const otherSideOwner = sideOwners[otherSide];
-
-    // Only run this logic if league is selected, rosters exist, and one owner is missing
-    if (selectedLeague && !otherSideOwner && Object.keys(rosters).length > 0) {
-      for (const [ownerId, playerIds] of Object.entries(rosters)) {
-        if (playerIds?.includes(player.id)) {
-          setSideOwners((prev) => ({ ...prev, [otherSide]: ownerId }));
-          break;
-        }
-      }
-    }
-  };
-  
   return (
     <main className="min-h-screen py-10 px-4 bg-black text-white">
       <div className="max-w-7xl mx-auto space-y-12">
@@ -401,6 +300,48 @@ useEffect(() => {
                 onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
               />
             </div>
+
+            {/* ✅ Recommendations Section */}
+              {(recommendations.A.length > 0 || recommendations.B.length > 0) && (
+                <div className="col-span-2 mt-6 bg-gray-900 p-4 rounded-lg border border-gray-700">
+                  <h3 className="text-indigo-400 font-semibold text-center mb-4">
+                    🔍 Suggested Players to Balance Trade
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {["A", "B"].map((side) => (
+                      <div key={side} className="bg-gray-800 p-3 rounded-lg">
+                        <h4 className="text-sm font-semibold mb-2">
+                          {side === "A" ? "Add to Side A" : "Add to Side B"}
+                        </h4>
+                        {recommendations[side].length > 0 ? (
+                          <ul className="space-y-2">
+                            {recommendations[side].map((p) => (
+                              <li
+                                key={p.id}
+                                className="flex justify-between items-center bg-gray-700 p-2 rounded"
+                              >
+                                <div>
+                                  <p className="text-white">{p.name}</p>
+                                  <p className="text-xs text-gray-400">{p.pos} • Value: {p.value}</p>
+                                </div>
+                                <button
+                                  onClick={() => handleAddPlayer(side, p)}
+                                  className="bg-blue-600 hover:bg-blue-500 text-white text-xs px-3 py-1 rounded"
+                                >
+                                  Add
+                                </button>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <p className="text-gray-500 text-xs">No suggestions</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
 
            {/* ✅ Top 10 Players Sidebar */}
           <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">
