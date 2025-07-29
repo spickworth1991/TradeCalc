@@ -53,32 +53,32 @@ export default function PlayerStockResults() {
   const totalPages = Math.ceil(filteredPlayers.length / pageSize);
 
   useEffect(() => {
-    console.log("✅ Effect Triggered:", {
-      hydrated,
-      username,
-      userId,
-      leaguesLength: leagues?.length,
-    });
+    // console.log("✅ Effect Triggered:", {
+    //   hydrated,
+    //   username,
+    //   userId,
+    //   leaguesLength: leagues?.length,
+    // });
 
     if (!hydrated) {
-      console.log("⏸ Skipping fetch: Not hydrated yet.");
+      // console.log("⏸ Skipping fetch: Not hydrated yet.");
       return;
     }
 
     if (!username || !userId) {
-      console.log("⏸ Skipping fetch: Missing username or userId.");
+      // console.log("⏸ Skipping fetch: Missing username or userId.");
       return;
     }
 
     if (!leagues || leagues.length === 0) {
-      console.log("⏸ Skipping fetch: No leagues yet.");
+      // console.log("⏸ Skipping fetch: No leagues yet.");
       return;
     }
 
     let abort = false;
 
     const fetchPlayerStock = async () => {
-      console.log("🚀 Starting fetchPlayerStock for userId:", userId);
+      // console.log("🚀 Starting fetchPlayerStock for userId:", userId);
       setLoading(true);
       setLoadingDone(false);
       setError("");
@@ -86,7 +86,7 @@ export default function PlayerStockResults() {
       setProgress({ current: 0, total: 0 });
 
       try {
-        console.log("📂 Filtering leagues...");
+        // console.log("📂 Filtering leagues...");
         const filteredLeagues = leagues.filter((lg) => {
           const isBestBall = lg.settings?.best_ball === 1;
           if (onlyBestBall && !isBestBall) return false;
@@ -100,11 +100,11 @@ export default function PlayerStockResults() {
         }
 
         if (!abort) setProgress({ current: 0, total: filteredLeagues.length });
-        console.log("✅ Filtered Leagues:", filteredLeagues.length);
+        // console.log("✅ Filtered Leagues:", filteredLeagues.length);
 
-        console.log("📥 Fetching Player DB...");
+        // console.log("📥 Fetching Player DB...");
         const playerMap = await getPlayerDB();
-        console.log("✅ Player DB loaded with", Object.keys(playerMap).length, "players");
+        // console.log("✅ Player DB loaded with", Object.keys(playerMap).length, "players");
 
         const ownershipMap = {};
 
@@ -116,7 +116,7 @@ export default function PlayerStockResults() {
               const idx = i++;
               if (abort) return;
               try {
-                console.log(`➡️ Fetching rosters for league ${items[idx].league_id} (${idx + 1}/${items.length})`);
+                // console.log(`➡️ Fetching rosters for league ${items[idx].league_id} (${idx + 1}/${items.length})`);
                 const result = await fn(items[idx], idx);
                 results[idx] = result;
               } catch (err) {
@@ -131,13 +131,13 @@ export default function PlayerStockResults() {
           return results.filter(Boolean);
         };
 
-        console.log("📡 Fetching rosters with concurrency limit...");
+        // console.log("📡 Fetching rosters with concurrency limit...");
         const results = await fetchWithLimit(filteredLeagues, 5, async (lg) => {
           const rosters = await getRostersForLeague(lg.league_id);
           return { lg, rosters };
         });
 
-        console.log("✅ Finished fetching rosters for", results.length, "leagues");
+        // console.log("✅ Finished fetching rosters for", results.length, "leagues");
 
         results.forEach(({ lg, rosters }) => {
           const myRoster = rosters.find((r) => r.owner_id === userId); // ✅ Now uses correct userId
@@ -155,7 +155,7 @@ export default function PlayerStockResults() {
           });
         });
 
-        console.log("✅ Ownership Map built for", Object.keys(ownershipMap).length, "players");
+        // console.log("✅ Ownership Map built for", Object.keys(ownershipMap).length, "players");
 
         const result = Object.entries(ownershipMap).map(([id, data]) => {
           const p = playerMap[id];
@@ -170,7 +170,7 @@ export default function PlayerStockResults() {
         });
 
         result.sort((a, b) => b.count - a.count);
-        console.log("✅ Final Player List:", result.length, "players");
+        // console.log("✅ Final Player List:", result.length, "players");
 
         if (!abort) {
           setPlayers(result);
@@ -192,7 +192,7 @@ export default function PlayerStockResults() {
     fetchPlayerStock();
 
     return () => {
-      console.log("🔒 Cleanup: aborting fetch");
+      // console.log("🔒 Cleanup: aborting fetch");
       abort = true;
     };
   }, [hydrated, username, userId, leagues, onlyBestBall, excludeBestBall]);
