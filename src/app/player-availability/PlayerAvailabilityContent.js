@@ -1,30 +1,26 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useSearchParams, useRouter } from "next/navigation";
+import { useSleeperData } from "@/context/SleeperDataContext";
 import SearchBox from "../components/SearchBox";
 import Link from "next/link";
 import LoadingScreen from "@/app/components/LoadingScreen";
 
 export default function PlayerAvailabilityContent() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-
-  const username = searchParams.get("username") || "";
-  const onlyBestBall = searchParams.get("only_bestball") === "1";
-  const excludeBestBall = searchParams.get("exclude_bestball") === "1";
+  const { username, userId, leagues, getRostersForLeague, getPlayerDB, hydrated } = useSleeperData();
 
   const [searchedPlayerName, setSearchedPlayerName] = useState("");
   const [loadingDone, setLoadingDone] = useState(false);
   const [loading, setLoading] = useState(true);
   const [players, setPlayers] = useState([]);
-  const [leagues, setLeagues] = useState([]);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   const [results, setResults] = useState([]);
   const [error, setError] = useState("");
+  const [onlyBestBall, setOnlyBestBall] = useState(false);
+  const [excludeBestBall, setExcludeBestBall] = useState(false);
 
   useEffect(() => {
-    if (!username) return;
+    if (!hydrated) return; // Wait for context hydration
 
     const fetchData = async () => {
       try {
@@ -32,41 +28,18 @@ export default function PlayerAvailabilityContent() {
         setLoadingDone(false);
         setError("");
 
-        const userRes = await fetch(`https://api.sleeper.app/v1/user/${username}`);
-        if (!userRes.ok) throw new Error("User not found");
-        const user = await userRes.json();
-
-        const year = new Date().getFullYear();
-        const leaguesRes = await fetch(
-          `https://api.sleeper.app/v1/user/${user.user_id}/leagues/nfl/${year}`
-        );
-        let leaguesData = await leaguesRes.json();
-
-        leaguesData = leaguesData.filter((league) => {
-          if (league.status !== "in_season") return false;
-          const isBestBall = league.settings?.best_ball === 1;
-          if (onlyBestBall && !isBestBall) return false;
-          if (excludeBestBall && isBestBall) return false;
-          return true;
-        });
-
-        if (!leaguesData.length) {
-          setError("No leagues found with these filters.");
-          setLeagues([]);
+        if (!username || !userId) {
+          setError("Please log in first.");
           return;
         }
 
-        await Promise.all(
-          leaguesData.map(async (league) => {
-            const rosterRes = await fetch(
-              `https://api.sleeper.app/v1/league/${league.league_id}/rosters`
-            );
-            league.rosters = await rosterRes.json();
-          })
-        );
+        if (!leagues || leagues.length === 0) {
+          setError("No leagues found. Make sure you're logged in.");
+          return;
+        }
 
-        const playerRes = await fetch("https://api.sleeper.app/v1/players/nfl");
-        const playerMap = await playerRes.json();
+        // ✅ Load Sleeper Player DB (cached)
+        const playerMap = await getPlayerDB();
         const normalizedPlayers = Object.entries(playerMap)
           .filter(([id, p]) => p.full_name)
           .map(([id, p]) => ({
@@ -76,33 +49,63 @@ export default function PlayerAvailabilityContent() {
           }));
 
         setPlayers(normalizedPlayers);
-        setLeagues(leaguesData);
       } catch (err) {
         console.error(err);
-        setError("Failed to load data. Check username and try again.");
+        setError("Failed to load data.");
       } finally {
         setLoadingDone(true);
-        setTimeout(() => {
-          setLoading(false);
-        }, 750);
+        setTimeout(() => setLoading(false), 750);
       }
     };
 
     fetchData();
-  }, [username, onlyBestBall, excludeBestBall]);
+  }, [hydrated, username, userId, leagues, getPlayerDB]);
 
-  const checkAvailability = (player) => {
+  const checkAvailability = async (player) => {
     const target = player || selectedPlayer;
     if (!target) return;
 
-    const unrostered = leagues.filter((league) => {
-      const allRosteredPlayers = league.rosters.flatMap((r) => r.players || []);
-      return !allRosteredPlayers.includes(target.id);
-    });
+    try {
+      setLoading(true);
+      setLoadingDone(false);
+      setResults([]);
 
-    setResults(unrostered);
-    setSearchedPlayerName(target.name);
+      const filteredLeagues = leagues.filter((lg) => {
+        const isBestBall = lg.settings?.best_ball === 1;
+        if (onlyBestBall && !isBestBall) return false;
+        if (excludeBestBall && isBestBall) return false;
+        return lg.status === "in_season" || lg.status === "drafting" || lg.status === "complete";
+      });
+
+      const availabilityResults = [];
+
+      for (const lg of filteredLeagues) {
+        const rosters = await getRostersForLeague(lg.league_id);
+        const allPlayers = rosters.flatMap((r) => r.players || []);
+
+        if (!allPlayers.includes(target.id)) {
+          availabilityResults.push(lg);
+        }
+      }
+
+      setResults(availabilityResults);
+      setSearchedPlayerName(target.name);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to check availability.");
+    } finally {
+      setLoadingDone(true);
+      setTimeout(() => setLoading(false), 750);
+    }
   };
+
+  if (!hydrated) {
+    return (
+      <main className="min-h-screen flex items-center justify-center bg-black text-white">
+        <p>Initializing...</p>
+      </main>
+    );
+  }
 
   if (!username) {
     return (
@@ -110,41 +113,7 @@ export default function PlayerAvailabilityContent() {
         <h1 className="text-3xl sm:text-5xl font-bold mb-8 text-center">
           Player Availability Checker
         </h1>
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const uname = formData.get("username");
-            const only = formData.get("only_bestball") ? "1" : "";
-            const exclude = formData.get("exclude_bestball") ? "1" : "";
-            router.push(
-              `/player-availability?username=${uname}&only_bestball=${only}&exclude_bestball=${exclude}`
-            );
-          }}
-          className="w-full max-w-md bg-gray-900 p-6 rounded-xl shadow-lg"
-        >
-          <label className="block mb-2 font-semibold">Sleeper Username</label>
-          <input
-            name="username"
-            className="w-full mb-4 px-4 py-2 text-black rounded-md"
-            required
-          />
-          <fieldset className="mb-4">
-            <legend className="font-semibold mb-2">Best Ball Options</legend>
-            <label className="block">
-              <input type="checkbox" name="only_bestball" /> Only Best Ball
-            </label>
-            <label className="block">
-              <input type="checkbox" name="exclude_bestball" /> Exclude Best Ball
-            </label>
-          </fieldset>
-          <button
-            type="submit"
-            className="w-full bg-blue-800 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
-          >
-            Search
-          </button>
-        </form>
+        <p className="text-gray-400 mb-4">Please log in from the homepage first.</p>
         <Link
           href="/"
           className="mt-4 inline-block px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-600"
@@ -161,10 +130,30 @@ export default function PlayerAvailabilityContent() {
         Player Availability for {username}
       </h1>
 
+      {/* ✅ Filters */}
+      <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={onlyBestBall}
+            onChange={() => setOnlyBestBall(!onlyBestBall)}
+          />
+          Only Best Ball
+        </label>
+        <label className="flex items-center gap-2">
+          <input
+            type="checkbox"
+            checked={excludeBestBall}
+            onChange={() => setExcludeBestBall(!excludeBestBall)}
+          />
+          Exclude Best Ball
+        </label>
+      </div>
+
       {loading && (
         <LoadingScreen
           done={loadingDone}
-          text="Fetching Your Leagues..."
+          text="Loading Player Data..."
           bgImage="/nfl-loading-bg.webp"
         />
       )}

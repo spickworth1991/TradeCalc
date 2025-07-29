@@ -1,21 +1,31 @@
-// src/app/player-stock/page.js
 "use client";
 
-import { useState } from "react";
+import { useSleeperData } from "@/context/SleeperDataContext";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function PlayerStockPage() {
-  const [username, setUsername] = useState("");
+  const { username } = useSleeperData();
+  const router = useRouter();
   const [onlyBestBall, setOnlyBestBall] = useState(false);
   const [excludeBestBall, setExcludeBestBall] = useState(false);
-  const router = useRouter();
 
-  const handleSubmit = async (e) => {
+useEffect(() => {
+  if (!username) {
+    router.push("/");
+  }
+}, [username, router]);
+
+if (!username) {
+  return null; // prevent rendering while redirecting
+}
+
+
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const params = new URLSearchParams({
-      username,
       only_bestball: onlyBestBall ? "1" : "",
       exclude_bestball: excludeBestBall ? "1" : "",
     });
@@ -43,16 +53,7 @@ export default function PlayerStockPage() {
         onSubmit={handleSubmit}
         className="w-full max-w-md bg-gray-900 p-6 rounded-xl shadow-lg"
       >
-        <label className="block mb-2 font-semibold" htmlFor="username">
-          Sleeper Username
-        </label>
-        <input
-          id="username"
-          className="w-full mb-4 px-4 py-2 text-black rounded-md"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          required
-        />
+        <p className="text-center mb-4">Logged in as <strong>{username}</strong></p>
 
         <fieldset className="mb-4">
           <legend className="font-semibold mb-2">Best Ball League Options</legend>
@@ -80,10 +81,10 @@ export default function PlayerStockPage() {
           type="submit"
           className="w-full bg-blue-800 hover:bg-blue-600 transition text-white font-semibold py-2 px-4 rounded"
         >
-          Search
+          View Player Stock
         </button>
       </form>
-      <Link href="/" className="inline-block px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
+      <Link href="/" className="inline-block mt-4 px-4 py-2 bg-blue-800 text-white rounded hover:bg-blue-600 transition">⬅️ Return to Home</Link>
     </main>
   );
 }

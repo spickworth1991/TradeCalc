@@ -3,16 +3,32 @@ import { Analytics } from "@vercel/analytics/next"
 import { useEffect, useState } from "react";
 import TradeSide from "../components/TradeSide";
 import PlayerCard from "../components/PlayerCard";
-import SleeperLogin from "../components/SleeperLogin";
 import { toSlug } from "@/utils/slugify";
 import Image from 'next/image';
 import { useFantasyCalcData } from "@/context/FantasyCalcContext";
 import Link from "next/link";
+import { useSleeperData } from "@/context/SleeperDataContext";
+import { useRouter } from "next/navigation";
+
 
 
 
 export default function Home() {
   const SAFE_MARGIN = 50;
+  const { username, leagues, getRostersForLeague } = useSleeperData();
+  const router = useRouter();
+
+useEffect(() => {
+    if (!username) {
+      router.push("/");
+    }
+  }, [username, router]);
+
+  if (!username) {
+    return null; // prevent rendering while redirecting
+  }
+
+
 
   const [hasMounted, setHasMounted] = useState(false);
 
@@ -39,14 +55,6 @@ export default function Home() {
   });
   const [recommendations, setRecommendations] = useState({ A: [], B: [] });
   const [result, setResult] = useState(null);
-  const [sleeperUser, setSleeperUser] = useState(() => {
-    if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("sleeperUser");
-      return stored ? JSON.parse(stored) : null;
-    }
-    return null;
-  });
-  const [leagues, setLeagues] = useState([]);
   const [selectedLeague, setSelectedLeague] = useState(() => {
     if (typeof window !== "undefined") {
       const stored = sessionStorage.getItem("selectedLeague");
@@ -186,47 +194,27 @@ export default function Home() {
     sessionStorage.setItem("sideOwners", JSON.stringify(sideOwners));
   }, [sideOwners]);
 
-  useEffect(() => {
-    if (sleeperUser) {
-      sessionStorage.setItem("sleeperUser", JSON.stringify(sleeperUser));
-    }
-  }, [sleeperUser]);
 
 
-  const handleLogin = async (username, userId) => {
-    setSleeperUser({ username, userId });
-    const season = new Date().getFullYear();
-    const res = await fetch(
-      `https://api.sleeper.app/v1/user/${userId}/leagues/nfl/${season}`,
-    );
-    const data = await res.json();
-    setLeagues(Array.isArray(data) ? data : []);
-  };
   
   const handleLeagueSelect = async (leagueId) => {
     const league = leagues.find((l) => l.league_id === leagueId);
     if (!league) return;
     setSelectedLeague(league);
 
-    const usersRes = await fetch(
-      `https://api.sleeper.app/v1/league/${leagueId}/users`,
-    );
+    const usersRes = await fetch(`https://api.sleeper.app/v1/league/${leagueId}/users`);
     const users = await usersRes.json();
     setOwners(users);
-    setOwnerMap(
-      Object.fromEntries(users.map((u) => [u.user_id, u.display_name])),
-    );
+    setOwnerMap(Object.fromEntries(users.map((u) => [u.user_id, u.display_name])));
 
-    const rosterRes = await fetch(
-      `https://api.sleeper.app/v1/league/${leagueId}/rosters`,
-    );
-    const data = await rosterRes.json();
+    const data = await getRostersForLeague(leagueId);
     const map = {};
     data.forEach((r) => {
       map[r.owner_id] = r.players || [];
     });
     setRosters(map);
   };
+
 
   const changeFormat = (newFormat) => {
     setFormat(newFormat);
@@ -258,7 +246,7 @@ export default function Home() {
     setSideOwners({ A: null, B: null });
     setSideA([]);
     setSideB([]);
-    setSleeperUser(null);
+
     if (typeof window !== "undefined") {
       sessionStorage.removeItem("sleeperUser");
     }
@@ -322,36 +310,25 @@ export default function Home() {
               </div>
             </div>
 
-            {!sleeperUser && (
-          <div className="flex justify-center">
-            <SleeperLogin onLogin={handleLogin} />
-          </div>
-        )}
+            <div className="text-center space-y-4">
+              <p className="text-lg">
+                Logged in as <strong>{username}</strong>
+              </p>
 
-        <div className="text-center space-y-4">
-          {sleeperUser && (
-            <p className="text-lg">
-              Logged in as <strong>{sleeperUser.username}</strong>
-            </p>
-          )}
+              <select
+                onChange={(e) => handleLeagueSelect(e.target.value)}
+                className="p-2 rounded bg-gray-800 text-white border border-gray-600 text-lg"
+                value={selectedLeague?.league_id || ""}
+              >
+                <option value="">Select a league</option>
+                {leagues.map((l) => (
+                  <option key={l.league_id} value={l.league_id}>
+                    {l.name || l.metadata?.name || `League ${l.league_id}`}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-          {sleeperUser && (
-            <select
-              onChange={(e) => handleLeagueSelect(e.target.value)}
-              className="p-2 rounded bg-gray-800 text-white border border-gray-600 text-lg"
-              value={selectedLeague?.league_id || ""}
-            >
-              <option value="">Select a league</option>
-              {leagues.map((l) => (
-                <option key={l.league_id} value={l.league_id}>
-                  {l.name || l.metadata?.name || `League ${l.league_id}`}
-                </option>
-              ))}
-            </select>
-          )}
-
-          
-        </div>
         
 
             {/* QB Toggle */}
@@ -385,7 +362,7 @@ export default function Home() {
                   🔁 Clear Trade
                 </button>
               )}
-              {selectedLeague && sleeperUser && (
+              {selectedLeague && (
                 <button
                   onClick={clearLeague}
                   className="bg-red-500 hover:bg-red-600 px-4 py-2 rounded shadow text-white font-semibold"
@@ -393,6 +370,7 @@ export default function Home() {
                   ❌ Clear League
                 </button>
               )}
+
             </div>
           )}
 

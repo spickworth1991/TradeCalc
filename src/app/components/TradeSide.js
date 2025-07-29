@@ -39,7 +39,11 @@ export default function TradeSide({
         </select>
       )}
 
-      <SearchBox players={allPlayers} onSelect={addPlayer} />
+      <SearchBox
+        players={allPlayers}
+        onSelectAndSearch={(player) => addPlayer(player)} // ✅ This will call parent handler with correct side
+      />
+
 
       <div className="mt-3 space-y-2">
         {players.map(p => (

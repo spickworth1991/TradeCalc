@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { FantasyCalcProvider } from "@/context/FantasyCalcContext";
 import Navbar from "@/app/components/Navbar";
+import { SleeperDataProvider } from "@/context/SleeperDataContext";
 
 
 
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-black text-white min-h-screen font-sans">
         <FantasyCalcProvider values={null}>
-          <Navbar /> {/* ✅ Navbar added globally */}
-          <main>{children}</main>
+          <Navbar /> 
+          <SleeperDataProvider>{children}</SleeperDataProvider>
         </FantasyCalcProvider>
         <Analytics />
         <SpeedInsights />
