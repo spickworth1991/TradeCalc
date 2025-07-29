@@ -195,7 +195,7 @@ export default function PlayerStockResults() {
       // console.log("🔒 Cleanup: aborting fetch");
       abort = true;
     };
-  }, [hydrated, username, userId, leagues, onlyBestBall, excludeBestBall]);
+  }, [hydrated, username, leagues, onlyBestBall, excludeBestBall, getPlayerDB, getRostersForLeague]);
 
   return (
     <main className="min-h-screen bg-black text-white px-4 py-10 flex flex-col items-center">

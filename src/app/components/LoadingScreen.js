@@ -14,10 +14,24 @@ export default function LoadingScreen({
     "The longest NFL field goal is 66 yards (Justin Tucker).",
     "The NFL draft was first held in 1936.",
     "The Steelers and Patriots both have 6 Super Bowl wins.",
+    "Emmitt Smith is the NFL's all-time rushing leader.",
+    "Peyton Manning has 5 NFL MVP awards, the most ever.",
+    "Super Bowl is the most-watched annual sporting event in the U.S.",
+    "Green Bay Packers have the most NFL championships (13).",
+    "Patrick Mahomes signed the biggest NFL contract in history.",
+    "The first televised NFL game aired in 1939.",
+    "Lamar Jackson was the youngest unanimous MVP at 22.",
+    "The Dallas Cowboys are the most valuable NFL franchise.",
+    "The first overtime playoff game was in 1958.",
+    "There are 32 teams in the NFL, split into two conferences.",
+    "Super Bowl rings can cost over $30,000 each.",
+    "The Vince Lombardi Trophy is made of sterling silver.",
   ],
 }) {
   const [progress, setProgress] = useState(0);
-  const [factIndex, setFactIndex] = useState(0);
+  const [factIndex, setFactIndex] = useState(() =>
+    Math.floor(Math.random() * factsArray.length) // ✅ Start on random fact
+  );
 
   const estimatedTime = 15000; // ~15 seconds for 95%
 
@@ -35,14 +49,20 @@ export default function LoadingScreen({
     }
 
     factInterval = setInterval(() => {
-      setFactIndex((prev) => (prev + 1) % factsArray.length);
+      setFactIndex((prev) => {
+        let next;
+        do {
+          next = Math.floor(Math.random() * factsArray.length);
+        } while (next === prev); // ✅ Avoid repeating the same fact
+        return next;
+      });
     }, 3000);
 
     return () => {
       clearInterval(interval);
       clearInterval(factInterval);
     };
-  }, [done]);
+  }, [done, factsArray.length]); // ✅ Dependencies fixed
 
   return (
     <div
@@ -66,7 +86,7 @@ export default function LoadingScreen({
 
           {/* Progress overlay */}
           <div
-            className="absolute top-0 bottom-0 left-0 transition-all duration-200 ease-out"
+            className="absolute top-0 bottom-0 left-0 bg-green-500 transition-all duration-200 ease-out"
             style={{ width: `${progress}%` }}
           />
 
