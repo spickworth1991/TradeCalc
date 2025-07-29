@@ -288,6 +288,7 @@ export default function Home() {
                 owners={owners}
                 selectedOwner={sideOwners.A}
                 onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, A: id }))}
+                recommendations={recommendations.A}
               />
               <TradeSide
                 label="B"
@@ -298,50 +299,11 @@ export default function Home() {
                 owners={owners}
                 selectedOwner={sideOwners.B}
                 onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
+                recommendations={recommendations.B}
               />
             </div>
 
-            {/* ✅ Recommendations Section */}
-              {(recommendations.A.length > 0 || recommendations.B.length > 0) && (
-                <div className="col-span-2 mt-6 bg-gray-900 p-4 rounded-lg border border-gray-700">
-                  <h3 className="text-indigo-400 font-semibold text-center mb-4">
-                    🔍 Suggested Players to Balance Trade
-                  </h3>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {["A", "B"].map((side) => (
-                      <div key={side} className="bg-gray-800 p-3 rounded-lg">
-                        <h4 className="text-sm font-semibold mb-2">
-                          {side === "A" ? "Add to Side A" : "Add to Side B"}
-                        </h4>
-                        {recommendations[side].length > 0 ? (
-                          <ul className="space-y-2">
-                            {recommendations[side].map((p) => (
-                              <li
-                                key={p.id}
-                                className="flex justify-between items-center bg-gray-700 p-2 rounded"
-                              >
-                                <div>
-                                  <p className="text-white">{p.name}</p>
-                                  <p className="text-xs text-gray-400">{p.pos} • Value: {p.value}</p>
-                                </div>
-                                <button
-                                  onClick={() => handleAddPlayer(side, p)}
-                                  className="bg-blue-600 hover:bg-blue-500 text-white text-xs px-3 py-1 rounded"
-                                >
-                                  Add
-                                </button>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : (
-                          <p className="text-gray-500 text-xs">No suggestions</p>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
+           
 
            {/* ✅ Top 10 Players Sidebar */}
           <div className="bg-gray-900 p-4 rounded-lg border border-gray-700">

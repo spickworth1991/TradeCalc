@@ -7,10 +7,10 @@ export default function TradeSide({
   setPlayers,
   addPlayer,
   allPlayers,
-  recommendations,
   owners,
   selectedOwner,
-  onOwnerSelect
+  onOwnerSelect,
+  recommendations = [],
 }) {
   const removePlayer = (id) => {
     setPlayers(players.filter(p => p.id !== id))
@@ -57,22 +57,43 @@ export default function TradeSide({
         </div>
       )}
 
-      {recommendations && recommendations.length > 0 && (
-        <div className="mt-4">
-          <h4 className="text-sm text-gray-500 mb-1">Suggestions:</h4>
-          <div className="flex flex-col gap-1">
-            {recommendations.map(p => (
-              <button
-                key={p.id}
-                onClick={() => addPlayer(p)}
-                className="text-sm text-blue-400 hover:text-blue-300 text-left"
-              >
-                ➕ {p.name} ({p.pos}) – {p.value}
-              </button>
-            ))}
+      {/* ✅ Recommendations Section */}
+        {recommendations.length > 0 && (
+          <div className="mt-4 bg-gray-800 p-3 rounded-lg border border-gray-700">
+            <h4 className="text-indigo-400 text-sm font-semibold mb-2">
+              Suggested Adds
+            </h4>
+            <ul className="space-y-2">
+              {recommendations.map((p) => (
+                <li
+                  key={p.id}
+                  className="flex justify-between items-center text-sm bg-gray-900 p-2 rounded"
+                >
+                  <div>
+                    <a
+                      href={`https://www.nfl.com/players/${p.name
+                        .toLowerCase()
+                        .replace(/\s+/g, "-")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:underline"
+                    >
+                      {p.name}
+                    </a>
+                    <p className="text-gray-400 text-xs">Value: {p.value}</p>
+                  </div>
+                  <button
+                    onClick={() => addPlayer(p)}
+                    className="bg-green-600 hover:bg-green-500 text-white text-xs px-3 py-1 rounded"
+                  >
+                    Add
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      )}
+        )}
+
     </div>
   )
 }
