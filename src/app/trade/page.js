@@ -59,19 +59,25 @@ export default function Home() {
   useEffect(() => setHasMounted(true), []);
 
   useEffect(() => {
-  const sorted = mergedPlayers
-    .slice()
-    .sort((a, b) => getPlayerValue(b) - getPlayerValue(a));
-  setAllPlayers(sorted);
-}, [mergedPlayers, valueSource]);
+    const getVal = (p) => {
+      return valueSource === "FantasyCalc" ? p.value || 0 : p.dpValue || 0;
+    };
+
+    const sorted = mergedPlayers
+      .slice()
+      .sort((a, b) => getVal(b) - getVal(a));
+    setAllPlayers(sorted);
+  }, [mergedPlayers, valueSource]);
+
 
 // Whenever the source flips to DynastyProcess, force dynasty format
-useEffect(() => {
-  if (valueSource === "DynastyProcess" && format !== "dynasty") {
-    setFormat("dynasty");
-    sessionStorage.setItem("format", "dynasty");
-  }
-}, [valueSource]);
+  useEffect(() => {
+    if (valueSource === "DynastyProcess" && format !== "dynasty") {
+      setFormat("dynasty");
+      sessionStorage.setItem("format", "dynasty");
+    }
+  }, [valueSource, format, setFormat]);
+
 
 
 const getPlayerValue = (p) => {
