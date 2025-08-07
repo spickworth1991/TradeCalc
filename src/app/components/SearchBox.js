@@ -13,9 +13,9 @@ export default function SearchBox({ players, onSelectAndSearch }) {
   useEffect(() => {
     const handler = setTimeout(() => {
       if (query.trim()) {
-        const filtered = players.filter((p) =>
-          p.name?.toLowerCase().includes(query.toLowerCase())
-        );
+        const filtered = players
+          .filter((p) => p.name?.toLowerCase().includes(query.toLowerCase()))
+          .sort((a, b) => b.value - a.value); // ✅ Sort by value
         setMatches(filtered.slice(0, 10));
         setOpen(true);
         setHighlightIndex(-1);
@@ -23,7 +23,8 @@ export default function SearchBox({ players, onSelectAndSearch }) {
         setMatches([]);
         setOpen(false);
       }
-    }, 200); // 200ms debounce
+    }, 200);
+
 
     return () => clearTimeout(handler);
   }, [query, players]);

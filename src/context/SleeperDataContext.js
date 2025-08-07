@@ -83,6 +83,16 @@ export function SleeperDataProvider({ children }) {
     }
   };
 
+  const logout = () => {
+    sessionStorage.removeItem("sleeperData");
+    setUsername(null);
+    setUserId(null);
+    setLeagues([]);
+    setRosters({});
+    setPlayers(null);
+  };
+
+
   const getRostersForLeague = useCallback(
     async (leagueId) => {
       if (rosters[leagueId]) return rosters[leagueId];
@@ -113,6 +123,7 @@ export function SleeperDataProvider({ children }) {
         hydrated,
         login,
         refresh,
+        logout,
         getRostersForLeague,
         getPlayerDB,
         loading,

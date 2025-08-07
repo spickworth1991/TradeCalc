@@ -2,18 +2,19 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { toSlug } from "@/utils/slugify";
 
-export default function PlayerCard({ player, onAdd, onRemove }) {
+export default function PlayerCard({ player, onAdd, onRemove, displayValue }) {
   const [flash, setFlash] = useState(false);
-  const prevValue = useRef(player.value);
+  const prevValue = useRef(displayValue(player));
   const slug = toSlug(player.name || "");
 
   useEffect(() => {
-    if (player.value !== prevValue.current) {
+    const currentValue = displayValue(player);
+    if (currentValue !== prevValue.current) {
       setFlash(true);
-      prevValue.current = player.value;
+      prevValue.current = currentValue;
       setTimeout(() => setFlash(false), 500);
     }
-  }, [player.value]);
+  }, [player, displayValue]);
 
   const avatarSrc = `/avatars/${slug}.webp`;
   const [imgSrc, setImgSrc] = useState(avatarSrc);
@@ -35,13 +36,15 @@ export default function PlayerCard({ player, onAdd, onRemove }) {
           onError={() => setImgSrc("/avatars/default.webp")}
         />
         <p className="font-semibold mt-1">{player.name}</p>
-        <p className="text-xs text-gray-400">{player.pos} – {player.team}</p>
+        <p className="text-xs text-gray-400">
+          {player.pos} – {player.team}
+        </p>
         <p
           className={`text-right font-semibold mt-1 ${
             flash ? "text-green-400 scale-105" : "text-blue-400"
           } transition-all duration-300`}
         >
-          {player.value}
+          {displayValue(player)}
         </p>
       </div>
       {onRemove && (

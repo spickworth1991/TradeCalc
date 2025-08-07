@@ -9,11 +9,29 @@ import Link from "next/link";
 import { useSleeperData } from "@/context/SleeperDataContext";
 import { useRouter } from "next/navigation";
 
+// Normalize out suffixes & punctuation for key-matching
+function normalizeName(str) {
+  return str
+    .toLowerCase()
+    .replace(/\b(ii|iii|iv|jr|sr)\b/gi, "")  // strip suffixes
+    .replace(/[^a-z0-9 ]/g, "")             // remove punctuation
+    .trim();
+}
+
+
 export default function Home() {
   const SAFE_MARGIN = 50;
   const { username, leagues, getRostersForLeague } = useSleeperData();
   const router = useRouter();
-  const calcData = useFantasyCalcData();
+
+
+  const VALUE_SOURCES = {
+    FantasyCalc: { label: "FantasyCalc", supports: { dynasty: true, redraft: true } },
+    DynastyProcess: { label: "DynastyProcess", supports: { dynasty: true, redraft: false } }
+  };
+
+  const [valueSource, setValueSource] = useState("FantasyCalc");
+
 
   // ✅ All hooks at top-level
   const [hasMounted, setHasMounted] = useState(false);
@@ -28,16 +46,10 @@ export default function Home() {
   const [ownerMap, setOwnerMap] = useState({});
   const [rosters, setRosters] = useState({});
   const [sideOwners, setSideOwners] = useState(() => (typeof window !== "undefined" ? JSON.parse(sessionStorage.getItem("sideOwners") || '{"A":null,"B":null}') : { A: null, B: null }));
-  const [format, setFormat] = useState(() => (typeof window !== "undefined" ? sessionStorage.getItem("format") || "redraft" : "redraft"));
-  const [superflex, setSuperflex] = useState(() => {
-  if (typeof window !== "undefined") {
-      const stored = sessionStorage.getItem("superflex");
-      return stored !== null ? stored === "true" : true; // ✅ Default to true (Superflex)
-    }
-    return true; // ✅ Server-side default
-  });
+  const { mergedPlayers, format, setFormat, superflex, setSuperflex } = useFantasyCalcData();
 
-
+  
+  
   // ✅ Redirect if not logged in
   useEffect(() => {
     if (!username) router.push("/");
@@ -46,26 +58,28 @@ export default function Home() {
   // ✅ Mark mounted for client-only UI
   useEffect(() => setHasMounted(true), []);
 
-  // ✅ Fetch FantasyCalc data based on format
   useEffect(() => {
-    const fetchPlayers = async () => {
-      const formatKey = `${format.charAt(0).toUpperCase() + format.slice(1)}_${superflex ? "SF" : "1QB"}`;
-      const values = calcData?.[formatKey] || [];
+  const sorted = mergedPlayers
+    .slice()
+    .sort((a, b) => getPlayerValue(b) - getPlayerValue(a));
+  setAllPlayers(sorted);
+}, [mergedPlayers, valueSource]);
 
-      const flat = values
-        .map((p) => ({
-          name: p?.player?.name,
-          id: p?.player?.sleeperId || p?.player?.id,
-          pos: p?.player?.position,
-          team: p?.player?.maybeTeam || "",
-          value: p?.value || 0,
-        }))
-        .filter((p) => p.name && p.value > 0);
+// Whenever the source flips to DynastyProcess, force dynasty format
+useEffect(() => {
+  if (valueSource === "DynastyProcess" && format !== "dynasty") {
+    setFormat("dynasty");
+    sessionStorage.setItem("format", "dynasty");
+  }
+}, [valueSource]);
 
-      setAllPlayers(flat);
-    };
-    fetchPlayers();
-  }, [format, superflex, calcData]);
+
+const getPlayerValue = (p) => {
+  if (!p) return 0;
+  return valueSource === "FantasyCalc" ? p.value || 0 : p.dpValue || 0;
+};
+
+
 
   // ✅ Update side values if format changes
   useEffect(() => {
@@ -193,7 +207,15 @@ export default function Home() {
             <div className="flex items-center gap-3">
               <span className="text-sm font-medium"></span>
               <div
-                onClick={() => setFormat(format === "redraft" ? "dynasty" : "redraft")}
+                onClick={() => {
+                    if (valueSource === "DynastyProcess") {
+                      alert("Sorry—DynastyProcess only supports Dynasty mode.");
+                      return;
+                    }
+                        const next = format === "redraft" ? "dynasty" : "redraft";
+                        setFormat(next);
+                        sessionStorage.setItem("format", next);
+                  }}
                 className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
                   format === "redraft" ? "bg-blue-600" : "bg-gray-600"
                 }`}
@@ -228,13 +250,30 @@ export default function Home() {
               </select>
             </div>
 
+            <div className="flex flex-col items-center gap-2">
+              <label className="font-semibold">Value Source:</label>
+              <select
+                value={valueSource}
+                onChange={(e) => setValueSource(e.target.value)}
+                className="bg-gray-800 text-white p-2 rounded"
+              >
+                {Object.keys(VALUE_SOURCES).map((src) => (
+                  <option key={src} value={src}>{VALUE_SOURCES[src].label}</option>
+                ))}
+              </select>
+            </div>
+
         
 
             {/* QB Toggle */}
             <div className="flex items-center gap-3">
               <span className="text-sm font-medium"></span>
               <div
-                onClick={() => setSuperflex(!superflex)}
+                onClick={() => {
+                  setSuperflex(!superflex);
+                  sessionStorage.setItem("superflex", (!superflex).toString());
+                }}
+
                 className={`relative w-44 h-10 rounded-full cursor-pointer transition-all duration-300 flex items-center ${
                   superflex ? "bg-blue-600" : "bg-gray-600"
                 }`}
@@ -289,6 +328,7 @@ export default function Home() {
                 selectedOwner={sideOwners.A}
                 onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, A: id }))}
                 recommendations={recommendations.A}
+                getPlayerValue={getPlayerValue}
               />
               <TradeSide
                 label="B"
@@ -300,6 +340,7 @@ export default function Home() {
                 selectedOwner={sideOwners.B}
                 onOwnerSelect={(id) => setSideOwners((prev) => ({ ...prev, B: id }))}
                 recommendations={recommendations.B}
+                getPlayerValue={getPlayerValue}
               />
             </div>
 
@@ -334,10 +375,13 @@ export default function Home() {
                         width={40}
                         height={40}
                         className="rounded"
+                        unoptimized
+                        onError={(e) => (e.currentTarget.src = "/avatars/default.webp")}
                       />
+
                       <div>
                         <a href={`https://www.nfl.com/players/${p.name.toLowerCase().replace(/\s+/g, "-")}`} target="_blank" className="text-indigo-400 hover:underline text-sm">{p.name}</a>
-                        <p className="text-xs text-gray-400">Value: {p.value}</p>
+                        <p className="text-xs text-gray-400">Value: {getPlayerValue(p)}</p>
                       </div>
                     </div>
                     <div className="flex gap-1">

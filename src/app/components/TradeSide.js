@@ -10,12 +10,15 @@ export default function TradeSide({
   owners,
   selectedOwner,
   onOwnerSelect,
-  recommendations = [],
+  recommendations,
+  getPlayerValue = [],
 }) {
   const removePlayer = (id) => {
     setPlayers(players.filter(p => p.id !== id))
   }
 
+  const displayValue = (p) => getPlayerValue(p);
+  
   const displayLabel = selectedOwner
     ? owners.find(o => o.user_id === selectedOwner)?.display_name || `Side ${label}`
     : `Side ${label}`
@@ -47,15 +50,19 @@ export default function TradeSide({
 
       <div className="mt-3 space-y-2">
         {players.map(p => (
-          <PlayerCard key={p.id} player={p} onRemove={() => removePlayer(p.id)} />
+          <PlayerCard
+            key={p.id}
+            player={p}
+            displayValue={displayValue}
+            onRemove={() => removePlayer(p.id)}
+          />
+
         ))}
       </div>
 
-      {players.length > 0 && (
-        <div className="mt-3 text-sm font-semibold text-right">
-          Total: {players.reduce((sum, p) => sum + p.value, 0)}
-        </div>
-      )}
+      <div className="mt-3 text-sm font-semibold text-right">
+        Total: {players.reduce((sum, p) => sum + getPlayerValue(p), 0)}
+      </div>
 
       {/* ✅ Recommendations Section */}
         {recommendations.length > 0 && (
@@ -65,31 +72,22 @@ export default function TradeSide({
             </h4>
             <ul className="space-y-2">
               {recommendations.map((p) => (
-                <li
-                  key={p.id}
-                  className="flex justify-between items-center text-sm bg-gray-900 p-2 rounded"
-                >
-                  <div>
-                    <a
-                      href={`https://www.nfl.com/players/${p.name
-                        .toLowerCase()
-                        .replace(/\s+/g, "-")}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-400 hover:underline"
-                    >
-                      {p.name}
-                    </a>
-                    <p className="text-gray-400 text-xs">Value: {p.value}</p>
-                  </div>
-                  <button
-                    onClick={() => addPlayer(p)}
-                    className="bg-green-600 hover:bg-green-500 text-white text-xs px-3 py-1 rounded"
-                  >
-                    Add
-                  </button>
-                </li>
-              ))}
+              <li key={p.id} className="flex justify-between items-center text-sm bg-gray-900 p-2 rounded">
+                <div>
+                  <a href={`https://www.nfl.com/players/${p.name.toLowerCase().replace(/\s+/g, "-")}`}
+                     target="_blank"
+                     rel="noopener noreferrer"
+                     className="text-blue-400 hover:underline">
+                    {p.name}
+                  </a>
+                  <p className="text-gray-400 text-xs">Value: {getPlayerValue(p)}</p>
+                </div>
+                <button onClick={() => addPlayer(p)}
+                        className="bg-green-600 hover:bg-green-500 text-white text-xs px-3 py-1 rounded">
+                  Add
+                </button>
+              </li>
+            ))}
             </ul>
           </div>
         )}
